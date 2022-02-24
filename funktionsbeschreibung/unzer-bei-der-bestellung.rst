@@ -1,5 +1,5 @@
-PayPal bei der Bestellung
-=========================
+Unzer bei der Bestellung
+========================
 
 Wurden die Artikel mit PayPal bezahlt, werden im Administrationsbereich auf der Registerkarte :guilabel:`PayPal` der Bestellung Zahlungsinformationen, eine PayPal-Historie und eine Übersicht der bestellten Artikel angezeigt.
 

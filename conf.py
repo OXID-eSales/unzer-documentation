@@ -130,7 +130,7 @@ todo_include_todos = True
 html_theme = 'sphinx_rtd_theme'
 
 html_context = {
-    'current_version': '6.2',
+    'current_version': '1.0',
     'versions':
         [('1.0', 'https://docs.oxid-esales.com/modules/unzer/de/1.0/'),
          ],
@@ -269,6 +269,7 @@ rst_epilog = """
 .. |prerequisites| replace:: **Voraussetzungen**
 .. |result| replace:: **Resultat**
 .. |background| replace:: **Hintergrund**
+.. |example| replace:: **Beispiel**
 .. |br| raw:: html
 
    <br />
