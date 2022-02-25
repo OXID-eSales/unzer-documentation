@@ -1,16 +1,11 @@
 Installation
 ============
 
-
-
-Installation durchführen
-------------------------
-
 Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Version 6.3.
 
 |prerequisites|
 
-* Sie haben den OXID eSHOP 6.3 oder höher installiert.`
+* Sie haben den OXID eSHOP 6.3 oder höher installiert.
 * Sie haben Transportverschlüsselung (`https`) konfiguriert.
 
    a. Öffnen Sie im Verzeichnis `<Rootverzeichnis des eShops>/source` die Datei `config.inc.php`.
@@ -35,15 +30,15 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/unzer:dev-b-6.3.x
+      composer require oxid-solution-catalysts/unzer
 
-.. todo: #Johannes#Mario: Wenn produktiv, dann composer require oxid-solution-catalysts/unzer ?
+.. todo: #Mario: Prüfen: ob anderes Repo als Quelle
 
 3. Bestätigen Sie die Abfragen.
 
 |result|
 
-Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Administrationsbereich unter :menuselection:`Erweiterungen --> Zahlungsarten`.
+Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Administrationsbereich unter :menuselection:`Erweiterungen --> Module`.
 
 
 .. todo: #tbd Bild ergänzen
@@ -51,14 +46,6 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Admini
 .. todo: Nächster Schritt Konfiguration
 
 
-Installation abschließen
-------------------------
-
-.. todo: #Mario/#Johannes: Schritt sinnvoll/überflüssig?
-
-Löschen Sie temporäre Dateien.
-|br|
-Löschen Sie dazu alle Dateien und Ordner außer :file:`.htaccess` aus dem Verzeichnis :file:`/tmp` des Shops.
 
 
 

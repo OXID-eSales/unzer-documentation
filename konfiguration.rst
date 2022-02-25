@@ -40,12 +40,18 @@ Aktivieren Sie Unzer in jedem Subshop, in dem Sie das Modul nutzen wollen.
 
 |result|
 
-Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind alle Zahlungsarten, die das Modul :guilabel:`Unzer Payment-Modul für OXID` abdeckt, als aktiv gekennzeichnet.
+Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten, die das Modul :guilabel:`Unzer Payment-Modul für OXID` abdeckt, als aktiv gekennzeichnet.
+
+Aktiv sind automatisch diejenigen Zahlungsarten, die zu den Ländern passen, die Sie unter :menuselection:`Stammdaten --> Länder` als aktiv markiert haben.
+
+.. todo: #tbd: erläutern, wie man den Shop um neue Länder und edizierte Unzer-Zahlungsmethoden erweitert
+
+|example|
+
+Sie haben die Niederlande als aktiv markiert.
 
 
-.. todo: #Mario: klärt, welche Zahlungsarten sofort aktiv sind
-
-.. todo: #Bild ergänzen; #Mario: ist das das erwartete Ergebnis?
+.. todo: #Bild ergänzen;
     .. image:: media/screenshots/oxdaac01.png
     :alt: Unzer Zahlungsarten
     :class: with-shadow
@@ -76,9 +82,9 @@ Registrieren Sie einen Webhook, um Ihren eShop mit Unzer zu verbinden.
    * Production Public-Key
    * Production Private-Key
 
-Weitere Informationen zum Registrieren bei Unzer finden Sie unter https://www.unzer.com/de/direct/
+Weitere Informationen zum Registrieren bei Unzer finden Sie unter https://www.unzer.com/de
 
-.. todo: #Mario verifiziert: Unzer Link  https://www.unzer.com/de/direct/
+.. todo: #Mario verifiziert/liefert: Unzer Link  https://www.unzer.com/de/direct/
 
 
 |procedure|
@@ -86,7 +92,6 @@ Weitere Informationen zum Registrieren bei Unzer finden Sie unter https://www.un
 1. Geben Sie unter :menuselection:`Einstell. --> Zugangsdaten` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein.
 #. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren`.
 
-.. todo: #Mario: wozu ist der API-Key? -- klären
 
 |result|
 
@@ -126,6 +131,8 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
    Die verzögerte Zahlung für Zahlung per PayPal oder Kreditkarte greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
 #. Tragen Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
 
+.. todo: #Mario klärt mit Unzer: Was passiert, wenn ich einen zu hohen oder zu niedrigen Wert eintrage?
+
 |result|
 
 Wenn Sie für Zahlung per PayPal oder Kreditkarte :guilabel:`Authorize & later Capture` gewählt haben, wird die Zahlung ausgelöst,
@@ -135,8 +142,7 @@ Wenn Sie für Zahlung per PayPal oder Kreditkarte :guilabel:`Authorize & later C
 
 Bei allen anderen von Unzer unterstützten Zahlungsarten wird die Zahlung sofort mit der Bestellung ausgelöst.
 
-.. todo: #Mario: Was passiert, wenn ich einen zu hohen oder zu niedrigen Wert eintrage?
-.. todo: #Mario: Welchen Wert trage ich ein, wenn ich keine Ratenzahlung vereinbart habe?
+
 .. todo: #tbd: Prüfen: wie sieht Ratenzahlungsangebt aus Kundensicht aus?
 
 Sonstiges: Optimale Performance sicherstellen
@@ -183,6 +189,8 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
 
 1. Optional: Um während des Testen Logs zu generieren, markieren Sie unter :menuselection:`Einstell. --> Umgebung` das Kontrollkästchen :guilabel:`Debug-Modus aktivieren`.
    |br|
+   Typischerweisen schalten Sie das Logging nur auf Anfrage ein: Wenn der Support von Unzer Sie bittet, ein Problem nachzustellen.
+   |br|
    Die Log-Dateien finden Sie im Verzeichnis ``log/unzer``.
 #. Nachdem Sie die Funktionen des Moduls konfiguriert und getestet haben, schalten Sie auf :guilabel:`Livebetrieb` um.
 #. Um unnötigen Speicherplatzverbrauch zu vermeiden, stellen Sie sicher, dass im Livebetrieb der Debug-Modus deaktiviert ist.
@@ -206,7 +214,6 @@ Löschen und generieren Sie einen Webhook neu auch in dem Fall, dass Sie aus and
 
 |background|
 
-.. todo: #Mario: Folgendes verifizieren:
 
 Wenn der Webhook auf Ihrem Testsystem auch dann noch aktiv ist, wenn Sie das Testsystem nicht nutzen, werden die Statusmeldungen, die Unzer an ihr Produktionssystem sendet, auch an Ihr Testsystem gesendet.
 
