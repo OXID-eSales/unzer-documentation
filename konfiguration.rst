@@ -30,6 +30,8 @@ Konfigurieren und testen Sie Unzer. Schalten Sie anschließend den Live-Betrieb 
 Unzer aktivieren
 ----------------
 
+Aktivieren Sie Unzer in jedem Subshop, in dem Sie das Modul nutzen wollen.
+
 |procedure|
 
 1. Wählen Sie :menuselection:`Erweiterungen --> Module`. 
@@ -39,6 +41,9 @@ Unzer aktivieren
 |result|
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind alle Zahlungsarten, die das Modul :guilabel:`Unzer Payment-Modul für OXID` abdeckt, als aktiv gekennzeichnet.
+
+
+.. todo: #Mario: klärt, welche Zahlungsarten sofort aktiv sind
 
 .. todo: #Bild ergänzen; #Mario: ist das das erwartete Ergebnis?
     .. image:: media/screenshots/oxdaac01.png

@@ -57,7 +57,8 @@ Ebenfalls vereinbaren Sie mit Unzer beispielsweise,
 Sobald alle Fragen geklärt sind, erhalten dann von Unzer die Anmeldeinformationen, die Sie zum Konfigurieren brauchen.
 
 .. todo: #tbd: Links ergänzen
-Weitere Informationen über Nutzungsbedingungen und die die Zahlungsarten, die Sie Ihren Kunden mit dem Modul zur Auswahl anbieten können, finden Sie unter #tbd: Link zu Unzer ergänzen
+    Weitere Informationen über Nutzungsbedingungen und die die Zahlungsarten, die Sie Ihren Kunden mit dem Modul zur Auswahl anbieten können, finden Sie unter #tbd: Link zu Unzer ergänzen
+
 
 .. todo: #Mario: klären:  standardmäßig Aktive Zahlungsarten; oder vielleicht in On-boarding zwischen Kunde und Unzer geklärt;
 
