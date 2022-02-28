@@ -18,7 +18,7 @@ Bieten Sie mit dem Unzer Payment-Modul für OXID die in folgenden Märkten belie
 .. todo: Apple Pay zu V. 1.01 ergänzen
 
 =================== ========================================================
-Markt               Zahlungsmethoden
+Markt               Zahlungsmethode
 =================== ========================================================
 Weltweit	        Alipay
 Weltweit	        Kreditkarte
@@ -115,7 +115,7 @@ Marktabdeckung nach Zahlungsmethoden
 ------------------------------------
 
 =============================================== ================
-Markt           Zahlungsmethoden
+Zahlungsmethode                                 Markt
 =============================================== ================
 Alipay	                                        Weltweit
 Bancontact	                                    Belgien

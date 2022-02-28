@@ -44,7 +44,7 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarte
 
 Aktiv sind automatisch diejenigen Zahlungsarten, die zu den Ländern passen, die Sie unter :menuselection:`Stammdaten --> Länder` als aktiv markiert haben.
 
-.. todo: #tbd: erläutern, wie man den Shop um neue Länder und edizierte Unzer-Zahlungsmethoden erweitert
+.. todo: #tbd: erläutern, wie man den Shop um neue Länder und dedizierte Unzer-Zahlungsmethoden erweitert
 
 |example|
 
