@@ -3,6 +3,9 @@
 
 Nutzen Sie das Unzer Payment-Modul für OXID, um Ihren nationalen und internationalen Kunden ein weites Spektrum beliebter Zahlungsarten bereitzustellen.
 
+Gegenwärtig können Sie Ihren Kunden damit 17 der von Unzer abgedeckten weltweit wichtigsten Zahlungsarten anbieten. Apple Pay ist in Vorbereitung.
+
+Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.unzer.com/de/zahlungsmethoden <https://www.unzer.com/de/zahlungsmethoden/>`_ .
 
 .. image:: media/unzer-logo.png
     :alt: Unzer-Logo
@@ -15,7 +18,8 @@ Marktabdeckung nach Ländern
 
 Bieten Sie mit dem Unzer Payment-Modul für OXID die in folgenden Märkten beliebten Zahlungsmethoden an.
 
-.. todo: Apple Pay zu V. 1.01 ergänzen
+
+
 
 =================== ========================================================
 Markt               Zahlungsmethode
@@ -25,80 +29,81 @@ Weltweit	        Kreditkarte
 Weltweit	        PayPal
 Weltweit	        WeChat
 Australien	        Sofort Überweisung (Klarna Pay now)
-Belgien	            Rechnung, abgetreten an Unzer
+Belgien	            Unzer Invoice
 Belgien	            Vorkasse
 Belgien	            SEPA-Lastschrift
 Belgien	            Sofort Überweisung (Klarna Pay now)
 Belgien             Bancontact
 Dänemark	        Sofort Überweisung (Klarna Pay now)
-Deustchland	        Rechnung, abgetreten an Unzer
+Deustchland	        Unzer Invoice
 Deustchland	        Vorkasse
 Deustchland	        SEPA-Lastschrift
 Deutschland	        Giropay
 Deutschland	        Ratenzahlung mit Unzer
-Deutschland	        Rechnung Secured, abgetreten an Unzer
-Deutschland	        SEPA-Lastschrift Secured
+Deutschland	        Unzer Invoice
+Deutschland	        Unzer Invoice Secured (abgetreten an Unzer)
+Deutschland	        SEPA-Lastschrift Secured (Risiko abgetreten an Unzer)
 Deutschland	        Sofort Überweisung (Klarna Pay now)
-Deutschland	        Unzer Bank Transfer
-Estland	            Rechnung, abgetreten an Unzer
+Deutschland	        Unzer Bank Transfer (Überweisung)
+Estland	            Unzer Invoice
 Estland	            Vorkasse
 Estland	            SEPA-Lastschrift
-Finland	            Rechnung, abgetreten an Unzer
+Finland	            Unzer Invoice
 Finland	            Vorkasse
 Finland	            SEPA-Lastschrift
 Finland	            Sofort Überweisung (Klarna Pay now)
 Frankreich	        Sofort Überweisung (Klarna Pay now)
-Griechenland	    Rechnung, abgetreten an Unzer
+Griechenland	    Unzer Invoice
 Griechenland	    Vorkasse
 Griechenland	    SEPA-Lastschrift
 Großbritannien	    Sofort Überweisung (Klarna Pay now)
-Irland	            Rechnung, abgetreten an Unzer
+Irland	            Unzer Invoice
 Irland	            Vorkasse
 Irland	            SEPA-Lastschrift
-Italien	            Rechnung, abgetreten an Unzer
+Italien	            Unzer Invoice
 Italien	            Vorkasse
 Italien	            SEPA-Lastschrift
-Lettland	        Rechnung, abgetreten an Unzer
+Lettland	        Unzer Invoice
 Lettland	        Vorkasse
 Lettland	        SEPA-Lastschrift
-Litauen	            Rechnung, abgetreten an Unzer
+Litauen	            Unzer Invoice
 Litauen	            Vorkasse
 Litauen	            SEPA-Lastschrift
-Luxemburg	        Rechnung, abgetreten an Unzer
+Luxemburg	        Unzer Invoice
 Luxemburg	        Vorkasse
 Luxemburg	        SEPA-Lastschrift
-Malta	            Rechnung, abgetreten an Unzer
+Malta	            Unzer Invoice
 Malta	            Vorkasse
 Malta	            SEPA-Lastschrift
 Niederlande	        iDEAL
-Niederlande	        Rechnung, abgetreten an Unzer
+Niederlande	        Unzer Invoice
 Niederlande	        Vorkasse
 Niederlande	        SEPA-Lastschrift
 Niederlande	        Sofort Überweisung (Klarna Pay now)
 Norwegen	        Sofort Überweisung (Klarna Pay now)
 Österreich	        eps Überweisung (Electronic Payment Standard)
 Österreich	        Ratenzahlung mit Unzer
-Österreich	        Rechnung, abgetreten an Unzer
-Österreich	        Rechnung Secured, abgetreten an Unzer
+Österreich	        Unzer Invoice
+Österreich	        Unzer Invoice Secured (abgetreten an Unzer)
 Österreich	        Vorkasse
 Österreich	        SEPA-Lastschrift
-Österreich	        Unzer Bank Transfer
+Österreich	        Unzer Bank Transfer (Überweisung)
 Polen	            Przelewy24
 Polen	            Sofort Überweisung (Klarna Pay now)
-Portugal	        Rechnung, abgetreten an Unzer
+Portugal	        Unzer Invoice
 Portugal	        Vorkasse
 Portugal	        SEPA-Lastschrift
 Portugal	        Sofort Überweisung (Klarna Pay now)
 Schweden	        Sofort Überweisung (Klarna Pay now)
 Schweiz     	    Sofort Überweisung (Klarna Pay now)
-Slowakei	        Rechnung, abgetreten an Unzer
+Slowakei	        Unzer Invoice
 Slowakei	        Vorkasse
 Slowakei	        SEPA-Lastschrift
 Slowakei	        Sofort Überweisung (Klarna Pay now)
-Slowenien	        Rechnung, abgetreten an Unzer
+Slowenien	        Unzer Invoice
 Slowenien	        Vorkasse
 Slowenien	        SEPA-Lastschrift
-Spanien	            Rechnung, abgetreten an Unzer
+Spanien	            Unzer Invoice
 Spanien	            Vorkasse
 Spanien	            SEPA-Lastschrift
 Spanien	            Sofort Überweisung (Klarna Pay now)
@@ -106,7 +111,7 @@ talien	            Sofort Überweisung (Klarna Pay now)
 Tschechien	        Sofort Überweisung  (Klarna Pay now)
 Ungarn	            Sofort Überweisung (Klarna Pay now)
 Vereinigte Staaten	Sofort Überweisung (Klarna Pay now)
-Zypern	            Rechnung, abgetreten an Unzer
+Zypern	            Unzer Invoice
 Zypern	            Vorkasse
 Zypern	            SEPA-Lastschrift
 =================== ========================================================
@@ -127,26 +132,26 @@ PayPal	                                        Weltweit
 Przelewy24	                                    Polen
 Ratenzahlung mit Unzer	                        Deutschland
 Ratenzahlung mit Unzer	                        Österreich
-Rechnung Secured, abgetreten an Unzer	        Deutschland
-Rechnung Secured, abgetreten an Unzer	        Österreich
-Rechnung, abgetreten an Unzer	                Belgien
-Rechnung, abgetreten an Unzer	                Deustchland
-Rechnung, abgetreten an Unzer	                Estland
-Rechnung, abgetreten an Unzer	                Finland
-Rechnung, abgetreten an Unzer	                Griechenland
-Rechnung, abgetreten an Unzer	                Irland
-Rechnung, abgetreten an Unzer	                Italien
-Rechnung, abgetreten an Unzer	                Lettland
-Rechnung, abgetreten an Unzer	                Litauen
-Rechnung, abgetreten an Unzer	                Luxemburg
-Rechnung, abgetreten an Unzer	                Malta
-Rechnung, abgetreten an Unzer	                Niederlande
-Rechnung, abgetreten an Unzer	                Österreich
-Rechnung, abgetreten an Unzer	                Portugal
-Rechnung, abgetreten an Unzer	                Slowakei
-Rechnung, abgetreten an Unzer	                Slowenien
-Rechnung, abgetreten an Unzer	                Spanien
-Rechnung, abgetreten an Unzer	                Zypern
+Unzer Invoice Secured (abgetreten an Unzer)	    Deutschland
+Unzer Invoice Secured (abgetreten an Unzer)	    Österreich
+Unzer Invoice                    	            Belgien
+Unzer Invoice                    	            Deustchland
+Unzer Invoice                    	            Estland
+Unzer Invoice                    	            Finland
+Unzer Invoice                    	            Griechenland
+Unzer Invoice                    	            Irland
+Unzer Invoice                    	            Italien
+Unzer Invoice                    	            Lettland
+Unzer Invoice                    	            Litauen
+Unzer Invoice                    	            Luxemburg
+Unzer Invoice                    	            Malta
+Unzer Invoice                    	            Niederlande
+Unzer Invoice                    	            Österreich
+Unzer Invoice                    	            Portugal
+Unzer Invoice                    	            Slowakei
+Unzer Invoice                    	            Slowenien
+Unzer Invoice                    	            Spanien
+Unzer Invoice                    	            Zypern
 SEPA-Lastschrift	                            Belgien
 SEPA-Lastschrift	                            Deustchland
 SEPA-Lastschrift	                            Estland
@@ -165,7 +170,7 @@ SEPA-Lastschrift	                            Slowakei
 SEPA-Lastschrift	                            Slowenien
 SEPA-Lastschrift	                            Spanien
 SEPA-Lastschrift	                            Zypern
-SEPA-Lastschrift Secured	                    Deutschland
+SEPA-Lastschrift Secured (Risiko bei Unzer)	    Deutschland
 Sofort Überweisung (Klarna Pay now)	            Australien
 Sofort Überweisung (Klarna Pay now)	            Belgien
 Sofort Überweisung (Klarna Pay now)	            Dänemark
@@ -185,8 +190,8 @@ Sofort Überweisung (Klarna Pay now)	            talien
 Sofort Überweisung (Klarna Pay now)	            Tschechien
 Sofort Überweisung (Klarna Pay now)	            Ungarn
 Sofort Überweisung (Klarna Pay now)	            Vereinigte Staaten
-Unzer Bank Transfer	                            Deutschland
-Unzer Bank Transfer	                            Österreich
+Unzer Bank Transfer	(Überweisung)               Deutschland
+Unzer Bank Transfer	(Überweisung)               Österreich
 Vorkasse	                                    Belgien
 Vorkasse	                                    Deustchland
 Vorkasse	                                    Estland

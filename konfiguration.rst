@@ -135,13 +135,12 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
 
 |result|
 
-Wenn Sie für Zahlung per PayPal oder Kreditkarte :guilabel:`Authorize & later Capture` gewählt haben, wird die Zahlung ausgelöst,
+Wenn Sie für Zahlung per PayPal oder Kreditkarte :guilabel:`Authorize & later Capture` gewählt haben, wird die verzögerte Zahlung ausgelöst,
 
 * sobald Sie in Ihrem eShop den bestellten Artikel auf den Status `Geliefert` gesetzt haben.
-* wenn Sie auf der Unzer-Seite  #tbd
+* wenn Sie die Zahlung mit Unzer Insights anfordern (unter `insights.unzer.com <https://insights.unzer.com/>`_)
 
 Bei allen anderen von Unzer unterstützten Zahlungsarten wird die Zahlung sofort mit der Bestellung ausgelöst.
-
 
 .. todo: #tbd: Prüfen: wie sieht Ratenzahlungsangebt aus Kundensicht aus?
 
@@ -192,10 +191,21 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
    Typischerweisen schalten Sie das Logging nur auf Anfrage ein: Wenn der Support von Unzer Sie bittet, ein Problem nachzustellen.
    |br|
    Die Log-Dateien finden Sie im Verzeichnis ``log/unzer``.
+#. Konfigurieren Sie die vom Unzer Payment-Modul bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
+
+   * Aktivieren Sie die Länder, die Sie abdecken wollen.
+   * Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln.
+   * Vermeiden Sie Dopplungen von Zahlungsarten.
+     |br|
+     Hintergrund: SEPA Lastschrift und Unzer Invoice (Rechnung) können Sie in europäischen Ländern einschließlich Deutschland anbieten, SEPA Lastschrift Secured und Unzer Invoice Secured (Rechnung Secured) dagegen nur in Deutschland.
+     |br|
+     Konfigurierien Sie diese Rechnungsarten so, dass beispiesweise Unzer Invoice Secured nur deutschen und Unzer Invoice nur nicht-deutschen Benutzergruppen zugeordnet ist.
 #. Nachdem Sie die Funktionen des Moduls konfiguriert und getestet haben, schalten Sie auf :guilabel:`Livebetrieb` um.
 #. Um unnötigen Speicherplatzverbrauch zu vermeiden, stellen Sie sicher, dass im Livebetrieb der Debug-Modus deaktiviert ist.
 
 .. todo: #tbd: prüfen, ob das Verzeichnis ``log/unzer`` angelegt wird, unter source oder modules ist es nicht
+
+.. todo: #tbd: #Mario: Terminologie glattziehen: Unzer Invoice / Rechnung / Secured
 
 .. _webhook-loeschen-und-neu-anlegen:
 
@@ -233,18 +243,6 @@ Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem W
 |result|
 
 Ihr Produktionssystem erhält von Unzer die Statusmeldungen über die Zahlungsvorgänge Ihrer Kunden.
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
