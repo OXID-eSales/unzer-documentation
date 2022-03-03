@@ -132,6 +132,8 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
 #. Tragen Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
 
 .. todo: #Mario klärt mit Unzer: Was passiert, wenn ich einen zu hohen oder zu niedrigen Wert eintrage?
+.. todo: #Mario: Terminologie: Authorize & later Capture usw.
+
 
 |result|
 
@@ -188,7 +190,7 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
 
 1. Optional: Um während des Testen Logs zu generieren, markieren Sie unter :menuselection:`Einstell. --> Umgebung` das Kontrollkästchen :guilabel:`Debug-Modus aktivieren`.
    |br|
-   Typischerweisen schalten Sie das Logging nur auf Anfrage ein: Wenn der Support von Unzer Sie bittet, ein Problem nachzustellen.
+   Typischerweise schalten Sie das Logging nur auf Anfrage ein: Wenn der Support von Unzer Sie bittet, ein Problem nachzustellen.
    |br|
    Die Log-Dateien finden Sie im Verzeichnis ``log/unzer``.
 #. Konfigurieren Sie die vom Unzer Payment-Modul bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
@@ -199,7 +201,7 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
      |br|
      Hintergrund: SEPA Lastschrift und Unzer Invoice (Rechnung) können Sie in europäischen Ländern einschließlich Deutschland anbieten, SEPA Lastschrift Secured und Unzer Invoice Secured (Rechnung Secured) dagegen nur in Deutschland.
      |br|
-     Konfigurierien Sie diese Rechnungsarten so, dass beispiesweise Unzer Invoice Secured nur deutschen und Unzer Invoice nur nicht-deutschen Benutzergruppen zugeordnet ist.
+     Konfigurieren Sie diese Rechnungsarten so, dass beispielsweise Unzer Invoice Secured nur deutschen und Unzer Invoice nur nicht-deutschen Benutzergruppen zugeordnet ist.
 #. Nachdem Sie die Funktionen des Moduls konfiguriert und getestet haben, schalten Sie auf :guilabel:`Livebetrieb` um.
 #. Um unnötigen Speicherplatzverbrauch zu vermeiden, stellen Sie sicher, dass im Livebetrieb der Debug-Modus deaktiviert ist.
 

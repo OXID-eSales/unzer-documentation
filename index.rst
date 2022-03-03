@@ -18,6 +18,7 @@ Moduldokumentation
    Wofür/Wofür nicht? <einfuehrung>
    Installation <installation>
    Konfiguration <konfiguration>
+   Betrieb <betrieb>
 ..
    Funktionsbeschreibung <funktionsbeschreibung/index>
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
