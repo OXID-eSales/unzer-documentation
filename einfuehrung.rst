@@ -239,8 +239,8 @@ Eröffnen Sie ein Händlerkonto bei Unzer. Sie haben folgende Möglichkeiten:
 .. todo: Optionen und Links verifizieren:
 
 * Empfohlen: Lassen Sie Unzer ein individuelles Angebot für Sie machen.
-   |br|
-   Rufen Sie dazu das Kontaktformular unter `www.unzer.com/de/kontakt-vertrieb-oxid <https://www.unzer.com/de/kontakt-vertrieb-oxid/>`_.
+  |br|
+  Rufen Sie dazu das Kontaktformular unter `www.unzer.com/de/kontakt-vertrieb-oxid <https://www.unzer.com/de/kontakt-vertrieb-oxid/>`_.
 * Registrieren Sie sich direkt unter `www.unzer.com/de/direct <https://www.unzer.com/de/direct/>`_.
 
 Sobald alle Fragen geklärt sind, sendet Ihnen Unzer die Anmeldeinformationen, die Sie zum Konfigurieren brauchen.
