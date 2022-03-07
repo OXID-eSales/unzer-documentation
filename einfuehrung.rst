@@ -5,8 +5,6 @@ Nutzen Sie das Unzer Payment-Modul für OXID, um Ihren nationalen und internatio
 
 Gegenwärtig können Sie Ihren Kunden damit 17 der von Unzer abgedeckten weltweit wichtigsten Zahlungsarten anbieten. Apple Pay ist in Vorbereitung.
 
-Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.unzer.com/de/zahlungsmethoden <https://www.unzer.com/de/zahlungsmethoden/>`_ .
-
 .. image:: media/unzer-logo.png
     :alt: Unzer-Logo
     :class: no-shadow
@@ -17,7 +15,6 @@ Marktabdeckung nach Ländern
 ---------------------------
 
 Bieten Sie mit dem Unzer Payment-Modul für OXID die in folgenden Märkten beliebten Zahlungsmethoden an.
-
 
 
 
@@ -35,9 +32,9 @@ Belgien	            SEPA-Lastschrift
 Belgien	            Sofort Überweisung (Klarna Pay now)
 Belgien             Bancontact
 Dänemark	        Sofort Überweisung (Klarna Pay now)
-Deustchland	        Unzer Invoice
-Deustchland	        Vorkasse
-Deustchland	        SEPA-Lastschrift
+Deutschland	        Unzer Invoice
+Deutschland	        Vorkasse
+Deutschland	        SEPA-Lastschrift
 Deutschland	        Giropay
 Deutschland	        Ratenzahlung mit Unzer
 Deutschland	        Unzer Invoice
@@ -48,10 +45,10 @@ Deutschland	        Unzer Bank Transfer (Überweisung)
 Estland	            Unzer Invoice
 Estland	            Vorkasse
 Estland	            SEPA-Lastschrift
-Finland	            Unzer Invoice
-Finland	            Vorkasse
-Finland	            SEPA-Lastschrift
-Finland	            Sofort Überweisung (Klarna Pay now)
+Finnland	            Unzer Invoice
+Finnland	            Vorkasse
+Finnland	            SEPA-Lastschrift
+Finnland	            Sofort Überweisung (Klarna Pay now)
 Frankreich	        Sofort Überweisung (Klarna Pay now)
 Griechenland	    Unzer Invoice
 Griechenland	    Vorkasse
@@ -107,7 +104,7 @@ Spanien	            Unzer Invoice
 Spanien	            Vorkasse
 Spanien	            SEPA-Lastschrift
 Spanien	            Sofort Überweisung (Klarna Pay now)
-talien	            Sofort Überweisung (Klarna Pay now)
+Italien	            Sofort Überweisung (Klarna Pay now)
 Tschechien	        Sofort Überweisung  (Klarna Pay now)
 Ungarn	            Sofort Überweisung (Klarna Pay now)
 Vereinigte Staaten	Sofort Überweisung (Klarna Pay now)
@@ -135,9 +132,9 @@ Ratenzahlung mit Unzer	                        Österreich
 Unzer Invoice Secured (abgetreten an Unzer)	    Deutschland
 Unzer Invoice Secured (abgetreten an Unzer)	    Österreich
 Unzer Invoice                    	            Belgien
-Unzer Invoice                    	            Deustchland
+Unzer Invoice                    	            Deutschland
 Unzer Invoice                    	            Estland
-Unzer Invoice                    	            Finland
+Unzer Invoice                    	            Finnland
 Unzer Invoice                    	            Griechenland
 Unzer Invoice                    	            Irland
 Unzer Invoice                    	            Italien
@@ -153,9 +150,9 @@ Unzer Invoice                    	            Slowenien
 Unzer Invoice                    	            Spanien
 Unzer Invoice                    	            Zypern
 SEPA-Lastschrift	                            Belgien
-SEPA-Lastschrift	                            Deustchland
+SEPA-Lastschrift	                            Deutschland
 SEPA-Lastschrift	                            Estland
-SEPA-Lastschrift	                            Finland
+SEPA-Lastschrift	                            Finnland
 SEPA-Lastschrift	                            Griechenland
 SEPA-Lastschrift	                            Irland
 SEPA-Lastschrift	                            Italien
@@ -175,7 +172,7 @@ Sofort Überweisung (Klarna Pay now)	            Australien
 Sofort Überweisung (Klarna Pay now)	            Belgien
 Sofort Überweisung (Klarna Pay now)	            Dänemark
 Sofort Überweisung (Klarna Pay now)	            Deutschland
-Sofort Überweisung (Klarna Pay now)	            Finland
+Sofort Überweisung (Klarna Pay now)	            Finnland
 Sofort Überweisung (Klarna Pay now)	            Frankreich
 Sofort Überweisung (Klarna Pay now)	            Großbritannien
 Sofort Überweisung (Klarna Pay now)	            Niederlande
@@ -186,16 +183,16 @@ Sofort Überweisung (Klarna Pay now)	            Schweden
 Sofort Überweisung (Klarna Pay now)	            Schweiz
 Sofort Überweisung (Klarna Pay now)	            Slowakei
 Sofort Überweisung (Klarna Pay now)	            Spanien
-Sofort Überweisung (Klarna Pay now)	            talien
+Sofort Überweisung (Klarna Pay now)	            Italien
 Sofort Überweisung (Klarna Pay now)	            Tschechien
 Sofort Überweisung (Klarna Pay now)	            Ungarn
 Sofort Überweisung (Klarna Pay now)	            Vereinigte Staaten
 Unzer Bank Transfer	(Überweisung)               Deutschland
 Unzer Bank Transfer	(Überweisung)               Österreich
 Vorkasse	                                    Belgien
-Vorkasse	                                    Deustchland
+Vorkasse	                                    Deutschland
 Vorkasse	                                    Estland
-Vorkasse	                                    Finland
+Vorkasse	                                    Finnland
 Vorkasse	                                    Griechenland
 Vorkasse	                                    Irland
 Vorkasse	                                    Italien
@@ -213,7 +210,11 @@ Vorkasse	                                    Zypern
 WeChat	                                        Weltweit
 =============================================== ================
 
+Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.unzer.com/de/zahlungsmethoden <https://www.unzer.com/de/zahlungsmethoden/>`_ .
 
+.. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen?
+
+Informationen über die Zahlungsmethoden, die das Unzer Payment-Modul für OXID abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
 
 
 Konditionen
@@ -221,17 +222,28 @@ Konditionen
 
 Welche Zahlungsmethoden Sie zu welchen Konditionen nutzen wollen, vereinbaren Sie individuell mit Unzer.
 
+Von welchen Konditionen Sie bei der Zusammenarbeit mit Unzer profitieren, erfahren Sie unter `www.unzer.com/de/online-loesungen-preise <https://www.unzer.com/de/online-loesungen-preise/>`_.
+
 Ebenfalls vereinbaren Sie mit Unzer beispielsweise,
 
 * ob Sie Ihren Kunden Ratenzahlung anbieten wollen, und zu welchem Zinssatz
-* ob es für Ihre Produkte evententuell sinnvoll ist, verzögerten Zahlung anzubieten
+* ob es für Ihre Produkte eventuell sinnvoll ist, verzögerten Zahlung anzubieten
   |br|
   Verzögerte Zahlung kann beispielsweise sinnvoll sein bei individualisierten Produkten, die Sie erst auf Bestellung fertigen.
 
-Sobald alle Fragen geklärt sind, erhalten dann von Unzer die Anmeldeinformationen, die Sie zum Konfigurieren brauchen.
+Registrierung
+-------------
 
-.. todo: #tbd: #Mario: Links ergänzen
-    Weitere Informationen über Nutzungsbedingungen und die die Zahlungsarten, die Sie Ihren Kunden mit dem Modul zur Auswahl anbieten können, finden Sie unter #tbd: Link zu Unzer ergänzen
+Eröffnen Sie ein Händlerkonto bei Unzer. Sie haben folgende Möglichkeiten:
+
+.. todo: Optionen und Links verifizieren:
+
+* Empfohlen: Lassen Sie Unzer ein individuelles Angebot für Sie machen.
+   |br|
+   Rufen Sie dazu das Kontaktformular unter `www.unzer.com/de/kontakt-vertrieb-oxid <https://www.unzer.com/de/kontakt-vertrieb-oxid/>`_.
+* Registrieren Sie sich direkt unter `www.unzer.com/de/direct <https://www.unzer.com/de/direct/>`_.
+
+Sobald alle Fragen geklärt sind, sendet Ihnen Unzer die Anmeldeinformationen, die Sie zum Konfigurieren brauchen.
 
 
 .. Intern: oxdaaa, Status:

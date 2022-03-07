@@ -5,10 +5,10 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
 
 |prerequisites|
 
-* Sie haben den OXID eSHOP 6.3 oder höher installiert.
+* Sie haben den OXID eShop 6.3 oder höher installiert.
 * Sie haben Transportverschlüsselung (`https`) konfiguriert.
 
-   a. Öffnen Sie im Verzeichnis `<Rootverzeichnis des eShops>/source` die Datei `config.inc.php`.
+   a. Öffnen Sie im Verzeichnis `<Root-Verzeichnis des eShops>/source` die Datei `config.inc.php`.
    b. Stellen Sie sicher dass für die eShop base URL (Parameter `sShopURL`) https eingestellt ist.
    
       Beispiel:
