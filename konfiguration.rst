@@ -1,7 +1,7 @@
 Konfiguration
 =============
 
-Machen Sie das Unzer Payment-Modul für OXID betriebsbereit.
+Machen Sie das :productname:`Unzer Payment-Modul für OXID` betriebsbereit.
 
 Grundsätzliches Vorgehen
 ------------------------
@@ -48,7 +48,7 @@ Aktiv sind automatisch diejenigen Zahlungsarten, die zu den Ländern passen, die
 
 |example|
 
-Sie haben die Niederlande als aktiv markiert.
+Sie haben die Niederlande als aktiv markiert. Damit ist die Zahlungsart :productname:`iDEAL` verfügbar.
 
 
 .. todo: #Bild ergänzen;
@@ -105,7 +105,7 @@ Zahlungsarten: Reservierung und Ratenzahlungszins festlegen
 
 Legen Sie fest, ob für den eShop Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen nur reserviert werden sollen.
 
-Geben Sie außerdem den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
+----------------------------------------------------------------------
 
 |example|
 
@@ -120,24 +120,45 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
   |br|
   Deshalb wollen Sie sicherstellen, dass die Zahlung nur ausgelöst wird, wenn die Ware da oder auf dem Weg zum Versand ist.
 
+----------------------------------------------------------------------
+
+Geben Sie außerdem den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
+
+.. ATTENTION::
+
+   **Konversion gefährdet**
+
+   Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unzer vereinbart haben, manuell eingeben.
+
+   Wenn Sie versehentlich einen abweichenden Wert eingeben, ist kein Checkout möglich, und Ihr Kunde springt wahrscheinlich ab.
+
+   Vergewissern Sie sich, dass Sie den exakt richtigen Wert wie mit Unzer vereinbart eingeben.
+
+
 |procedure|
 
 1. Wählen Sie :menuselection:`Einstell. --> Zahlungsarten`.
 #. Sie haben folgende Möglichkeiten:
-   a. Um Zahlungen direkt auszulösen, wählen Sie :guilabel:`direct Capture`.
-   b. Um die Zahlung nur zu reservieren und später auszulösen, wählen Sie :guilabel:`Authorize & later Capture`.
-#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsarten :guilabel:`PayPal` oder :guilabel:`Kreditkarte` zugeordnet haben.
+   a. Um Zahlungen direkt auszulösen, wählen Sie :guilabel:`Einziehen`.
+   b. Um die Zahlung nur zu reservieren und später auszulösen, wählen Sie :guilabel:`Autorisieren`.
+#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsarten :guilabel:`PayPal` oder :guilabel:`Kartenzahlung` zugeordnet haben.
    |br|
-   Die verzögerte Zahlung für Zahlung per PayPal oder Kreditkarte greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
+   Die verzögerte Zahlung für Zahlung per :productname:`PayPal` oder :productname:`Kartenzahlung` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
 #. Tragen Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
 
-.. todo: #Mario klärt mit Unzer: Was passiert, wenn ich einen zu hohen oder zu niedrigen Wert eintrage?
-.. todo: #Mario: Terminologie: Authorize & later Capture usw.
+    .. ATTENTION::
+
+       Vergewissern Sie sich, dass Sie den exakt richtigen Ratenzahlungszinssatz so wie mit Unzer vereinbart eingeben.
+
+
+
+.. todo: #Mario klärt: können wir das Eingeben des korrekten Ratenzahlungszinssatzes automatisieren?
+.. todo: #tbd EN: Terminologie: Authorize & later Capture usw. für Autorisieren/Einziehen; Kartenzahlung/card
 
 
 |result|
 
-Wenn Sie für Zahlung per PayPal oder Kreditkarte :guilabel:`Authorize & later Capture` gewählt haben, wird die verzögerte Zahlung ausgelöst,
+Wenn Sie für Zahlung per PayPal oder Kartenzahlung :guilabel:`Autorisieren` gewählt haben, wird die verzögerte Zahlung ausgelöst,
 
 * sobald Sie in Ihrem eShop den bestellten Artikel auf den Status `Geliefert` gesetzt haben.
 * wenn Sie die Zahlung mit Unzer Insights anfordern (unter `insights.unzer.com <https://insights.unzer.com/>`_)
@@ -192,22 +213,23 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
    |br|
    Typischerweise schalten Sie das Logging nur auf Anfrage ein: Wenn der Support von Unzer Sie bittet, ein Problem nachzustellen.
    |br|
-   Die Log-Dateien finden Sie im Verzeichnis ``log/unzer``.
+   Die Log-Dateien finden Sie im Verzeichnis :file:`log/unzer`.
 #. Konfigurieren Sie die vom Unzer Payment-Modul bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
 
    * Aktivieren Sie die Länder, die Sie abdecken wollen.
    * Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln.
    * Vermeiden Sie Dopplungen von Zahlungsarten.
      |br|
-     Hintergrund: SEPA Lastschrift und Unzer Invoice (Rechnung) können Sie in europäischen Ländern einschließlich Deutschland anbieten, SEPA Lastschrift Secured und Unzer Invoice Secured (Rechnung Secured) dagegen nur in Deutschland.
+     Hintergrund: :productname:`SEPA Lastschrift` und :productname:`Unzer Kauf auf Rechnung` können Sie in europäischen Ländern einschließlich Deutschland anbieten, :productname:`SEPA Lastschrift (abgesichert mit Unzer)` und :productname:`Kauf auf Rechnung (abgesichert mit Unzer)` dagegen nur in Deutschland.
      |br|
-     Konfigurieren Sie diese Rechnungsarten so, dass beispielsweise Unzer Invoice Secured nur deutschen und Unzer Invoice nur nicht-deutschen Benutzergruppen zugeordnet ist.
+     Konfigurieren Sie diese Rechnungsarten so, dass beispielsweise :productname:`Kauf auf Rechnung (abgesichert mit Unzer)` nur deutschen und :productname:`Unzer Kauf auf Rechnung` nur nicht-deutschen Benutzergruppen zugeordnet ist.
 #. Nachdem Sie die Funktionen des Moduls konfiguriert und getestet haben, schalten Sie auf :guilabel:`Livebetrieb` um.
 #. Um unnötigen Speicherplatzverbrauch zu vermeiden, stellen Sie sicher, dass im Livebetrieb der Debug-Modus deaktiviert ist.
 
 .. todo: #tbd: prüfen, ob das Verzeichnis ``log/unzer`` angelegt wird, unter source oder modules ist es nicht
 
-.. todo: #tbd: #Mario: Terminologie glattziehen: Unzer Invoice / Rechnung / Secured
+.. todo: #tbd: EN: Invoice Unzer = Unzer Kauf auf Rechnung / Invoice Unzer Secured = Kauf auf Rechnung (abgesichert mit Unzer)
+   SEPA Lastschrift Secured / SEPA Lastschrift (abgesichert mit Unzer)
 
 .. _webhook-loeschen-und-neu-anlegen:
 

@@ -12,10 +12,10 @@ Nehmen Sie beispielsweise Rückzahlungen vor oder beheben Sie die Ursachen von Z
 #. Zeigen Sie auf der Registerkarte :guilabel:`Unzer` die Daten der Transaktion an.
 #. Prüfen Sie den Status des Zahlungsvorgangs:
 
-   * :guilabel:`Success`: Die Zahlung ist erfolgt. Sie können den Artikel versenden.
-   * :guilabel:`Pending`: Die Zahlung steht aus.
+   * :guilabel:`Erfolg`: Die Zahlung ist erfolgt. Sie können den Artikel versenden.
+   * :guilabel:`Ausstehend`: Die Zahlung steht aus.
       Wie lange eine Zahlung ausstehend bleibt, hängt von der Zahlungsart ab. Eine Kreditkarten-Zahlung kann beispielsweise zwei Tage dauern.
-   * :guilabel:`Error`: Ein Problem ist aufgetreten.
+   * :guilabel:`Fehler`: Ein Problem ist aufgetreten.
 
 #. Wenn ein Problem aufgetreten ist, tun Sie Folgendes, um die Ursache zu beheben:
 
@@ -35,7 +35,7 @@ Nehmen Sie beispielsweise Rückzahlungen vor oder beheben Sie die Ursachen von Z
       * Unzer Type-ID
 
 
-.. todo: #Mario: "Buchhaltungssupport von Unzer": Kontaktdaten besorgen, Link
-.. todo: #Mario:  Terminlogie: "Success", "Pending" usw.
+.. todo: #Mario/Steve: "Buchhaltungssupport von Unzer": Kontaktdaten besorgen, Link
+.. todo: #tbd EN: Terminlogie: OK"Successful", "Pending" usw. Erfolg/Ausstehend/Fehler
 
 .. Intern: oxdaa##, Status:
