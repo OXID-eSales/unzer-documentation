@@ -1,9 +1,9 @@
 ﻿Wofür/Wofür nicht?
 ==================
 
-Nutzen Sie das Unzer Payment-Modul für OXID, um Ihren nationalen und internationalen Kunden ein weites Spektrum beliebter Zahlungsarten bereitzustellen.
+Nutzen Sie das :productname:`Unzer Payment-Modul für OXID`, um Ihren nationalen und internationalen Kunden ein weites Spektrum beliebter Zahlungsarten bereitzustellen.
 
-Gegenwärtig können Sie Ihren Kunden damit 17 der von Unzer abgedeckten weltweit wichtigsten Zahlungsarten anbieten. Apple Pay ist in Vorbereitung.
+Gegenwärtig können Sie Ihren Kunden damit 17 der von Unzer abgedeckten weltweit wichtigsten Zahlungsarten anbieten. :productname:`Apple Pay` ist in Vorbereitung.
 
 .. image:: media/unzer-logo.png
     :alt: Unzer-Logo
@@ -14,7 +14,7 @@ Gegenwärtig können Sie Ihren Kunden damit 17 der von Unzer abgedeckten weltwei
 Marktabdeckung nach Ländern
 ---------------------------
 
-Bieten Sie mit dem Unzer Payment-Modul für OXID die in folgenden Märkten beliebten Zahlungsmethoden an.
+Bieten Sie mit dem :productname:`Unzer Payment-Modul für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
 
 =================== ========================================================
@@ -209,11 +209,12 @@ Vorkasse	                                    Zypern
 WeChat	                                        Weltweit
 =============================================== ================
 
+
 Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.unzer.com/de/zahlungsmethoden <https://www.unzer.com/de/zahlungsmethoden/>`_ .
 
 .. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen?
 
-Informationen über die Zahlungsmethoden, die das Unzer Payment-Modul für OXID abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
+Informationen über die Zahlungsmethoden, die das :productname:`Unzer Payment-Modul für OXID` abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
 
 
 Konditionen
