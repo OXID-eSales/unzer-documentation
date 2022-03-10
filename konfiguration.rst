@@ -1,7 +1,7 @@
 Konfiguration
 =============
 
-Machen Sie das :productname:`Unzer Payment-Modul für OXID` betriebsbereit.
+Machen Sie das :productname:`Unzer Payment für OXID` betriebsbereit.
 
 Grundsätzliches Vorgehen
 ------------------------
@@ -100,8 +100,8 @@ Die URL Ihres registrierten Webhooks wird angezeigt. Ihr Shop ist mit Unzer verb
 .. todo: Screenshot einfügen
 
 
-Zahlungsarten: Reservierung und Ratenzahlungszins festlegen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Optionen für Kreditkarten/PayPal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Legen Sie fest, ob für den eShop Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen nur reserviert werden sollen.
 
@@ -122,34 +122,18 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
 
 ----------------------------------------------------------------------
 
-Geben Sie außerdem den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
-
-.. ATTENTION::
-
-   **Konversion gefährdet**
-
-   Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unzer vereinbart haben, manuell eingeben.
-
-   Wenn Sie versehentlich einen abweichenden Wert eingeben, ist kein Checkout möglich, und Ihr Kunde springt wahrscheinlich ab.
-
-   Vergewissern Sie sich, dass Sie den exakt richtigen Wert wie mit Unzer vereinbart eingeben.
-
+.. todo: #Mario: Im dt. UI statt capture/authorize Einziehen/Autorisieren
 
 |procedure|
 
-1. Wählen Sie :menuselection:`Einstell. --> Zahlungsarten`.
+1. Wählen Sie :menuselection:`Einstell. --> zusätzliche Optionen für Kreditkarten`.
 #. Sie haben folgende Möglichkeiten:
    a. Um Zahlungen direkt auszulösen, wählen Sie :guilabel:`Einziehen`.
    b. Um die Zahlung nur zu reservieren und später auszulösen, wählen Sie :guilabel:`Autorisieren`.
-#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die Zahlungsarten :guilabel:`PayPal` oder :guilabel:`Kartenzahlung` zugeordnet haben.
+#. Wiederholen Sie Schritt 2 unter :menuselection:`Einstell. --> zusätzliche Optionen für PayPal`.
+#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die jeweils entsprechend konfigurierte Zahlungsarte :guilabel:`PayPal` oder :guilabel:`Kartenzahlung` zugeordnet haben.
    |br|
    Die verzögerte Zahlung für Zahlung per :productname:`PayPal` oder :productname:`Kartenzahlung` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
-#. Tragen Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
-
-    .. ATTENTION::
-
-       Vergewissern Sie sich, dass Sie den exakt richtigen Ratenzahlungszinssatz so wie mit Unzer vereinbart eingeben.
-
 
 
 .. todo: #Mario klärt: können wir das Eingeben des korrekten Ratenzahlungszinssatzes automatisieren?
@@ -166,6 +150,61 @@ Wenn Sie für Zahlung per PayPal oder Kartenzahlung :guilabel:`Autorisieren` gew
 Bei allen anderen von Unzer unterstützten Zahlungsarten wird die Zahlung sofort mit der Bestellung ausgelöst.
 
 .. todo: #tbd: Prüfen: wie sieht Ratenzahlungsangebt aus Kundensicht aus?
+
+Optionen für ApplePay: Zertifikate eingeben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. todo: #Mario sendet Kontaktdaten:
+   klären: Anwendungsfall
+   wie genau bekomme ich die Informationen?
+
+Damit Ihre Kunden per Applay Pay zahlen können, geben Sie die Gerforderlihen Zertifikate ein.
+
+|prerequisites|
+
+.. todo: #Mario: Was muss ich getan haben, um die Zertifikate zu kriegen? Beispielmitteilung wäre gut. Generiere ich sie?
+
+Sie haben folgende DAten erhalten:
+
+* Zertifikat zur Zahlungsabwicklung
+* Privater Schlüssel zur Zahlungsabwicklung
+* Shopbetreiber Zertifikat
+* Shopbetreiber Zertifikat Privater Schlüssel
+
+
+|procedure|
+
+1. Wählen Sie :menuselection:`Einstell. --> Optionen für ApplePay`
+# Geben Sie die Zertifikate in die entsprechenden Eingabefelder ein.
+#. Markieren Sie unter :guilabel:`Unterstütze Kreditkarten` das Kreditkarten-Unternehmen, der Kreditkarte Ihrem Apple Pay-Konto zugeordnet ist.
+#. Markieren Sie unter :guilabel:`Unterstützte Zahlungsarten`
+
+.. todo: #Mario:  "Markieren Sie unter :guilabel:`Unterstützte Zahlungsarten`" #Mario: was ist hier der Use Case?
+Was bedeutet "Vom Händler unterstütze Zahlungsarten. Der Wert "supports3DS" wird immer an Apple Pay gesendet. Der Rest ist optional."?
+Es gibt folgende Optionen:
+Kreditkarte
+Debitkarte
+China Union Pay Transaktionen
+
+
+Ôptionen für Ratenzahlung: Unzer-Zinssatz eingeben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Geben Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
+
+Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unzer vereinbart haben, manuell eingeben.
+
+.. ATTENTION::
+
+   **Konversion gefährdet**
+
+   Wenn Sie versehentlich einen abweichenden Wert eingeben, ist kein Checkout möglich, und Ihr Kunde springt wahrscheinlich ab.
+
+   Vergewissern Sie sich, dass Sie den exakt richtigen Wert wie mit Unzer vereinbart eingeben.
+
+|procedure|
+
+Tragen Sie unter :guilable:`zusätzliche Optionen für Ratenzahlung` den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
+
 
 Sonstiges: Optimale Performance sicherstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -195,8 +234,8 @@ Um Interferenzen zu verhindern, stellen Sie sicher, dass jQuery nicht für das U
    * Wenn Ihr Theme jQuery **nicht** benutzt, stellen Sie sicher, das das Kontrollkästchen :guilabel:`Einbindung von jQuery über das Modul` aktiviert ist.
 
 
-Umgebung: eShop testen und Live-Betrieb aktivieren
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Betriebsmodus: eShop testen und Live-Betrieb aktivieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Testen Sie Unzer in der Unzer-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozesse nach Ihren Vorstellungen funktionieren.
 
@@ -209,7 +248,7 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
 
 |procedure|
 
-1. Optional: Um während des Testen Logs zu generieren, markieren Sie unter :menuselection:`Einstell. --> Umgebung` das Kontrollkästchen :guilabel:`Debug-Modus aktivieren`.
+1. Optional: Um während des Testen Logs zu generieren, markieren Sie unter :menuselection:`Einstell. --> Betriebsmodus` das Kontrollkästchen :guilabel:`Debug-Modus aktivieren`.
    |br|
    Typischerweise schalten Sie das Logging nur auf Anfrage ein: Wenn der Support von Unzer Sie bittet, ein Problem nachzustellen.
    |br|

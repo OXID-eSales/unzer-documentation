@@ -1,9 +1,11 @@
 ﻿Wofür/Wofür nicht?
 ==================
 
-Nutzen Sie das :productname:`Unzer Payment-Modul für OXID`, um Ihren nationalen und internationalen Kunden ein weites Spektrum beliebter Zahlungsarten bereitzustellen.
+.. todo: #Mario: Wie lautet der offizielle Produktname?
 
-Gegenwärtig können Sie Ihren Kunden damit 17 der von Unzer abgedeckten weltweit wichtigsten Zahlungsarten anbieten. :productname:`Apple Pay` ist in Vorbereitung.
+Nutzen Sie das Modul :productname:`Unzer Payment für OXID`, um Ihren nationalen und internationalen Kunden ein weites Spektrum beliebter Zahlungsarten bereitzustellen.
+
+Gegenwärtig können Sie Ihren Kunden damit 18 der von Unzer abgedeckten weltweit wichtigsten Zahlungsarten anbieten.
 
 .. image:: media/unzer-logo.png
     :alt: Unzer-Logo
@@ -14,13 +16,14 @@ Gegenwärtig können Sie Ihren Kunden damit 17 der von Unzer abgedeckten weltwei
 Marktabdeckung nach Ländern
 ---------------------------
 
-Bieten Sie mit dem :productname:`Unzer Payment-Modul für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
+Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
 
 =================== ========================================================
 Markt               Zahlungsmethode
 =================== ========================================================
 Weltweit	        Alipay
+Weltweit	        Apple Pay
 Weltweit	        Kartenzahlung
 Weltweit	        PayPal
 Weltweit	        WeChat
@@ -119,6 +122,7 @@ Marktabdeckung nach Zahlungsmethoden
 Zahlungsmethode                                 Markt
 =============================================== ================
 Alipay	                                        Weltweit
+Apple Pay                                       Weltweit
 Bancontact	                                    Belgien
 eps Überweisung (Electronic Payment Standard)	Österreich
 Giropay	                                        Deutschland
@@ -214,7 +218,7 @@ Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.
 
 .. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen?
 
-Informationen über die Zahlungsmethoden, die das :productname:`Unzer Payment-Modul für OXID` abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
+Informationen über die Zahlungsmethoden, die das Modul :productname:`Unzer Payment für OXID` abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
 
 
 Konditionen
