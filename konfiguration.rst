@@ -186,7 +186,7 @@ Debitkarte
 China Union Pay Transaktionen
 
 
-Ôptionen für Ratenzahlung: Unzer-Zinssatz eingeben
+Optionen für Ratenzahlung: Unzer-Zinssatz eingeben
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Geben Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.

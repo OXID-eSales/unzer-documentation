@@ -1,5 +1,7 @@
-Installation und Update
-=======================
+Installation
+============
+
+.. todo: #Mario: ab V. 6.2?
 
 Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Version 6.3.
 
