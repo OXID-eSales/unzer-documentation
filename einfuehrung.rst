@@ -18,6 +18,7 @@ Marktabdeckung nach Ländern
 
 Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
+..todo: #MArio/#Srdjan sendet link zu Doku mit Beschreibung der Abdeckung
 
 =================== ========================================================
 Markt               Zahlungsmethode
@@ -216,7 +217,7 @@ WeChat	                                        Weltweit
 
 Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.unzer.com/de/zahlungsmethoden <https://www.unzer.com/de/zahlungsmethoden/>`_ .
 
-.. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen?
+.. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen? #Srdjan: URL OK? S. klärt Status mit Marketing
 
 Informationen über die Zahlungsmethoden, die das Modul :productname:`Unzer Payment für OXID` abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
 

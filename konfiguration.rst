@@ -3,6 +3,8 @@ Konfiguration
 
 Machen Sie das :productname:`Unzer Payment für OXID` betriebsbereit.
 
+.. todo: #Mario: Wie lautet der offizielle Produktname?
+
 Grundsätzliches Vorgehen
 ------------------------
 
