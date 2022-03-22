@@ -3,7 +3,6 @@ Konfiguration
 
 Machen Sie das :productname:`Unzer Payment für OXID` betriebsbereit.
 
-.. todo: #Mario: Wie lautet der offizielle Produktname?
 
 Grundsätzliches Vorgehen
 ------------------------
@@ -18,15 +17,19 @@ Konfigurieren und testen Sie Unzer. Schalten Sie anschließend den Live-Betrieb 
 
 1. Aktivieren Sie das Modul.
 #. Stellen Sie unter :guilabel:`Zugangsdaten` die Verbindung zu Ihrem Unzer-Händlerkonto her.
+#. Wenn Sie :productname:`Apple Pay` nutzen, tun Sie Folgendes:
+
+   * Generieren Sie die notwendigen Zertifikate in Ihrem :productname:`Apple Pay`-Konto.
+   * Geben Sie unter :guilabel:`Optionen für ApplePay` die Zertifikate ein, um Ihren OXID eShop mit Ihrem :productname:`Apple Pay`-Konto zu verbinden.
 #. Optional: Konfigurieren Sie bei Bedarf unter :guilabel:`Zahlungsarten`, dass Zahlungen verzögert ausgelöst werden sollen (beispielsweise bei Geschäftskunden).
 #. Prüfen Sie, Ob das Theme Ihres eShops jQuery nutzt.
    |br|
    Wenn das nicht der Fall ist, binden Sie jQuery unter :guilabel:`Sonstiges` über das Modul ein.
 #. Verknüpfen Sie die von Unzer bereitgestellten Zahlungsarten mit Ihren Versandarten und Versandkostenregeln und führen Sie Testzahlungen in der Unzer-Sandbox aus.
    |br|
-   Die Betriebsart ``Sandbox`` ist nach dem Aktivieren standardmäßig eingestellt.
-#. Testen Sie Unzer in der Unzer-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozess nach Ihren Vorstellungen funktionieren.
-#. Wenn Sie Ihre Tests abgeschlossen haben, wechseln Sie unter :guilabel:`Umgebung` in die Betriebsart ``Livebetrieb``.
+   Die Betriebsart :technicalname:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
+#. Testen Sie Unzer in der Unzer-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozesse nach Ihren Vorstellungen funktionieren.
+#. Wenn Sie Ihre Tests abgeschlossen haben, wechseln Sie unter :guilabel:`Umgebung` in die Betriebsart :technicalname:`Livebetrieb`.
 #. Wenn Sie die Tests auf einem dedizierten Testsystem durchgeführt haben und Ihren eShop dann in das Produktionssystem umziehen, generieren Sie die Webhooks für die URL des Produktionssystems neu.
 
 Unzer aktivieren
@@ -153,19 +156,33 @@ Bei allen anderen von Unzer unterstützten Zahlungsarten wird die Zahlung sofort
 
 .. todo: #tbd: Prüfen: wie sieht Ratenzahlungsangebt aus Kundensicht aus?
 
+
+Zertifikate für ApplePay generieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn Sie :productname:`Apple Pay` nutzen, müssen Sie die Verbindung separat herstellen.
+
+Die dafür nötigen Zertifikate generieren Sie in Ihrem :productname:`Apple Pay`-Konto.
+
+|prerequisites|
+
+
+
+|procedure|
+
 Optionen für ApplePay: Zertifikate eingeben
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. todo: #Mario sendet Kontaktdaten:
    klären: Anwendungsfall
    wie genau bekomme ich die Informationen?
 
-Damit Ihre Kunden per Applay Pay zahlen können, geben Sie die Gerforderlihen Zertifikate ein.
+Damit Ihre Kunden per Applay Pay zahlen können, generieren Sie die erforderlichen Zertifikate und geben sie ein.
 
 |prerequisites|
 
 .. todo: #Mario: Was muss ich getan haben, um die Zertifikate zu kriegen? Beispielmitteilung wäre gut. Generiere ich sie?
 
-Sie haben folgende DAten erhalten:
+Sie haben folgende Daten erhalten:
 
 * Zertifikat zur Zahlungsabwicklung
 * Privater Schlüssel zur Zahlungsabwicklung
@@ -181,11 +198,11 @@ Sie haben folgende DAten erhalten:
 #. Markieren Sie unter :guilabel:`Unterstützte Zahlungsarten`
 
 .. todo: #Mario:  "Markieren Sie unter :guilabel:`Unterstützte Zahlungsarten`" #Mario: was ist hier der Use Case?
-Was bedeutet "Vom Händler unterstütze Zahlungsarten. Der Wert "supports3DS" wird immer an Apple Pay gesendet. Der Rest ist optional."?
-Es gibt folgende Optionen:
-Kreditkarte
-Debitkarte
-China Union Pay Transaktionen
+   Was bedeutet "Vom Händler unterstütze Zahlungsarten. Der Wert "supports3DS" wird immer an Apple Pay gesendet. Der Rest ist optional."?
+   Es gibt folgende Optionen:
+   Kreditkarte
+   Debitkarte
+   China Union Pay Transaktionen
 
 
 Optionen für Ratenzahlung: Unzer-Zinssatz eingeben
@@ -205,8 +222,7 @@ Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unze
 
 |procedure|
 
-Tragen Sie unter :guilable:`zusätzliche Optionen für Ratenzahlung` den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
-
+Tragen Sie unter :guilabel:`zusätzliche Optionen für Ratenzahlung` den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
 
 Sonstiges: Optimale Performance sicherstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -234,6 +250,28 @@ Um Interferenzen zu verhindern, stellen Sie sicher, dass jQuery nicht für das U
 
    * Wenn Ihr Theme jQuery benutzt, stellen Sie sicher, das das Kontrollkästchen :guilabel:`Einbindung von jQuery über das Modul` deaktiviert ist.
    * Wenn Ihr Theme jQuery **nicht** benutzt, stellen Sie sicher, das das Kontrollkästchen :guilabel:`Einbindung von jQuery über das Modul` aktiviert ist.
+
+.. todo: EN: Ensure correct currency settings
+
+Optional: Korrekte Währungseinstellungen sicherstellen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Stellen Sie sicher, dass die Währungen, die Ihr OXID eShop unterstützt, übereinstimmen mit den Währungen, die :productname:`Apple Pay` unterstützt.
+
+Schiefgehen kann allerdings nichts: Bei Währungen, die :productname:`Apple Pay` nicht unterstützt, wird lediglich die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
+
+
+.. include:: /_static/reuse/apple-pay-currencies.rst
+
+|procedure|
+
+1. Wählen Sie :menuselection:`Stammdaten --> Grundeinstellungen`.
+2. Expandieren Sie auf der Registerkarte :guilabel:`Einstell.` den Bereich :guilabel:`Weitere Einstellungen`.
+3. Prüfen Sie in dem Eingabefeld für Währungen, ob Sie Währungen hinzufügen oder entfernen wollen.
+4. Um eine saubere Konfiguration sicherzustellen, stellen Sie für die Zahlungsart :productname:`Amazon Pay` auf der Registerkarte :guilabel:`Länder` sicher, dass nur solche Länder zugeordnet sind, welche die von :productname:`Amazon Pay` unterstützten Währungen haben.
+
+.. todo: Bilder ergänzen: Währungsauswahl Backend und Frontend
+
 
 
 Betriebsmodus: eShop testen und Live-Betrieb aktivieren

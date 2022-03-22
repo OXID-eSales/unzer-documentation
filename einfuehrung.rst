@@ -13,8 +13,8 @@ Gegenwärtig können Sie Ihren Kunden damit 18 der von Unzer abgedeckten weltwei
     :height: 35
     :width: 150
 
-Marktabdeckung nach Ländern
----------------------------
+Welche Märkte sind abgedeckt?
+-----------------------------
 
 Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
@@ -116,8 +116,8 @@ Zypern	            Vorkasse
 Zypern	            SEPA-Lastschrift
 =================== ========================================================
 
-Marktabdeckung nach Zahlungsmethoden
-------------------------------------
+Welche Märkte sind abgedeckt (sortiert nach Zahlungsmethoden)?
+--------------------------------------------------------------
 
 =============================================== ================
 Zahlungsmethode                                 Markt
@@ -137,7 +137,7 @@ Kauf auf Rechnung (abgesichert mit Unzer)	    Deutschland
 Kauf auf Rechnung (abgesichert mit Unzer)	    Österreich
 Kauf auf Rechnung                   	        Belgien
 Kauf auf Rechnung                   	        Deutschland
-UKauf auf Rechnung                   	        Estland
+Kauf auf Rechnung                   	        Estland
 Kauf auf Rechnung                   	        Finnland
 Kauf auf Rechnung                   	        Griechenland
 UKauf auf Rechnung                   	        Irland
@@ -215,17 +215,42 @@ WeChat	                                        Weltweit
 =============================================== ================
 
 
+Welche Währungen unterstützt Apple Pay?
+---------------------------------------
+
+Wenn Sie :productname:`Apple Pay` nutzen, dann berücksichtigen Sie folgende Einschränkung:
+.. todo: #Mario Folgendes verifizieren: gilt es analog zu Amazon Pay?
+
+Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
+
+Stellen Sie deshalb beim Konfigurieren sicher, dass Ihr OXID eShop nur diejenigen Währungen anbietet, die :productname:`Apple Pay` unterstützt.
+
+.. include:: /_static/reuse/apple-pay-currencies.rst
+
+
+Weitere Informationen zum Konfigurieren der Währungen Ihres OXID eShops finden Sie unter :ref:`konfiguration:Optional: Korrekte Währungseinstellungen sicherstellen`.
+
+Wo finde ich weitere Informationen?
+-----------------------------------
+
+Zahlungsmethoden
+^^^^^^^^^^^^^^^^
+
+Welche Zahlungsmethoden Sie zu welchen Konditionen nutzen wollen, vereinbaren Sie individuell mit Unzer.
+
 Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.unzer.com/de/zahlungsmethoden <https://www.unzer.com/de/zahlungsmethoden/>`_ .
 
 .. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen? #Srdjan: URL OK? S. klärt Status mit Marketing
 
-Informationen über die Zahlungsmethoden, die das Modul :productname:`Unzer Payment für OXID` abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
+Informationen über die Zahlungsmethoden, die :productname:`Unzer Payment für OXID` abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
+
+.. todo: #Srdjan: Folgende Ressource scheint ebenfalls nützlich zu sein. Führen wir die au?
+
+Informationen über die Eigenschaften der verschiedenen Zahlungsmethoden finden Sie unter `docs.unzer.com/payment-methods/ <https://docs.unzer.com/payment-methods/>`_.
 
 
 Konditionen
------------
-
-Welche Zahlungsmethoden Sie zu welchen Konditionen nutzen wollen, vereinbaren Sie individuell mit Unzer.
+^^^^^^^^^^^
 
 Von welchen Konditionen Sie bei der Zusammenarbeit mit Unzer profitieren, erfahren Sie unter `www.unzer.com/de/online-loesungen-preise <https://www.unzer.com/de/online-loesungen-preise/>`_.
 
@@ -236,8 +261,11 @@ Ebenfalls vereinbaren Sie mit Unzer beispielsweise,
   |br|
   Verzögerte Zahlung kann beispielsweise sinnvoll sein bei individualisierten Produkten, die Sie erst auf Bestellung fertigen.
 
-Registrierung
--------------
+Wo kann ich mich registrieren?
+------------------------------
+
+Händlerkonto bei Unzer registrieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Eröffnen Sie ein Händlerkonto bei Unzer. Sie haben folgende Möglichkeiten:
 
@@ -249,6 +277,16 @@ Eröffnen Sie ein Händlerkonto bei Unzer. Sie haben folgende Möglichkeiten:
 * Registrieren Sie sich direkt unter `www.unzer.com/de/direct <https://www.unzer.com/de/direct/>`_.
 
 Sobald alle Fragen geklärt sind, sendet Ihnen Unzer die Anmeldeinformationen, die Sie zum Konfigurieren brauchen.
+
+Händlerkonto bei Apple Pay registrieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn Sie mit Unzer vereinbaren, dass Sie :productname:`Apple Pay` nutzen, dann müssen Sie ein separates Apple-Konto anlegen.
+
+.. todo: 'Srdjan: Ist das Unzer-Konto evtl. technisch Voraussetzung für das Apple-Konto?
+
+Weitere Informationen finden Sie unter :ref:`konfiguration:Zertifikate für ApplePay generieren`
+
 
 
 .. Intern: oxdaaa, Status:
