@@ -19,8 +19,8 @@ Konfigurieren und testen Sie Unzer. Schalten Sie anschließend den Live-Betrieb 
 #. Stellen Sie unter :guilabel:`Zugangsdaten` die Verbindung zu Ihrem Unzer-Händlerkonto her.
 #. Wenn Sie :productname:`Apple Pay` nutzen, tun Sie Folgendes:
 
-   * Generieren Sie die notwendigen Zertifikate in Ihrem :productname:`Apple Pay`-Konto.
-   * Geben Sie unter :guilabel:`Optionen für ApplePay` die Zertifikate ein, um Ihren OXID eShop mit Ihrem :productname:`Apple Pay`-Konto zu verbinden.
+   a. Generieren Sie die notwendigen Zertifikate in Ihrem :productname:`Apple Pay`-Konto.
+   b. Geben Sie unter :guilabel:`Optionen für ApplePay` die Zertifikate ein, um Ihren OXID eShop mit Ihrem :productname:`Apple Pay`-Konto zu verbinden.
 #. Optional: Konfigurieren Sie bei Bedarf unter :guilabel:`Zahlungsarten`, dass Zahlungen verzögert ausgelöst werden sollen (beispielsweise bei Geschäftskunden).
 #. Prüfen Sie, Ob das Theme Ihres eShops jQuery nutzt.
    |br|
@@ -149,7 +149,7 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
 
 Wenn Sie für Zahlung per PayPal oder Kartenzahlung :guilabel:`Autorisieren` gewählt haben, wird die verzögerte Zahlung ausgelöst,
 
-* sobald Sie in Ihrem eShop den bestellten Artikel auf den Status `Geliefert` gesetzt haben.
+* sobald Sie in Ihrem eShop den bestellten Artikel auf den Status `Geliefert` gesetzt haben
 * wenn Sie die Zahlung mit Unzer Insights anfordern (unter `insights.unzer.com <https://insights.unzer.com/>`_)
 
 Bei allen anderen von Unzer unterstützten Zahlungsarten wird die Zahlung sofort mit der Bestellung ausgelöst.
@@ -160,15 +160,48 @@ Bei allen anderen von Unzer unterstützten Zahlungsarten wird die Zahlung sofort
 Zertifikate für ApplePay generieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn Sie :productname:`Apple Pay` nutzen, müssen Sie die Verbindung separat herstellen.
+Wenn Sie :productname:`Apple Pay` nutzen, müssen Sie die Verbindung zu Apple separat herstellen.
 
-Die dafür nötigen Zertifikate generieren Sie in Ihrem :productname:`Apple Pay`-Konto.
+Die dafür nötigen IDs Zertifikate generieren Sie in Ihrem :productname:`Apple Pay`-Konto.
+
+Folgende Daten müssen Sie generieren, um sie später in Ihrem eShop einzugeben:
+
+* Händler-ID
+* Zertifikat zur Zahlungsabwicklung
+* Privater Schlüssel zur Zahlungsabwicklung
+* Shopbetreiber Zertifikat
+* Shopbetreiber Zertifikat Privater Schlüssel
 
 |prerequisites|
 
+* Sie haben ein Apple-Händlerkonto oder ein Apple-Entwicklerkonto.
+  |br|
+  Weitere Informationen zum Anlegen eines Apple-Entwicklerkonto finden Sie unter
+* Sie haben Zugriff auf die Dokumentation zum Erzegen der Zertifikate unter `docs.unzer.com/payment-methods/applepay/applepay-prerequisites <https://docs.unzer.com/payment-methods/applepay/applepay-prerequisites>`_.
 
+.. todo: #Arne: Wenn ich alle Daten im Apple-Entwicklerkonto anlegen, muss ich sie dann für den Livebtrieb neu generieren?
 
 |procedure|
+
+1. Um ein Apple-Entwickler-Konto anzulegen, legen Sie unter `appleid.apple.com <https://appleid.apple.com/>`_ eine Apple-ID an.
+#. Melden Sie sich in Ihrem Apple-Entwickler-Konto an.
+#. Wählen Sie :guilabel:`Certificates, Identifiers & Profiles`.
+#. Wählen Sie im Menü den Eintrag :guilabel:`Identifiers` und dann das :guilabel:` Add Identifiers`-Symbol (+).
+#. Unter :guilabel:`Register a new Identifier` wählen Sie :guilabel:`Merchant IDs` und bestätigen mit :guilabel:`Continue`.
+#. Unter :guilabel:`Edit or Configure Merchant ID` geben Sie Folgendes ein:
+#. Unter :guilabel:`Register a Merchant ID` geben Sie Folgendes ein:
+
+   * :guilabel:`Description`: Beschreibung der Anwendung
+     |br|
+     Beispiele:
+
+     * Wenn Sie ein dediziertes Testsystem zum Prüfen der Apple Pay-Funktionen benutzen, beispielsweise :technicalname:`Apple Pay Test`.
+     * Um im Produktionsbetrieb den besser den Überblick zu behalten, geben Sie beispielsweise den NAmen des betreffenden Subshops ein.
+   * :guilabel:`Identifier`: Empfohlen: Geben Sie eine Zeichenfolge nah dem Schema :technicalname:`merchant.<Domänenname>.<Applikationsname>` ein.
+     |br|
+     Beispiel: :technicalname:`merchant.meinoxidshop.applepaytest`
+
+
 
 Optionen für ApplePay: Zertifikate eingeben
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -180,14 +213,15 @@ Damit Ihre Kunden per Applay Pay zahlen können, generieren Sie die erforderlich
 
 |prerequisites|
 
-.. todo: #Mario: Was muss ich getan haben, um die Zertifikate zu kriegen? Beispielmitteilung wäre gut. Generiere ich sie?
 
-Sie haben folgende Daten erhalten:
+* Sie haben Ihren OXID eShop mit Unzer verbunden (siehe :ref:`konfiguration:Zugangsdaten: Webhook generieren`).
+* Sie haben folgende Daten generiert (siehe :ref:`konfiguration:Zertifikate für ApplePay generieren`):
 
-* Zertifikat zur Zahlungsabwicklung
-* Privater Schlüssel zur Zahlungsabwicklung
-* Shopbetreiber Zertifikat
-* Shopbetreiber Zertifikat Privater Schlüssel
+  * Händler-ID
+  * Zertifikat zur Zahlungsabwicklung
+  * Privater Schlüssel zur Zahlungsabwicklung
+  * Shopbetreiber Zertifikat
+  * Shopbetreiber Zertifikat Privater Schlüssel
 
 
 |procedure|
