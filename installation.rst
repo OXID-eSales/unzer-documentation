@@ -11,13 +11,13 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
 * Sie haben Transportverschlüsselung (`https`) konfiguriert.
 
    a. Öffnen Sie im Verzeichnis `<Root-Verzeichnis des eShops>/source` die Datei `config.inc.php`.
-   b. Stellen Sie sicher dass für die eShop base URL (Parameter `sShopURL`) https eingestellt ist.
+   b. Stellen Sie sicher dass für die Basis-URL (Parameter `sShopURL`) https eingestellt ist.
    
       Beispiel:
    
       .. code::
    
-         $this->sShopURL     = 'https://192.168.123.20';
+         $this->sShopURL     = 'https://www.example.org';
 
 |procedure|
 
