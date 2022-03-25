@@ -28,15 +28,28 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
 
       cd /var/www/oxideshop/
 
-2. Führen Sie folgenden Befehl aus: 
+
+#. Führen Sie folgende Befehle aus:
 
    .. code:: bash
 
-      composer require oxid-solution-catalysts/unzer
+      composer config repositories.oscunzer composer https://unzer-module.packages.oxid-esales.com/
+      composer require oxid-solution-catalysts/unzer ^1.0.0
+      composer install
+      ./vendor/bin/oe-console oe:module:install-configuration source/modules/osc/unzer
+      ./vendor/bin/oe-console oe:module:apply-configuration
 
-.. todo: #Mario: Prüfen: ob anderes Repo als Quelle
+#. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
+   |br|
+   Alternativ: Aktivieren Sie das Modul im Zuge der Konfiguration manuell (siehe :ref:`konfiguration:Unzer aktivieren`).
 
-3. Bestätigen Sie die Abfragen.
+   .. code:: bash
+
+      ./vendor/bin/oe-console oe:module:activate osc-unzer
+
+#. Bestätigen Sie die Abfragen.
+
+
 
 |result|
 
