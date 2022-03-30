@@ -20,7 +20,7 @@ Nehmen Sie beispielsweise Rückzahlungen vor oder beheben Sie die Ursachen von Z
 #. Wenn ein Problem aufgetreten ist, tun Sie Folgendes, um die Ursache zu beheben:
 
    a. Fragen Sie Ihren Kunden, warum die Zahlung nicht erfolgt ist.
-   b. Wenn die Ursache nicht beim Kunden liegt, wenden Sie sich an den Buchhaltungssupport von Unzer.
+   b. Wenn die Ursache nicht beim Kunden liegt, wenden Sie sich an den fachlichen Support von Unzer.
       |br|
       Halten Sie dabei die folgenden Informationen bereit:
 
@@ -29,13 +29,13 @@ Nehmen Sie beispielsweise Rückzahlungen vor oder beheben Sie die Ursachen von Z
          **Hinweis**: Unter der Unzer Short-ID finden Sie die Transaktion auch in Unzer Insights (unter `insights.unzer.com <https://insights.unzer.com/>`_).
        * Unzer Kunden-ID
 
-   c. Wenn der Buchhaltungssupport von Unzer feststellt, dass es sich um ein technisches Problem handelt, halten Sie für den technischen Support zusätzlich die folgenden Informationen bereit:
+   c. Wenn der fachliche Support von Unzer feststellt, dass es sich um ein technisches Problem handelt, halten Sie für den technischen Support zusätzlich die folgenden Informationen bereit:
 
       * Unzer Trace-ID
       * Unzer Type-ID
 
 
-.. todo: #Mario/Steve: "Buchhaltungssupport von Unzer": Kontaktdaten besorgen, Link
+.. todo: #Srdjan: Fachlicher Support von Unzer": Kontaktdaten besorgen, Link
 .. todo: #tbd EN: Terminlogie: OK"Successful", "Pending" usw. Erfolg/Ausstehend/Fehler
 
 .. Intern: oxdaa##, Status:

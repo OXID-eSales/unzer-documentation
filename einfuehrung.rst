@@ -1,8 +1,6 @@
 ﻿Wofür/Wofür nicht?
 ==================
 
-.. todo: #Mario: Wie lautet der offizielle Produktname?
-
 Nutzen Sie das Modul :productname:`Unzer Payment für OXID`, um Ihren nationalen und internationalen Kunden ein weites Spektrum beliebter Zahlungsarten bereitzustellen.
 
 Gegenwärtig können Sie Ihren Kunden damit 18 der von Unzer abgedeckten weltweit wichtigsten Zahlungsarten anbieten.
@@ -18,7 +16,6 @@ Welche Märkte sind abgedeckt?
 
 Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
-..todo: #MArio/#Srdjan sendet link zu Doku mit Beschreibung der Abdeckung
 
 =================== ========================================================
 Markt               Zahlungsmethode
@@ -48,7 +45,7 @@ Deutschland	        Unzer Bank Transfer (Überweisung)
 Estland	            Unzer Kauf auf Rechnung
 Estland	            Vorkasse
 Estland	            SEPA-Lastschrift
-Finnland	        UUnzer Kauf auf Rechnung
+Finnland	        Unzer Kauf auf Rechnung
 Finnland	        Vorkasse
 Finnland	        SEPA-Lastschrift
 Finnland	        Sofort Überweisung (Klarna Pay now)
@@ -60,13 +57,13 @@ Großbritannien	    Sofort Überweisung (Klarna Pay now)
 Irland	            Unzer Kauf auf Rechnung
 Irland	            Vorkasse
 Irland	            SEPA-Lastschrift
-Italien	            UUnzer Kauf auf Rechnung
+Italien	            Unzer Kauf auf Rechnung
 Italien	            Vorkasse
 Italien	            SEPA-Lastschrift
 Lettland	        Unzer Kauf auf Rechnung
 Lettland	        Vorkasse
 Lettland	        SEPA-Lastschrift
-Litauen	            UUnzer Kauf auf Rechnung
+Litauen	            Unzer Kauf auf Rechnung
 Litauen	            Vorkasse
 Litauen	            SEPA-Lastschrift
 Luxemburg	        Unzer Kauf auf Rechnung
@@ -96,7 +93,7 @@ Portugal	        SEPA-Lastschrift
 Portugal	        Sofort Überweisung (Klarna Pay now)
 Schweden	        Sofort Überweisung (Klarna Pay now)
 Schweiz     	    Sofort Überweisung (Klarna Pay now)
-Slowakei	        UUnzer Kauf auf Rechnung
+Slowakei	        Unzer Kauf auf Rechnung
 Slowakei	        Vorkasse
 Slowakei	        SEPA-Lastschrift
 Slowakei	        Sofort Überweisung (Klarna Pay now)
@@ -140,11 +137,11 @@ Kauf auf Rechnung                   	        Deutschland
 Kauf auf Rechnung                   	        Estland
 Kauf auf Rechnung                   	        Finnland
 Kauf auf Rechnung                   	        Griechenland
-UKauf auf Rechnung                   	        Irland
-UKauf auf Rechnung                   	        Italien
-UKauf auf Rechnung                   	        Lettland
+Kauf auf Rechnung                   	        Irland
+Kauf auf Rechnung                   	        Italien
+Kauf auf Rechnung                   	        Lettland
 Kauf auf Rechnung                   	        Litauen
-UKauf auf Rechnung                   	        Luxemburg
+Kauf auf Rechnung                   	        Luxemburg
 Kauf auf Rechnung                   	        Malta
 Kauf auf Rechnung                   	        Niederlande
 Kauf auf Rechnung                   	        Österreich
@@ -219,6 +216,7 @@ Welche Währungen unterstützt Apple Pay?
 ---------------------------------------
 
 Wenn Sie :productname:`Apple Pay` nutzen, dann berücksichtigen Sie folgende Einschränkung:
+
 .. todo: #Mario Folgendes verifizieren: gilt es analog zu Amazon Pay?
 
 Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
@@ -269,7 +267,7 @@ Händlerkonto bei Unzer registrieren
 
 Eröffnen Sie ein Händlerkonto bei Unzer. Sie haben folgende Möglichkeiten:
 
-.. todo: Optionen und Links verifizieren:
+.. todo: #Srdjan: Optionen und Links verifizieren:
 
 * Empfohlen: Lassen Sie Unzer ein individuelles Angebot für Sie machen.
   |br|
@@ -281,12 +279,11 @@ Sobald alle Fragen geklärt sind, sendet Ihnen Unzer die Anmeldeinformationen, d
 Händlerkonto bei Apple Pay registrieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn Sie mit Unzer vereinbaren, dass Sie :productname:`Apple Pay` nutzen, dann müssen Sie ein separates Apple-Konto anlegen.
+Wenn Sie mit Unzer vereinbaren, dass Sie :productname:`Apple Pay` nutzen, dann müssen Sie ein separates Apple-Konto anlegen und Zugangsdaten generieren.
 
 .. todo: 'Srdjan: Ist das Unzer-Konto evtl. technisch Voraussetzung für das Apple-Konto?
 
-Weitere Informationen finden Sie unter :ref:`konfiguration:Zertifikate für ApplePay generieren`
-
+Weitere Informationen finden Sie unter :ref:`konfiguration:Optionen für Apple Pay: Zugangsdaten eingeben`.
 
 
 .. Intern: oxdaaa, Status:

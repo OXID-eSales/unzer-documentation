@@ -13,15 +13,18 @@ Moduldokumentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Unzer Payment-Modul für OXID
+   :caption: Unzer Payment für OXID
 
    Wofür/Wofür nicht? <einfuehrung>
    Installation <installation>
    Konfiguration <konfiguration>
    Betrieb <betrieb>
+
 ..
    Funktionsbeschreibung <funktionsbeschreibung/index>
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
+   ApplePay <applepay/applepay-zertifikate.rst>
+   Update <update>
 
 .. image:: media/icons/home.png
    :width: 0 px
