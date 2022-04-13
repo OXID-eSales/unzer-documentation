@@ -1,7 +1,7 @@
 Apple Pay-Zugangsdaten erstellen
 ================================
 
-Wenn Sie :productname:`Apple Pay` nutzen, generieren Sie in Ihrem Apple-Konto die nötigen Daten, um sie in Ihrem OXID eShop zu Unzer hochladen zu können.
+Wenn Sie :productname:`Apple Pay` nutzen, generieren Sie in Ihrem Apple-Entwickler-Konto die nötigen Daten, um sie in Ihrem OXID eShop zu Unzer hochladen zu können.
 
 Die Daten benötigen Sie unter :menuselection:`Erweiterungen --> Module --> Einstell. --> zusätzliche Optionen für Apple Pay`.
 
@@ -16,14 +16,12 @@ Händler-ID anlegen
 
 Generieren Sie die die Händler-ID, die Sie im Feld :guilabel:`Shopbetreiber Identifikation` eingeben müssen.
 
-.. todo: #ML/#Srdjan: Zu Schritt 1 und 2: Können wir davon ausgehen, dass der Prozess für den Live-Betrieb identisch ist; braucht der Kunde ein Entwickler-Konto, um Testzahlunge ausführen zu können, reicht evtl. der Betriebsmodus Sandbox?
-         #Srdjan: Wenn ich im Entwickler-Konto eine Merchant-ID anlege, dann muss ich bei bei Umschalten auf Produktion Merchant-ID und alle Zertifikate noch einmal neu generieren und eingeben?
 
 
 |procedure|
 
-1. Optional: Um ein Apple-Entwickler-Konto anzulegen, legen Sie unter `appleid.apple.com <https://appleid.apple.com/>`_ eine Apple-ID an.
-#. Melden Sie sich in Ihrem Apple-Konto an.
+1. Um ein Apple-Entwickler-Konto anzulegen, legen Sie unter `appleid.apple.com <https://appleid.apple.com/>`_ eine Apple-ID an.
+#. Melden Sie sich in Ihrem Apple-Entwickler-Konto an.
 #. Wählen Sie :guilabel:`Certificates, Identifiers & Profiles`.
 #. Wählen Sie im Menü den Eintrag :guilabel:`Identifiers` und dann das :guilabel:` Add Identifiers`-Symbol (+)`.
 #. Unter :guilabel:`Register a new Identifier` wählen Sie :guilabel:`Merchant IDs` und bestätigen mit :guilabel:`Continue`.
@@ -68,7 +66,7 @@ Lassen Sie das Zertifikat von Apple signieren.
    * ECC-Schlüssel, in unserem Beispiel :file:`ecckey.key`
    * CSR, in unserem Beispiel :file:`ecccertreq.csr`
 
-#. Wählen Sie Sie in Ihrem Apple-Konto unter :menuselection:`Certificates, Identifiers & Profiles --> Identifiers` die Händler-ID, die Sie unter :ref:`applepay/applepay-zertifikate:Händler-ID anlegen` für Ihren OXID eShop erzeugt haben, in unserem Beispiel :technicalname:`Apple Pay Test`.
+#. Wählen Sie Sie in Ihrem Apple-Entwickler-Konto unter :menuselection:`Certificates, Identifiers & Profiles --> Identifiers` die Händler-ID, die Sie unter :ref:`applepay/applepay-zertifikate:Händler-ID anlegen` für Ihren OXID eShop erzeugt haben, in unserem Beispiel :technicalname:`Apple Pay Test`.
 #. Um die Datei :file:`ecccertreq.csr` zu Apple hochzuladen, wählen Sie unter :guilabel:`Apple Pay Payment Processing Certificates` die Schaltfläche :guilabel:`Create Certificate` (siehe `Step 2: Upload the Payment Processing Certificate CSR to Apple <https://docs.unzer.com/payment-methods/applepay/applepay-prerequisites/#step-2-upload-the-payment-processing-certificate-csr-to-apple>`_).
    |br|
    Name, Typ und Ablaufdatum des Zertifikats werden angezeigt.
@@ -111,7 +109,7 @@ Lassen Sie das Zertifikat von Apple signieren.
    * RSA-Schlüssel, in unserem Beispiel :file:`encrypted_merchant_id.key`
    * CSR, in unserem Beispiel :file:`merchant_id.csr`
 
-#. Wählen Sie Sie in Ihrem Apple-Konto unter :menuselection:`Certificates, Identifiers & Profiles --> Identifiers` die Händler-ID, die Sie unter :ref:`applepay/applepay-zertifikate:Händler-ID anlegen` für Ihren OXID eShop erzeugt haben, in unserem Beispiel :technicalname:`Apple Pay Test`.
+#. Wählen Sie Sie in Ihrem Apple-Entwickler-Konto unter :menuselection:`Certificates, Identifiers & Profiles --> Identifiers` die Händler-ID, die Sie unter :ref:`applepay/applepay-zertifikate:Händler-ID anlegen` für Ihren OXID eShop erzeugt haben, in unserem Beispiel :technicalname:`Apple Pay Test`.
 #. Um die Datei :file:`merchant_id` zu Apple hochzuladen, wählen Sie unter :guilabel:`Apple Pay Merchant ID Certificate` die Schaltfläche :guilabel:`Create Certificate` (siehe `Step 2: Upload the Merchant Identification Certificate CSR to Apple <https://docs.unzer.com/payment-methods/applepay/applepay-prerequisites/#step-2-upload-the-merchant-identification-certificate-csr-to-apple>`_).
    |br|
    Name, Typ und Ablaufdatum des Zertifikats werden angezeigt.

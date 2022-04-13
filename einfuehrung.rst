@@ -238,11 +238,9 @@ Welche Zahlungsmethoden Sie zu welchen Konditionen nutzen wollen, vereinbaren Si
 
 Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.unzer.com/de/zahlungsmethoden <https://www.unzer.com/de/zahlungsmethoden/>`_ .
 
-.. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen? #Srdjan: URL OK? S. klärt Status mit Marketing
+.. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen? #Mario: URL OK? -- Srdjan: Wegen den URLs hat Steve ein separates Dokument an #Mario gesendet, bitte mit Mario Abstimmen. – fehlt noch
 
 Informationen über die Zahlungsmethoden, die :productname:`Unzer Payment für OXID` abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
-
-.. todo: #Srdjan: Folgende Ressource scheint ebenfalls nützlich zu sein. Führen wir die au?
 
 Informationen über die Eigenschaften der verschiedenen Zahlungsmethoden finden Sie unter `docs.unzer.com/payment-methods/ <https://docs.unzer.com/payment-methods/>`_.
 
@@ -267,7 +265,7 @@ Händlerkonto bei Unzer registrieren
 
 Eröffnen Sie ein Händlerkonto bei Unzer. Sie haben folgende Möglichkeiten:
 
-.. todo: #Srdjan: Optionen und Links verifizieren:
+.. todo: #Mario: Optionen und Links verifizieren: Links, Dokument von Steve anschauen.
 
 * Empfohlen: Lassen Sie Unzer ein individuelles Angebot für Sie machen.
   |br|
@@ -279,9 +277,7 @@ Sobald alle Fragen geklärt sind, sendet Ihnen Unzer die Anmeldeinformationen, d
 Händlerkonto bei Apple Pay registrieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn Sie mit Unzer vereinbaren, dass Sie :productname:`Apple Pay` nutzen, dann müssen Sie ein separates Apple-Konto anlegen und Zugangsdaten generieren.
-
-.. todo: 'Srdjan: Ist das Unzer-Konto evtl. technisch Voraussetzung für das Apple-Konto?
+Wenn Sie mit Unzer vereinbaren, dass Sie :productname:`Apple Pay` nutzen, dann müssen Sie ein separates Apple-Entwickler-Konto anlegen und Zugangsdaten generieren.
 
 Weitere Informationen finden Sie unter :ref:`konfiguration:Optionen für Apple Pay: Zugangsdaten eingeben`.
 

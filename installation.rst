@@ -1,13 +1,11 @@
 Installation
 ============
 
-.. todo: #Mario: ab V. 6.2?
-
-Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Version 6.3.
+Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Version 6.2.
 
 |prerequisites|
 
-* Sie haben den OXID eShop 6.3 oder höher installiert.
+* Sie haben den OXID eShop 6.2 oder höher installiert.
 * Sie haben Transportverschlüsselung (`https`) konfiguriert.
 
    a. Öffnen Sie im Verzeichnis `<Root-Verzeichnis des eShops>/source` die Datei `config.inc.php`.

@@ -20,7 +20,7 @@ Konfigurieren und testen Sie Unzer. Schalten Sie anschließend den Live-Betrieb 
 #. Wenn Sie :productname:`Apple Pay` nutzen, tun Sie Folgendes:
 
    a. Generieren Sie lokal die notwendigen Zertifikate.
-   b. Signieren Sie die Zertifikate in Ihrem :productname:`Apple Pay`-Konto.
+   b. Signieren Sie die Zertifikate in Ihrem :productname:`Apple Pay`-Unzer Payment für OXID.
    c. Um Ihre :productname:`Apple Pay`-Zugangsdaten Unzer bekannt zu machen, geben Sie unter :guilabel:`Optionen für Apple Pay` die signierten Zertifikate ein und laden sie zu Unzer hoch.
 #. Optional: Konfigurieren Sie bei Bedarf unter :guilabel:`Zahlungsarten`, dass Zahlungen verzögert ausgelöst werden sollen (beispielsweise bei Geschäftskunden).
 #. Prüfen Sie, Ob das Theme Ihres eShops jQuery nutzt.
@@ -128,7 +128,7 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
 
 ----------------------------------------------------------------------
 
-.. todo: #Mario: Im dt. UI statt capture/authorize Einziehen/Autorisieren
+.. todo: EN/DE: capture/authorize = Einziehen/Autorisieren
 
 |procedure|
 
@@ -142,8 +142,7 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
    Die verzögerte Zahlung für Zahlung per :productname:`PayPal` oder :productname:`Kartenzahlung` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
 
 
-.. todo: #Mario klärt: können wir das Eingeben des korrekten Ratenzahlungszinssatzes automatisieren?
-.. todo: #tbd EN: Terminologie: Authorize & later Capture usw. für Autorisieren/Einziehen; Kartenzahlung/card
+.. todo: #EN/DE: Terminologie: Authorize & later Capture usw. für Autorisieren/Einziehen; Kartenzahlung/card
 
 
 |result|
@@ -163,7 +162,7 @@ Optionen für Apple Pay: Zugangsdaten eingeben
 
 Wenn Sie :productname:`Apple Pay` nutzen, stellen Sie die Verbindung zu Apple separat her.
 
-Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen sie in Ihrem :productname:`Apple Pay`-Konto signieren und laden sie zu Unzer hoch:
+Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen sie in Ihrem Apple-Entwickler-Konto signieren und laden sie zu Unzer hoch:
 
   * Händler-ID
   * Zertifikat zur Zahlungsabwicklung
@@ -190,7 +189,7 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 #. Wählen Sie die Schaltfläche :guilabel:`Zahlungs-Zertifikate übertragen`.
 #. Erzeugen Sie ein von Apple signiertes Händler-Zertifikat und den dazu gehörenden privaten Schlüssel im Format PKCS#8 (siehe: :ref:`applepay/applepay-zertifikate:Händler-Zertifikat erzeugen`).
 #. Wählen Sie :menuselection:`Einstell. --> Optionen für Apple Pay`
-#. Geben Sie ins Feld :guilabel:`Shopbetreiber Identifikation` die Händler-ID ein, die Sie in Ihrem Apple-Konto angelegt haben (siehe :ref:`applepay/applepay-zertifikate:Händler-ID anlegen`).
+#. Geben Sie ins Feld :guilabel:`Shopbetreiber Identifikation` die Händler-ID ein, die Sie in Ihrem Apple-Entwickler-Konto angelegt haben (siehe :ref:`applepay/applepay-zertifikate:Händler-ID anlegen`).
 #. Geben Sie die Händler-Zertifikat und Schlüssel in die entsprechenden Eingabefelder ein:
 
    * Öffnen Sie die :file:`pem`-Datei mit dem Händler-Zertifikat (in unserem Beispiel :file:`merchant_id.pem`) und kopieren Sie den Inhalt in das Feld :guilabel:`Zertifikat zur Zahlungsabwicklung`.
@@ -208,23 +207,17 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 
       Testen Sie alle Zahlungsarten ausführlich in der Sandbox.
 
-      .. todo: #Srdjan: Hinweis verifizieren, hängt es von Unzer oder von Apple ab?
 
 #. Optional: Wählen Sie unter :guilabel:`Unterstützte Zahlungsarten` den Karten-Typ, den Sie zulassen wollen:
 
    * Kontrollkästchen :guilabel:`Kreditkarte`: Lassen Sie :emphasis:`Kredit`-Kartenzahlungen zu.
    * Kontrollkästchen :guilabel:`Debitkarte`: Lassen Sie :emphasis:`Debit`-Kartenzahlungen zu.
-   * Kontrollkästchen :guilabel:`China Union Pay Transaktionen`: Lassen Sie Kartenzahlungen mit China Union Pay zu.
+   |br|
+   Standardmäßig sind beide Kartenarten aktiv. :emphasis:`Beide` Kartenarten sind auch dann aktiv, wenn Sie :emphasis:`keines` der beiden Kontrollkästchen markieren.
+   |br|
+   Debitkartenzahlungen werden seltener genutzt als Kreditkartenzahlungen. Wenn Sie beispielsweise Kreditkarten für zuverlässiger halten, dann markieren Sie diesen Kartentyp als einzig zulässigen.
 #. Speichern Sie Ihre Einstellungen.
 
-.. todo: #ML/#Srdjan: "supportsCredit" = Optional. If present, only transactions that are categorized as credit cards are allowed.
-          "supportsDebit" = Optional. If present, only transactions that are categorized as debit cards are allowed.
-         Siehe: https://developer.apple.com/documentation/apple_pay_on_the_web/applepaymerchantcapability
-         #ML/#Srdjan: Muss ich mindestens eine Zahlungsart wählen? Welche Vor-/Nachteile haben Debit-/Jreditkartenzahlungen?
-         #ML/#Srdjan: Bleibt China Union Pay? Wenn ja: Setzt voraus, dass ich "unterstützte Kreditkarte" China Union Pay markiert habe, korrekt?
-         #Mario: Popup-Text #ndern: "Vom Händler unterstütze Zahlungsarten. Der Wert "supports3DS" wird immer an Apple Pay gesendet. Der Rest ist optional"
-
-.. todo: #ML/#Srdjan: Zu `Unterstütze Kreditkarten`: #Srdjan. klärt, was es heißt ; was passiert, wenn falsche Karte? Intern in Klärung
 
 .. todo: Feld :guilabel:`Firma` bei Kauf auf Rechnung z.B. für AGB/Privacy : #ML/#Srdjan klärt
          #ML: Wenn es für Kauf auf Rechnung ist: Frage an Oxid: Warum wurde dieses Feld eingebaut bei apple pay settings?
@@ -371,8 +364,9 @@ Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem W
 
 Ihr Produktionssystem erhält von Unzer die Statusmeldungen über die Zahlungsvorgänge Ihrer Kunden.
 
-.. todo: #ML/#Srdjan: Gilt analog für Apple Pay: Zertifikate auf Prod.-System erneut generieen und eingeben -- dabei dann nicht im Apple-Entwickler-Konto, sondern im Apple-Händler-Konto? Wie nennen wir das "Apple-Händler-Konto"? Habe ich als Shopbetreiber zwingend ein Entwickler-Konto?
+.. todo: #ML/#Srdjan: Gilt analog für Apple Pay: Zertifikate auf Prod.-System erneut generieen und eingeben
 
+.. todo: Alle Zertifikate doppeln: im UI: #Mario: was muss der Shopbetreiber genau machen mit seinen Live- und Sandbox-Zertifikaten?
 
 
 
