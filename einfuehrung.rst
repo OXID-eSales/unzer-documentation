@@ -217,7 +217,7 @@ Welche Währungen unterstützt Apple Pay?
 
 Wenn Sie :productname:`Apple Pay` nutzen, dann berücksichtigen Sie folgende Einschränkung:
 
-.. todo: #Mario Folgendes verifizieren: gilt es analog zu Amazon Pay?  -- im Moment keine Einschr., Prüfung müsste rein: ML liefert feedback, Text wird dann stimmen
+.. todo: #ML Folgendes verifizieren: gilt es analog zu Amazon Pay?  -- im Moment keine Einschr., Prüfung müsste rein: ML liefert feedback, Text wird dann stimmen
 
 Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
 

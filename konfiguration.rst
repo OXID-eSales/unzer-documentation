@@ -372,7 +372,7 @@ Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem W
 #. Geben Sie unter :guilabel:`Zugangsdaten` Ihre Unzer-Zugangsdaten neu ein.
 #. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren`.
 #. Verifizieren Sie die URL, die als Teil des registrierten Webhooks angezeigt wird.
-#. Wenn Sie :productname:`Apple Pay` benutzen, geben Sie unter :menuselection:`Einstell. --> Optionen für Apple Pay` die Zertifikate und Schlüssel ein, die Sie in Ihrem Apple-Entwickler-Konto erzeugt und lokal gespeichert (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Zugangsdaten erstellen`).
+#. Wenn Sie :productname:`Apple Pay` benutzen, geben Sie unter :menuselection:`Einstell. --> Zusätzliche Optionen für Apple Pay` die Zertifikate und Schlüssel ein, die Sie in Ihrem Apple-Entwickler-Konto erzeugt und lokal gespeichert (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Zugangsdaten erstellen`).
 
 
 |result|
