@@ -217,7 +217,7 @@ Welche Währungen unterstützt Apple Pay?
 
 Wenn Sie :productname:`Apple Pay` nutzen, dann berücksichtigen Sie folgende Einschränkung:
 
-.. todo: #Mario Folgendes verifizieren: gilt es analog zu Amazon Pay?
+.. todo: #Mario Folgendes verifizieren: gilt es analog zu Amazon Pay?  -- im Moment keine Einschr., Prüfung müsste rein: ML liefert feedback, Text wird dann stimmen
 
 Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
 
@@ -237,8 +237,6 @@ Zahlungsmethoden
 Welche Zahlungsmethoden Sie zu welchen Konditionen nutzen wollen, vereinbaren Sie individuell mit Unzer.
 
 Oft gestellte Fragen über die Zahlungsmethoden von Unzer finden Sie unter `www.unzer.com/de/zahlungsmethoden <https://www.unzer.com/de/zahlungsmethoden/>`_ .
-
-.. todo:    #tbd: Link prüfen: Welche Informationen werden da stehen? #Mario: URL OK? -- Srdjan: Wegen den URLs hat Steve ein separates Dokument an #Mario gesendet, bitte mit Mario Abstimmen. – fehlt noch
 
 Informationen über die Zahlungsmethoden, die :productname:`Unzer Payment für OXID` abdeckt, finden Sie unter `www.unzer.com/de/oxid-e-sales <https://www.unzer.com/de/oxid-e-sales/>`_.
 
@@ -265,11 +263,10 @@ Händlerkonto bei Unzer registrieren
 
 Eröffnen Sie ein Händlerkonto bei Unzer. Sie haben folgende Möglichkeiten:
 
-.. todo: #Mario: Optionen und Links verifizieren: Links, Dokument von Steve anschauen.
 
 * Empfohlen: Lassen Sie Unzer ein individuelles Angebot für Sie machen.
   |br|
-  Rufen Sie dazu das Kontaktformular unter `www.unzer.com/de/kontakt-vertrieb-oxid <https://www.unzer.com/de/kontakt-vertrieb-oxid/>`_.
+  Rufen Sie dazu das Kontaktformular unter `www.unzer.com/de/kontakt-vertrieb <https://www.unzer.com/de/kontakt-vertrieb/>`_.
 * Registrieren Sie sich direkt unter `www.unzer.com/de/direct <https://www.unzer.com/de/direct/>`_.
 
 Sobald alle Fragen geklärt sind, sendet Ihnen Unzer die Anmeldeinformationen, die Sie zum Konfigurieren brauchen.

@@ -5,7 +5,12 @@ Wenn Sie :productname:`Apple Pay` nutzen, generieren Sie in Ihrem Apple-Entwickl
 
 Die Daten benötigen Sie unter :menuselection:`Erweiterungen --> Module --> Einstell. --> zusätzliche Optionen für Apple Pay`.
 
-Weitere Informationen finden Sie unter siehe :ref:`konfiguration:Optionen für Apple Pay: Zugangsdaten eingeben`.
+Sie benutzen dieselben Zertifikate und Schlüssel für den Sandbox- wie für den Live-Betrieb.
+
+Weitere Informationen finden Sie unter
+
+* :ref:`konfiguration:Optionen für Apple Pay: Zugangsdaten eingeben`
+* :ref:`konfiguration:Betriebsmodus: eShop testen und Live-Betrieb aktivieren`.
 
 |prerequisites|
 
@@ -127,7 +132,7 @@ Lassen Sie das Zertifikat von Apple signieren.
 
 Sie haben folgende Dateien gespeichert:
 
-* das Zertifikat zur Zahlungsabwicklung, in unserem Beispiel die Datei :file:`merchant_id.pem`
-* den dazugehörigen privaten Schlüssel zur Zahlungsabwicklung im Format PKCS#8, in unserem Beispiel die Datei :file:`merchant_id.key`
+* das Händler-ertifikat, in unserem Beispiel die Datei :file:`merchant_id.pem`
+* den dazugehörigen privaten Schlüssel zum Händler-Zertifikat im Format PKCS#8, in unserem Beispiel die Datei :file:`merchant_id.key`
 
 

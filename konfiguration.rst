@@ -88,9 +88,7 @@ Registrieren Sie einen Webhook, um Ihren eShop mit Unzer zu verbinden.
    * Production Public-Key
    * Production Private-Key
 
-Weitere Informationen zum Registrieren bei Unzer finden Sie unter https://www.unzer.com/de
-
-.. todo: #Mario verifiziert/liefert: Unzer Link  https://www.unzer.com/de/direct/
+Weitere Informationen zum Registrieren bei Unzer finden Sie unter `unzer.com/de/direct <https://www.unzer.com/de/direct/>`_.
 
 
 |procedure|
@@ -175,7 +173,6 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 * Sie haben Ihren OXID eShop mit Unzer verbunden (siehe :ref:`konfiguration:Zugangsdaten: Webhook generieren`).
 
 
-.. todo: #Arne: Wenn ich alle Daten im Apple-Entwicklerkonto anlege, muss ich sie dann für den Livebtrieb neu generieren?
 
 |procedure|
 
@@ -212,15 +209,12 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 
    * Kontrollkästchen :guilabel:`Kreditkarte`: Lassen Sie :emphasis:`Kredit`-Kartenzahlungen zu.
    * Kontrollkästchen :guilabel:`Debitkarte`: Lassen Sie :emphasis:`Debit`-Kartenzahlungen zu.
-   |br|
+
    Standardmäßig sind beide Kartenarten aktiv. :emphasis:`Beide` Kartenarten sind auch dann aktiv, wenn Sie :emphasis:`keines` der beiden Kontrollkästchen markieren.
    |br|
    Debitkartenzahlungen werden seltener genutzt als Kreditkartenzahlungen. Wenn Sie beispielsweise Kreditkarten für zuverlässiger halten, dann markieren Sie diesen Kartentyp als einzig zulässigen.
 #. Speichern Sie Ihre Einstellungen.
 
-
-.. todo: Feld :guilabel:`Firma` bei Kauf auf Rechnung z.B. für AGB/Privacy : #ML/#Srdjan klärt
-         #ML: Wenn es für Kauf auf Rechnung ist: Frage an Oxid: Warum wurde dieses Feld eingebaut bei apple pay settings?
 
 Optionen für Ratenzahlung: Unzer-Zinssatz eingeben
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -319,8 +313,27 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
      Hintergrund: :productname:`SEPA Lastschrift` und :productname:`Unzer Kauf auf Rechnung` können Sie in europäischen Ländern einschließlich Deutschland anbieten, :productname:`SEPA Lastschrift (abgesichert mit Unzer)` und :productname:`Kauf auf Rechnung (abgesichert mit Unzer)` dagegen nur in Deutschland.
      |br|
      Konfigurieren Sie diese Rechnungsarten so, dass beispielsweise :productname:`Kauf auf Rechnung (abgesichert mit Unzer)` nur deutschen und :productname:`Unzer Kauf auf Rechnung` nur nicht-deutschen Benutzergruppen zugeordnet ist.
-#. Nachdem Sie die Funktionen des Moduls konfiguriert und getestet haben, schalten Sie auf :guilabel:`Livebetrieb` um.
-#. Um unnötigen Speicherplatzverbrauch zu vermeiden, stellen Sie sicher, dass im Livebetrieb der Debug-Modus deaktiviert ist.
+#. Nachdem Sie die Funktionen des Moduls konfiguriert und getestet haben, stellen Sie unter :menuselection:`Einstell. --> Zugangsdaten` sicher, dass Sie folgende Daten, die Sie von Unzer erhalten haben, eingegeben haben:
+
+   * Im Feld :guilabel:`Live öffentlicher Schlüssel` ist der :technicalname:`Production Public-Key`.
+   * Im Feld :guilabel:`Live privater Schlüssel` ist der :technicalname:`Production Private-Key`.
+
+#. Wenn Sie :productname:`Apple Pay` nutzen, tun Sie Folgendes:
+
+   a. Geben Sie Schlüssel und Zertifikate unter :guilabel:`zusätzliche Optionen für Apple Pay` erneut ein.
+      |br|
+      Sie haben die Zertifikate und Schlüssel in Ihrem Apple-Entwickler-Konto erzeugt und lokal gespeichert (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Zugangsdaten erstellen`).
+
+      * Zertifikat zur Zahlungsabwicklung (Datei :file:`apple_pay.pem`)
+      * Privater Schlüssel zur Zahlungsabwicklung (Datei :file:`privatekey.key`)
+      * Shopbetreiber-Zertifikat (Datei :file:`merchant_id.pem`)
+      * Privater Schlüssel zum Shopbetreiber-Zertifikat (Datei :file:`merchant_id.key`)
+
+   b. Wählen Sie :guilabel:`Zahlungs-Zertifikate übertragen (Livebetrieb)`.
+
+#. Wählen Sie unter :guilabel:`Betriebsmodus` den Eintrag :guilabel:`Livebetrieb`.
+#. Um unnötigen Speicherplatzverbrauch zu vermeiden, stellen Sie unter :guilabel:`Betriebsmodus` sicher, dass im Livebetrieb der Debug-Modus deaktiviert ist.
+#. Speichern Sie Ihre Einstellungen.
 
 .. todo: #tbd: prüfen, ob das Verzeichnis ``log/unzer`` angelegt wird, unter source oder modules ist es nicht
 
@@ -359,15 +372,12 @@ Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem W
 #. Geben Sie unter :guilabel:`Zugangsdaten` Ihre Unzer-Zugangsdaten neu ein.
 #. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren`.
 #. Verifizieren Sie die URL, die als Teil des registrierten Webhooks angezeigt wird.
+#. Wenn Sie :productname:`Apple Pay` benutzen, geben Sie unter :menuselection:`Einstell. --> Optionen für Apple Pay` die Zertifikate und Schlüssel ein, die Sie in Ihrem Apple-Entwickler-Konto erzeugt und lokal gespeichert (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Zugangsdaten erstellen`).
+
 
 |result|
 
 Ihr Produktionssystem erhält von Unzer die Statusmeldungen über die Zahlungsvorgänge Ihrer Kunden.
-
-.. todo: #ML/#Srdjan: Gilt analog für Apple Pay: Zertifikate auf Prod.-System erneut generieen und eingeben
-
-.. todo: Alle Zertifikate doppeln: im UI: #Mario: was muss der Shopbetreiber genau machen mit seinen Live- und Sandbox-Zertifikaten?
-
 
 
 .. Intern: oxdaac, Status:
