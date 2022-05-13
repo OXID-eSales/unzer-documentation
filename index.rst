@@ -21,9 +21,12 @@ Moduldokumentation
    Betrieb <betrieb>
 
 ..
-   Funktionsbeschreibung <funktionsbeschreibung/index>
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
-   ApplePay <applepay/applepay-zertifikate.rst>
+
+..
+   Apple Pay-Zugangsdaten erstellen <applepay/applepay-zertifikate.rst>
+
+..
    Update <update>
 
 .. image:: media/icons/home.png

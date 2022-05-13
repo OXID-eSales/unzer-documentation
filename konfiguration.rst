@@ -176,7 +176,7 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 
 |procedure|
 
-1. Legen Sie eine :productname:`Apple Pay`-Händler-ID an (siehe :ref:`applepay/applepay-zertifikate:Händler-ID anlegen`).
+1. Legen Sie eine :productname:`Apple Pay`-Händler-ID an (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Händler-ID anlegen`).
 #. Erzeugen Sie ein von Apple signiertes Zertifikat zur Zahlungsabwicklung und den dazu gehörenden privaten Schlüssel zur Zahlungsabwicklung im Format PKCS#8 (siehe: :ref:`applepay/applepay-zertifikate:Zahlungs-Zertifikat erzeugen`).
 #. Wählen Sie :menuselection:`Einstell. --> Optionen für Apple Pay`
 #. Geben Sie Zahlungs-Zertifikat und Schlüssel in die entsprechenden Eingabefelder ein:
@@ -186,7 +186,7 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 #. Wählen Sie die Schaltfläche :guilabel:`Zahlungs-Zertifikate übertragen`.
 #. Erzeugen Sie ein von Apple signiertes Händler-Zertifikat und den dazu gehörenden privaten Schlüssel im Format PKCS#8 (siehe: :ref:`applepay/applepay-zertifikate:Händler-Zertifikat erzeugen`).
 #. Wählen Sie :menuselection:`Einstell. --> Optionen für Apple Pay`
-#. Geben Sie ins Feld :guilabel:`Shopbetreiber Identifikation` die Händler-ID ein, die Sie in Ihrem Apple-Entwickler-Konto angelegt haben (siehe :ref:`applepay/applepay-zertifikate:Händler-ID anlegen`).
+#. Geben Sie ins Feld :guilabel:`Shopbetreiber Identifikation` die Händler-ID ein, die Sie in Ihrem Apple-Entwickler-Konto angelegt haben (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Händler-ID anlegen`).
 #. Geben Sie die Händler-Zertifikat und Schlüssel in die entsprechenden Eingabefelder ein:
 
    * Öffnen Sie die :file:`pem`-Datei mit dem Händler-Zertifikat (in unserem Beispiel :file:`merchant_id.pem`) und kopieren Sie den Inhalt in das Feld :guilabel:`Zertifikat zur Zahlungsabwicklung`.
