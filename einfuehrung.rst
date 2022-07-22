@@ -38,7 +38,6 @@ Deutschland	        SEPA-Lastschrift
 Deutschland	        Giropay
 Deutschland	        Ratenzahlung mit Unzer
 Deutschland	        Unzer Kauf auf Rechnung
-Deutschland	        Kauf auf Rechnung (abgesichert mit Unzer)
 Deutschland	        SEPA Lastschrift (abgesichert mit Unzer)
 Deutschland	        Sofort Überweisung (Klarna Pay now)
 Deutschland	        Unzer Bank Transfer (Überweisung)
@@ -81,7 +80,6 @@ Norwegen	        Sofort Überweisung (Klarna Pay now)
 Österreich	        eps Überweisung (Electronic Payment Standard)
 Österreich	        Ratenzahlung mit Unzer
 Österreich	        Unzer Kauf auf Rechnung
-Österreich	        Kauf auf Rechnung (abgesichert mit Unzer)
 Österreich	        Vorkasse
 Österreich	        SEPA-Lastschrift
 Österreich	        Unzer Bank Transfer (Überweisung)
@@ -130,8 +128,6 @@ PayPal	                                        Weltweit
 Przelewy24	                                    Polen
 Ratenzahlung mit Unzer	                        Deutschland
 Ratenzahlung mit Unzer	                        Österreich
-Kauf auf Rechnung (abgesichert mit Unzer)	    Deutschland
-Kauf auf Rechnung (abgesichert mit Unzer)	    Österreich
 Kauf auf Rechnung                   	        Belgien
 Kauf auf Rechnung                   	        Deutschland
 Kauf auf Rechnung                   	        Estland
