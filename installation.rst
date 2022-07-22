@@ -38,7 +38,7 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
 
 |result|
 
-Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Administrationsbereich unter :menuselection:`Erweiterungen --> Module`.
+Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Administrationsbereich unter :menuselection:`Erweiterungen --> Module` (:ref:`oxdamb01`).
 
 
 .. _oxdamb01:
@@ -47,6 +47,8 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Admini
    :alt: Unzer Payment für OXID erfolgreich installiert
 
    Abb.: Unzer Payment für OXID erfolgreich installiert
+
+
 
 Nächster Schritt: Um :productname:`Unzer Payment` zu konfigurieren, wählen Sie :guilabel:`Weiter`.
 

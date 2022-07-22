@@ -48,7 +48,7 @@ Aktivieren Sie Unzer in jedem Subshop, in dem Sie das Modul nutzen wollen.
 
 Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten, die das Modul :guilabel:`Unzer Payment-Modul für OXID` abdeckt, als aktiv gekennzeichnet.
 
-Aktiv sind automatisch diejenigen Zahlungsarten, die zu den Ländern passen, die Sie unter :menuselection:`Stammdaten --> Länder` als aktiv markiert haben.
+Aktiv sind automatisch diejenigen Zahlungsarten, die zu den Ländern passen, die Sie unter :menuselection:`Stammdaten --> Länder` als aktiv markiert haben (:ref:`oxdamc01`).
 
 .. todo: #tbd: erläutern, wie man den Shop um neue Länder und dedizierte Unzer-Zahlungsmethoden erweitert
 
@@ -57,12 +57,12 @@ Aktiv sind automatisch diejenigen Zahlungsarten, die zu den Ländern passen, die
 Sie haben die Niederlande als aktiv markiert. Damit ist die Zahlungsart :productname:`iDEAL` verfügbar.
 
 
-.. todo: #Bild ergänzen;
-    .. image:: media/screenshots/oxdaac01.png
-    :alt: Unzer Zahlungsarten
-    :class: with-shadow
-    :height: 344
-    :width: 650
+.. _oxdamc01:
+
+.. figure:: /media/screenshots/oxdamc01.png
+   :alt: Automatisch aktivierte Zahlungsarten
+
+   Abb.: Automatisch aktivierte Zahlungsarten
 
 Unzer konfigurieren
 -------------------
@@ -93,13 +93,28 @@ Weitere Informationen zum Registrieren bei Unzer finden Sie unter `unzer.com/de/
 
 |procedure|
 
-1. Geben Sie unter :menuselection:`Einstell. --> Zugangsdaten` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein.
-#. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren`.
+1. Geben Sie unter :menuselection:`Einstell. --> Zugangsdaten` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein (:ref:`oxdamc02`, Pos. 1).
+#. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren` (:ref:`oxdamc02`, Pos. 2).
+#. Wählen Sie :guilabel:`Speichern` (:ref:`oxdamc02`, Pos. 3).
+
+.. _oxdamc02:
+
+.. figure:: /media/screenshots/oxdamc02.png
+   :alt: Webhook registrieren
+
+   Abb.: Webhook registrieren
 
 
 |result|
 
-Die URL Ihres registrierten Webhooks wird angezeigt. Ihr Shop ist mit Unzer verbunden. 
+Die URL Ihres registrierten Webhooks wird angezeigt (:ref:`oxdamc03`). Ihr Shop ist mit Unzer verbunden.
+
+.. _oxdamc03:
+
+.. figure:: /media/screenshots/oxdamc03.png
+   :alt: Registrierter Webhook
+
+   Abb.: Registrierter Webhook
 
 .. todo: Screenshot einfügen
 
