@@ -275,5 +275,5 @@ Wenn Sie mit Unzer vereinbaren, dass Sie :productname:`Apple Pay` nutzen, dann m
 Weitere Informationen finden Sie unter :ref:`konfiguration:Optionen für Apple Pay: Zugangsdaten eingeben`.
 
 
-.. Intern: oxdaaa, Status:
+.. Intern: oxdama, Status:
 

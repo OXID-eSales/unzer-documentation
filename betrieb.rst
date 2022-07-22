@@ -41,4 +41,4 @@ Nehmen Sie beispielsweise Rückzahlungen vor oder beheben Sie die Ursachen von Z
 
 .. todo: #tbd EN: Terminlogie: OK"Successful", "Pending" usw. Erfolg/Ausstehend/Fehler
 
-.. Intern: oxdaa##, Status:
+.. Intern: oxdamd, Status:

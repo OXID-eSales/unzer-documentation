@@ -380,4 +380,4 @@ Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem W
 Ihr Produktionssystem erhält von Unzer die Statusmeldungen über die Zahlungsvorgänge Ihrer Kunden.
 
 
-.. Intern: oxdaac, Status:
+.. Intern: oxdamc, Status:

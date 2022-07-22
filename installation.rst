@@ -34,19 +34,6 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
       composer config repositories.oscunzer composer https://unzer-module.packages.oxid-esales.com/
       composer require oxid-solution-catalysts/unzer ^1.0.0
       composer install
-      ./vendor/bin/oe-console oe:module:install-configuration source/modules/osc/unzer
-      ./vendor/bin/oe-console oe:module:apply-configuration
-
-#. Optional: Um das Modul zu aktivieren, führen Sie folgenden Befehl aus.
-   |br|
-   Alternativ: Aktivieren Sie das Modul im Zuge der Konfiguration manuell (siehe :ref:`konfiguration:Unzer aktivieren`).
-
-   .. code:: bash
-
-      ./vendor/bin/oe-console oe:module:activate osc-unzer
-
-#. Bestätigen Sie die Abfragen.
-
 
 
 |result|
@@ -54,13 +41,18 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
 Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Administrationsbereich unter :menuselection:`Erweiterungen --> Module`.
 
 
-.. todo: #tbd Bild ergänzen
+.. _oxdamb01:
 
-.. todo: Nächster Schritt Konfiguration
+.. figure:: /media/screenshots/oxdamb01.png
+   :alt: Unzer Payment für OXID erfolgreich installiert
+
+   Abb.: Unzer Payment für OXID erfolgreich installiert
+
+Nächster Schritt: Um :productname:`Unzer Payment` zu konfigurieren, wählen Sie :guilabel:`Weiter`.
 
 
 
 
 
 
-.. Intern: oxdaab, Status:
+.. Intern: oxdamb, Status:
