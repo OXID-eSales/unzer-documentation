@@ -95,7 +95,7 @@ Weitere Informationen zum Registrieren bei Unzer finden Sie unter `unzer.com/de/
 
 1. Geben Sie unter :menuselection:`Einstell. --> Zugangsdaten` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein (:ref:`oxdamc02`, Pos. 1).
 #. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren` (:ref:`oxdamc02`, Pos. 2).
-#. Wählen Sie :guilabel:`Speichern` (:ref:`oxdamc02`, Pos. 3).
+#. Speichern Sie Ihre Einstellungen (:ref:`oxdamc02`, Pos. 3).
 
 .. _oxdamc02:
 
@@ -115,8 +115,6 @@ Die URL Ihres registrierten Webhooks wird angezeigt (:ref:`oxdamc03`). Ihr Shop 
    :alt: Registrierter Webhook
 
    Abb.: Registrierter Webhook
-
-.. todo: Screenshot einfügen
 
 
 Optionen für Kreditkarten/PayPal
@@ -147,18 +145,23 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
 
 1. Wählen Sie :menuselection:`Einstell. --> zusätzliche Optionen für Kreditkarten`.
 #. Sie haben folgende Möglichkeiten:
-   a. Um Zahlungen direkt auszulösen, wählen Sie :guilabel:`Einziehen`.
-   b. Um die Zahlung nur zu reservieren und später auszulösen, wählen Sie :guilabel:`Autorisieren`.
+
+   * Um Zahlungen direkt auszulösen, wählen Sie :guilabel:`Einziehen`.
+   * Um die Zahlung nur zu reservieren und später auszulösen, wählen Sie :guilabel:`Autorisieren`.
 #. Wiederholen Sie Schritt 2 unter :menuselection:`Einstell. --> zusätzliche Optionen für PayPal`.
-#. Stellen Sie sicher, dass Sie die den individualisierten Produkten in Ihrem eShop nur die jeweils entsprechend konfigurierte Zahlungsarte :guilabel:`PayPal` oder :guilabel:`Kartenzahlung` zugeordnet haben.
+#. Speichern Sie Ihre Einstellungen.
+#. Stellen Sie sicher, dass Sie den individualisierten Produkten in Ihrem eShop nur die jeweils entsprechend konfigurierte Zahlungsarte :guilabel:`PayPal` oder :guilabel:`Kartenzahlung` zugeordnet haben.
    |br|
    Die verzögerte Zahlung für Zahlung per :productname:`PayPal` oder :productname:`Kartenzahlung` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
 
+.. todo: #ML: Wie individualisiere ich Produkte, was meinen wir genau, wie geht es?
 
 .. todo: #EN/DE: Terminologie: Authorize & later Capture usw. für Autorisieren/Einziehen; Kartenzahlung/card
 
 
 |result|
+
+Die Bestellung hat den Status :guilabel:`Ausstehend` (siehe :ref:`betrieb:Betrieb`, :ref:`oxdamd02`).
 
 Wenn Sie für Zahlung per PayPal oder Kartenzahlung :guilabel:`Autorisieren` gewählt haben, wird die verzögerte Zahlung ausgelöst,
 
@@ -167,8 +170,26 @@ Wenn Sie für Zahlung per PayPal oder Kartenzahlung :guilabel:`Autorisieren` gew
 
 Bei allen anderen von Unzer unterstützten Zahlungsarten wird die Zahlung sofort mit der Bestellung ausgelöst.
 
-.. todo: #tbd: Prüfen: wie sieht Ratenzahlungsangebt aus Kundensicht aus?
 
+Optionen für Ratenzahlung: Unzer-Zinssatz eingeben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Geben Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
+
+Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unzer vereinbart haben, manuell eingeben.
+
+.. ATTENTION::
+
+   **Konversion gefährdet**
+
+   Wenn Sie versehentlich einen abweichenden Wert eingeben, ist kein Checkout möglich, und Ihr Kunde springt wahrscheinlich ab.
+
+   Vergewissern Sie sich, dass Sie den exakt richtigen Wert wie mit Unzer vereinbart eingeben.
+
+|procedure|
+
+1. Tragen Sie unter :guilabel:`zusätzliche Optionen für Ratenzahlung` den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
+#. Speichern Sie Ihre Einstellungen.
 
 Optionen für Apple Pay: Zugangsdaten eingeben
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -186,7 +207,6 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 |prerequisites|
 
 * Sie haben Ihren OXID eShop mit Unzer verbunden (siehe :ref:`konfiguration:Zugangsdaten: Webhook generieren`).
-
 
 
 |procedure|
@@ -207,7 +227,7 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
    * Öffnen Sie die :file:`pem`-Datei mit dem Händler-Zertifikat (in unserem Beispiel :file:`merchant_id.pem`) und kopieren Sie den Inhalt in das Feld :guilabel:`Zertifikat zur Zahlungsabwicklung`.
    * Öffnen Sie die Text-Datei mit dem privaten Schlüssel zum Händler-Zertifikat (in unserem Beispiel :file:`merchant_id.key`) und kopieren Sie den Inhalt in das Feld :guilabel:`Privater Schlüssel zur Zahlungsabwicklung`.
 #. Geben Sie im Feld :guilabel:`Firma` Ihren Firmennamen ein.
-#. Markieren Sie unter :guilabel:`Unterstütze Kreditkarten` das Kreditkarten-Unternehmen, deren Kreditkarte Ihrem Apple Pay-Konto zugeordnet ist.
+#. Markieren Sie unter :guilabel:`Unterstützte Kreditkarten` das Kreditkarten-Unternehmen, deren Kreditkarte Ihrem Apple Pay-Konto zugeordnet ist.
 
    .. attention::
 
@@ -230,25 +250,28 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
    Debitkartenzahlungen werden seltener genutzt als Kreditkartenzahlungen. Wenn Sie beispielsweise Kreditkarten für zuverlässiger halten, dann markieren Sie diesen Kartentyp als einzig zulässigen.
 #. Speichern Sie Ihre Einstellungen.
 
+Optional: Korrekte Währungseinstellungen sicherstellen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Optionen für Ratenzahlung: Unzer-Zinssatz eingeben
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Stellen Sie sicher, dass die Währungen, die Ihr OXID eShop unterstützt, übereinstimmen mit den Währungen, die :productname:`Apple Pay` unterstützt.
 
-Geben Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
+Schiefgehen kann allerdings nichts: Bei Währungen, die :productname:`Apple Pay` nicht unterstützt, wird lediglich die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
 
-Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unzer vereinbart haben, manuell eingeben.
 
-.. ATTENTION::
-
-   **Konversion gefährdet**
-
-   Wenn Sie versehentlich einen abweichenden Wert eingeben, ist kein Checkout möglich, und Ihr Kunde springt wahrscheinlich ab.
-
-   Vergewissern Sie sich, dass Sie den exakt richtigen Wert wie mit Unzer vereinbart eingeben.
+.. include:: /_static/reuse/apple-pay-currencies.rst
 
 |procedure|
 
-Tragen Sie unter :guilabel:`zusätzliche Optionen für Ratenzahlung` den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
+1. Prüfen Sie die Währungen, die Ihr Shop unterstützt:
+
+   a. Wählen Sie :menuselection:`Stammdaten --> Grundeinstellungen`.
+   #. Expandieren Sie auf der Registerkarte :guilabel:`Einstell.` den Bereich :guilabel:`Weitere Einstellungen`.
+   #. Prüfen Sie in dem Eingabefeld für Währungen, ob Sie Währungen hinzufügen oder entfernen wollen.
+#. Um eine saubere Konfiguration sicherzustellen, tun Sie Folgendes:
+
+   #. Wählen Sie für die Zahlungsart :productname:`Apple Pay` die Registerkarte :guilabel:`Länder`.
+   #. Stellen Sie sicher, dass nur solche Länder zugeordnet sind, welche die von :productname:`Apple Pay` unterstützten Währungen haben.
+
 
 Sonstiges: Optimale Performance sicherstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -277,27 +300,6 @@ Um Interferenzen zu verhindern, stellen Sie sicher, dass jQuery nicht für das U
    * Wenn Ihr Theme jQuery benutzt, stellen Sie sicher, dass das Kontrollkästchen :guilabel:`Einbindung von jQuery über das Modul` deaktiviert ist.
    * Wenn Ihr Theme jQuery **nicht** benutzt, stellen Sie sicher, dass das Kontrollkästchen :guilabel:`Einbindung von jQuery über das Modul` aktiviert ist.
 
-.. todo: EN: Ensure correct currency settings
-
-Optional: Korrekte Währungseinstellungen sicherstellen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Stellen Sie sicher, dass die Währungen, die Ihr OXID eShop unterstützt, übereinstimmen mit den Währungen, die :productname:`Apple Pay` unterstützt.
-
-Schiefgehen kann allerdings nichts: Bei Währungen, die :productname:`Apple Pay` nicht unterstützt, wird lediglich die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
-
-
-.. include:: /_static/reuse/apple-pay-currencies.rst
-
-|procedure|
-
-1. Wählen Sie :menuselection:`Stammdaten --> Grundeinstellungen`.
-2. Expandieren Sie auf der Registerkarte :guilabel:`Einstell.` den Bereich :guilabel:`Weitere Einstellungen`.
-3. Prüfen Sie in dem Eingabefeld für Währungen, ob Sie Währungen hinzufügen oder entfernen wollen.
-4. Um eine saubere Konfiguration sicherzustellen, stellen Sie für die Zahlungsart :productname:`Amazon Pay` auf der Registerkarte :guilabel:`Länder` sicher, dass nur solche Länder zugeordnet sind, welche die von :productname:`Amazon Pay` unterstützten Währungen haben.
-
-.. todo: Bilder ergänzen: Währungsauswahl Backend und Frontend
-
 
 
 Betriebsmodus: eShop testen und Live-Betrieb aktivieren
@@ -309,7 +311,7 @@ Führen Sie dazu Testzahlungen in der Unzer-Sandbox aus.
 
 Der Betriebsmodus :guilabel:`Sandbox` ist standardmäßig eingestellt.
 
-Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in diesem Fall die Anweisungen unter :ref:`Webhook löschen und neu anlegen <webhook-loeschen-und-neu-anlegen>`.
+Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in diesem Fall die Anweisungen unter :ref:`konfiguration:Webhook löschen und neu anlegen`.
 
 
 |procedure|
@@ -318,16 +320,16 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
    |br|
    Typischerweise schalten Sie das Logging nur auf Anfrage ein: Wenn der Support von Unzer Sie bittet, ein Problem nachzustellen.
    |br|
-   Die Log-Dateien finden Sie im Verzeichnis :file:`log/unzer`.
+   Die Log-Dateien finden Sie im Verzeichnis :file:`source/log/unzer`.
 #. Konfigurieren Sie die vom Unzer Payment-Modul bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
 
    * Aktivieren Sie die Länder, die Sie abdecken wollen.
    * Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln.
    * Vermeiden Sie Dopplungen von Zahlungsarten.
      |br|
-     Hintergrund: :productname:`SEPA Lastschrift` und :productname:`Unzer Kauf auf Rechnung` können Sie in europäischen Ländern einschließlich Deutschland anbieten, :productname:`SEPA Lastschrift (abgesichert mit Unzer)` und :productname:`Kauf auf Rechnung (abgesichert mit Unzer)` dagegen nur in Deutschland.
+     Hintergrund: :productname:`SEPA Lastschrift` und :productname:`Unzer Kauf auf Rechnung` können Sie in europäischen Ländern einschließlich Deutschland anbieten, :productname:`SEPA Lastschrift (abgesichert mit Unzer)` dagegen nur in Deutschland.
      |br|
-     Konfigurieren Sie diese Rechnungsarten so, dass beispielsweise :productname:`Kauf auf Rechnung (abgesichert mit Unzer)` nur deutschen und :productname:`Unzer Kauf auf Rechnung` nur nicht-deutschen Benutzergruppen zugeordnet ist.
+     Konfigurieren Sie diese Rechnungsarten so, dass :productname:`SEPA Lastschrift (abgesichert mit Unzer)` nur deutschen und :productname:`SEPA Lastschrift` nur nicht-deutschen Benutzergruppen zugeordnet ist.
 #. Nachdem Sie die Funktionen des Moduls konfiguriert und getestet haben, stellen Sie unter :menuselection:`Einstell. --> Zugangsdaten` sicher, dass Sie folgende Daten, die Sie von Unzer erhalten haben, eingegeben haben:
 
    * Im Feld :guilabel:`Live öffentlicher Schlüssel` ist der :technicalname:`Production Public-Key`.
@@ -350,12 +352,9 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
 #. Um unnötigen Speicherplatzverbrauch zu vermeiden, stellen Sie unter :guilabel:`Betriebsmodus` sicher, dass im Livebetrieb der Debug-Modus deaktiviert ist.
 #. Speichern Sie Ihre Einstellungen.
 
-.. todo: #tbd: prüfen, ob das Verzeichnis ``log/unzer`` angelegt wird, unter source oder modules ist es nicht
+.. todo: #tbd: EN: SEPA Lastschrift Secured / SEPA Lastschrift (abgesichert mit Unzer)
 
-.. todo: #tbd: EN: Invoice Unzer = Unzer Kauf auf Rechnung / Invoice Unzer Secured = Kauf auf Rechnung (abgesichert mit Unzer)
-   SEPA Lastschrift Secured / SEPA Lastschrift (abgesichert mit Unzer)
 
-.. _webhook-loeschen-und-neu-anlegen:
 
 Webhook löschen und neu anlegen
 -------------------------------
@@ -393,6 +392,8 @@ Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem W
 |result|
 
 Ihr Produktionssystem erhält von Unzer die Statusmeldungen über die Zahlungsvorgänge Ihrer Kunden.
+|br|
+Sie können die Transaktionsdaten anzeigen. Weitere Informationen finden Sie unter :ref:`betrieb:Betrieb`.
 
 
 .. Intern: oxdamc, Status:
