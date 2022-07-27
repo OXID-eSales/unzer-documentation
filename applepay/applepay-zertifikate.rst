@@ -31,6 +31,8 @@ Generieren Sie die die Händler-ID, die Sie im Feld :guilabel:`Shopbetreiber Ide
 #. Wählen Sie im Menü den Eintrag :guilabel:`Identifiers` und dann das :guilabel:` Add Identifiers`-Symbol (+)`.
 #. Unter :guilabel:`Register a new Identifier` wählen Sie :guilabel:`Merchant IDs` und bestätigen mit :guilabel:`Continue`.
 #. Unter :guilabel:`Edit or Configure Merchant ID` geben Sie Folgendes ein:
+   .. todo:  add info
+
 #. Unter :guilabel:`Register a Merchant ID` geben Sie Folgendes ein:
 
    * :guilabel:`Description`: Beschreibung der Anwendung

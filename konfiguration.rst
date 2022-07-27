@@ -154,8 +154,6 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
    |br|
    Die verzögerte Zahlung für Zahlung per :productname:`PayPal` oder :productname:`Kartenzahlung` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
 
-.. todo: #ML: Wie individualisiere ich Produkte, was meinen wir genau, wie geht es?
-
 .. todo: #EN/DE: Terminologie: Authorize & later Capture usw. für Autorisieren/Einziehen; Kartenzahlung/card
 
 
