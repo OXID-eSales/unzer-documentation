@@ -20,17 +20,17 @@ Konfigurieren und testen Sie Unzer. Schalten Sie anschließend den Live-Betrieb 
 #. Wenn Sie :productname:`Apple Pay` nutzen, tun Sie Folgendes:
 
    a. Generieren Sie lokal die notwendigen Zertifikate.
-   b. Signieren Sie die Zertifikate in Ihrem :productname:`Apple Pay`-Unzer Payment für OXID.
+   b. Signieren Sie die Zertifikate in Ihrem Apple-Entwickler-Konto.
    c. Um Ihre :productname:`Apple Pay`-Zugangsdaten Unzer bekannt zu machen, geben Sie unter :guilabel:`Optionen für Apple Pay` die signierten Zertifikate ein und laden sie zu Unzer hoch.
-#. Optional: Konfigurieren Sie bei Bedarf unter :guilabel:`Zahlungsarten`, dass Zahlungen verzögert ausgelöst werden sollen (beispielsweise bei Geschäftskunden).
+#. Optional: Konfigurieren Sie bei Bedarf unter :guilabel:`Zusätzliche Optionen ...`, dass Zahlungen verzögert ausgelöst werden sollen (beispielsweise bei Geschäftskunden).
 #. Prüfen Sie, Ob das Theme Ihres eShops jQuery nutzt.
    |br|
-   Wenn das nicht der Fall ist, binden Sie jQuery unter :guilabel:`Sonstiges` über das Modul ein.
+   Wenn das nicht der Fall ist, binden Sie jQuery unter :guilabel:`Sonstiges` ein.
 #. Verknüpfen Sie die von Unzer bereitgestellten Zahlungsarten mit Ihren Versandarten und Versandkostenregeln und führen Sie Testzahlungen in der Unzer-Sandbox aus.
    |br|
    Die Betriebsart :technicalname:`Sandbox` ist nach dem Aktivieren standardmäßig eingestellt.
 #. Testen Sie Unzer in der Unzer-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozesse nach Ihren Vorstellungen funktionieren.
-#. Wenn Sie Ihre Tests abgeschlossen haben, wechseln Sie unter :guilabel:`Umgebung` in die Betriebsart :technicalname:`Livebetrieb`.
+#. Wenn Sie Ihre Tests abgeschlossen haben, wechseln Sie unter :guilabel:`Betriebsmodus` in die Betriebsart :technicalname:`Livebetrieb`.
 #. Wenn Sie die Tests auf einem dedizierten Testsystem durchgeführt haben und Ihren eShop dann in das Produktionssystem umziehen, generieren Sie die Webhooks für die URL des Produktionssystems neu.
 
 Unzer aktivieren
@@ -41,12 +41,12 @@ Aktivieren Sie Unzer in jedem Subshop, in dem Sie das Modul nutzen wollen.
 |procedure|
 
 1. Wählen Sie :menuselection:`Erweiterungen --> Module`. 
-2. Wählen Sie das Modul `Unzer Payment-Modul für OXID` und wählen Sie :menuselection:`Stamm --> Aktivieren`.
+2. Wählen Sie das Modul :guilabel:`Unzer Payment-Modul für OXID` und wählen Sie :menuselection:`Stamm --> Aktivieren`.
 
 
 |result|
 
-Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten, die das Modul :guilabel:`Unzer Payment-Modul für OXID` abdeckt, als aktiv gekennzeichnet.
+Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarten, die :productname:`Unzer Payment for OXID` abdeckt, als aktiv gekennzeichnet.
 
 Aktiv sind automatisch diejenigen Zahlungsarten, die zu den Ländern passen, die Sie unter :menuselection:`Stammdaten --> Länder` als aktiv markiert haben (:ref:`oxdamc01`).
 
@@ -95,7 +95,7 @@ Weitere Informationen zum Registrieren bei Unzer finden Sie unter `unzer.com/de/
 
 1. Geben Sie unter :menuselection:`Einstell. --> Zugangsdaten` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein (:ref:`oxdamc02`, Pos. 1).
 #. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren` (:ref:`oxdamc02`, Pos. 2).
-#. Speichern Sie Ihre Einstellungen (:ref:`oxdamc02`, Pos. 3).
+
 
 .. _oxdamc02:
 
@@ -139,8 +139,6 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
 
 ----------------------------------------------------------------------
 
-.. todo: EN/DE: capture/authorize = Einziehen/Autorisieren
-
 |procedure|
 
 1. Wählen Sie :menuselection:`Einstell. --> zusätzliche Optionen für Kreditkarten`.
@@ -154,12 +152,10 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
    |br|
    Die verzögerte Zahlung für Zahlung per :productname:`PayPal` oder :productname:`Kartenzahlung` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
 
-.. todo: #EN/DE: Terminologie: Authorize & later Capture usw. für Autorisieren/Einziehen; Kartenzahlung/card
-
 
 |result|
 
-Die Bestellung hat den Status :guilabel:`Ausstehend` (siehe :ref:`betrieb:Betrieb`, :ref:`oxdamd02`).
+Die Bestellung hat den Status :guilabel:`ausstehend` (siehe :ref:`oxdamd02` in Kapitel :ref:`betrieb:Betrieb`).
 
 Wenn Sie für Zahlung per PayPal oder Kartenzahlung :guilabel:`Autorisieren` gewählt haben, wird die verzögerte Zahlung ausgelöst,
 
@@ -174,11 +170,13 @@ Optionen für Ratenzahlung: Unzer-Zinssatz eingeben
 
 Geben Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
 
-Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unzer vereinbart haben, manuell eingeben.
+
 
 .. ATTENTION::
 
    **Konversion gefährdet**
+
+   Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unzer vereinbart haben, manuell eingeben.
 
    Wenn Sie versehentlich einen abweichenden Wert eingeben, ist kein Checkout möglich, und Ihr Kunde springt wahrscheinlich ab.
 
@@ -213,6 +211,8 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 #. Erzeugen Sie ein von Apple signiertes Zertifikat zur Zahlungsabwicklung und den dazu gehörenden privaten Schlüssel zur Zahlungsabwicklung im Format PKCS#8 (siehe: :ref:`applepay/applepay-zertifikate:Zahlungs-Zertifikat erzeugen`).
 #. Wählen Sie :menuselection:`Einstell. --> Optionen für Apple Pay`
 #. Geben Sie Zahlungs-Zertifikat und Schlüssel in die entsprechenden Eingabefelder ein:
+   |br|
+   Achten Sie darauf, Präfix und Suffix anzugeben (z.B. ``-----BEGIN PRIVATE KEY-----``).
 
    * Öffnen Sie die :file:`pem`-Datei mit dem Zertifikat zur Zahlungsabwicklung (in unserem Beispiel :file:`apple_pay.pem`) und kopieren Sie den Inhalt in das Feld :guilabel:`Zertifikat zur Zahlungsabwicklung`.
    * Öffnen Sie die Text-Datei mit dem privaten Schlüssel zur Zahlungsabwicklung (in unserem Beispiel :file:`privatekey.key`) und kopieren Sie den Inhalt in das Feld :guilabel:`Privater Schlüssel zur Zahlungsabwicklung`.
@@ -226,6 +226,8 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
    * Öffnen Sie die Text-Datei mit dem privaten Schlüssel zum Händler-Zertifikat (in unserem Beispiel :file:`merchant_id.key`) und kopieren Sie den Inhalt in das Feld :guilabel:`Privater Schlüssel zur Zahlungsabwicklung`.
 #. Geben Sie im Feld :guilabel:`Firma` Ihren Firmennamen ein.
 #. Markieren Sie unter :guilabel:`Unterstützte Kreditkarten` das Kreditkarten-Unternehmen, deren Kreditkarte Ihrem Apple Pay-Konto zugeordnet ist.
+
+.. todo: #ML: Ist das Feld Firma weggefallen? "Geben Sie im Feld :guilabel:`Firma` Ihren Firmennamen ein."
 
    .. attention::
 
@@ -267,7 +269,7 @@ Schiefgehen kann allerdings nichts: Bei Währungen, die :productname:`Apple Pay`
    #. Prüfen Sie in dem Eingabefeld für Währungen, ob Sie Währungen hinzufügen oder entfernen wollen.
 #. Um eine saubere Konfiguration sicherzustellen, tun Sie Folgendes:
 
-   #. Wählen Sie für die Zahlungsart :productname:`Apple Pay` die Registerkarte :guilabel:`Länder`.
+   #. Wählen Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` für die Zahlungsart :productname:`Apple Pay` die Registerkarte :guilabel:`Länder`.
    #. Stellen Sie sicher, dass nur solche Länder zugeordnet sind, welche die von :productname:`Apple Pay` unterstützten Währungen haben.
 
 

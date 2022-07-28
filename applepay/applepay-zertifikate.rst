@@ -23,6 +23,7 @@ Apple Pay-Händler-ID anlegen
 Generieren Sie die die Händler-ID, die Sie im Feld :guilabel:`Shopbetreiber Identifikation` eingeben müssen.
 
 
+
 |procedure|
 
 1. Um ein Apple-Entwickler-Konto anzulegen, legen Sie unter `appleid.apple.com <https://appleid.apple.com/>`_ eine Apple-ID an.
@@ -30,9 +31,6 @@ Generieren Sie die die Händler-ID, die Sie im Feld :guilabel:`Shopbetreiber Ide
 #. Wählen Sie :guilabel:`Certificates, Identifiers & Profiles`.
 #. Wählen Sie im Menü den Eintrag :guilabel:`Identifiers` und dann das :guilabel:` Add Identifiers`-Symbol (+)`.
 #. Unter :guilabel:`Register a new Identifier` wählen Sie :guilabel:`Merchant IDs` und bestätigen mit :guilabel:`Continue`.
-#. Unter :guilabel:`Edit or Configure Merchant ID` geben Sie Folgendes ein:
-   .. todo:  add info
-
 #. Unter :guilabel:`Register a Merchant ID` geben Sie Folgendes ein:
 
    * :guilabel:`Description`: Beschreibung der Anwendung
@@ -105,7 +103,6 @@ Lassen Sie das Zertifikat von Apple signieren.
 |prerequisites|
 
 * Sie haben eine Apple-Händler-ID angelegt (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Händler-ID anlegen`).
-
 
 |procedure|
 
