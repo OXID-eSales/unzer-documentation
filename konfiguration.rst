@@ -50,7 +50,6 @@ Unter :menuselection:`Shopeinstellungen --> Zahlungsarten` sind die Zahlungsarte
 
 Aktiv sind automatisch diejenigen Zahlungsarten, die zu den Ländern passen, die Sie unter :menuselection:`Stammdaten --> Länder` als aktiv markiert haben (:ref:`oxdamc01`).
 
-.. todo: #tbd: erläutern, wie man den Shop um neue Länder und dedizierte Unzer-Zahlungsmethoden erweitert
 
 |example|
 
@@ -148,10 +147,9 @@ In bestimmten Fällen ist es sinnvoll, dass die Zahlung erst durch die Ausliefer
    * Um die Zahlung nur zu reservieren und später auszulösen, wählen Sie :guilabel:`Autorisieren`.
 #. Wiederholen Sie Schritt 2 unter :menuselection:`Einstell. --> zusätzliche Optionen für PayPal`.
 #. Speichern Sie Ihre Einstellungen.
-#. Stellen Sie sicher, dass Sie den individualisierten Produkten in Ihrem eShop nur die jeweils entsprechend konfigurierte Zahlungsarte :guilabel:`PayPal` oder :guilabel:`Kartenzahlung` zugeordnet haben.
+#. Stellen Sie sicher, dass Sie den individualisierten Produkten in Ihrem eShop nur die jeweils entsprechend konfigurierte Zahlungsarten :guilabel:`PayPal` oder :guilabel:`Kartenzahlung` zugeordnet haben.
    |br|
    Die verzögerte Zahlung für Zahlung per :productname:`PayPal` oder :productname:`Kartenzahlung` greift für alle Artikel in Ihrem eShop, denen Sie diese Zahlungsarten zugeordnet haben.
-
 
 |result|
 
@@ -282,11 +280,11 @@ Um die Performance Ihres OXID eShops nicht zu beeinträchtigen, stellen Sie jedo
 
 |example|
 
-Sie benutzen eines der beiden OXID-Themes `Wave` oder `Fluid`.
+Sie benutzen eines der beiden OXID-Themes :productname:`Wave` oder :productname:`Fluid`.
 
 Beide OXID-Themes haben jQuery bereits integriert.
 
-Um Interferenzen zu verhindern, stellen Sie sicher, dass jQuery nicht für das Unzer Payment-Modul separat noch einmal eingebunden wird.
+Um Interferenzen zu verhindern, stellen Sie sicher, dass jQuery nicht für :productname:`Unzer Payment für OXID` separat noch einmal eingebunden wird.
 
 |procedure|
 
@@ -305,13 +303,13 @@ Um Interferenzen zu verhindern, stellen Sie sicher, dass jQuery nicht für das U
 Betriebsmodus: eShop testen und Live-Betrieb aktivieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Testen Sie Unzer in der Unzer-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozesse nach Ihren Vorstellungen funktionieren.
+Testen Sie :productname:`Unzer Payment für OXID` in der Unzer-Sandbox und passen Sie die Konfiguration an, bis alle Zahlungsprozesse nach Ihren Vorstellungen funktionieren.
 
 Führen Sie dazu Testzahlungen in der Unzer-Sandbox aus.
 
 Der Betriebsmodus :guilabel:`Sandbox` ist standardmäßig eingestellt.
 
-Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in diesem Fall die Anweisungen unter :ref:`konfiguration:Webhook löschen und neu anlegen`.
+Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in diesem Fall die Anweisungen unter :ref:`konfiguration:Von einem Testsystem auf das Produktionssystem umschalten`.
 
 
 |procedure|
@@ -321,20 +319,20 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
    Typischerweise schalten Sie das Logging nur auf Anfrage ein: Wenn der Support von Unzer Sie bittet, ein Problem nachzustellen.
    |br|
    Die Log-Dateien finden Sie im Verzeichnis :file:`source/log/unzer`.
-#. Konfigurieren Sie die vom Unzer Payment-Modul bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
+#. Konfigurieren Sie die von :productname:`Unzer Payment für OXID` bereitgestellten Zahlungsmethoden als Zahlungsarten in Ihrem eShop:
 
    * Aktivieren Sie die Länder, die Sie abdecken wollen.
    * Verknüpfen Sie die Zahlungsarten mit Ihren Versandarten und Versandkostenregeln.
    * Vermeiden Sie Dopplungen von Zahlungsarten.
      |br|
-     Hintergrund: :productname:`SEPA Lastschrift` und :productname:`Unzer Kauf auf Rechnung` können Sie in europäischen Ländern einschließlich Deutschland anbieten, :productname:`SEPA Lastschrift (abgesichert mit Unzer)` dagegen nur in Deutschland.
+     Hintergrund: :productname:`SEPA Lastschrift` können Sie in europäischen Ländern einschließlich Deutschland anbieten, :productname:`SEPA Lastschrift (abgesichert mit Unzer)` dagegen nur in Deutschland.
      |br|
      Konfigurieren Sie diese Rechnungsarten so, dass :productname:`SEPA Lastschrift (abgesichert mit Unzer)` nur deutschen und :productname:`SEPA Lastschrift` nur nicht-deutschen Benutzergruppen zugeordnet ist.
 #. Nachdem Sie die Funktionen des Moduls konfiguriert und getestet haben, stellen Sie unter :menuselection:`Einstell. --> Zugangsdaten` sicher, dass Sie folgende Daten, die Sie von Unzer erhalten haben, eingegeben haben:
 
    * Im Feld :guilabel:`Live öffentlicher Schlüssel` ist der :technicalname:`Production Public-Key`.
    * Im Feld :guilabel:`Live privater Schlüssel` ist der :technicalname:`Production Private-Key`.
-
+#. Wählen Sie unter :guilabel:`Betriebsmodus` den Eintrag :guilabel:`Livebetrieb` und wählen Sie :guilabel:`Speichern`.
 #. Wenn Sie :productname:`Apple Pay` nutzen, tun Sie Folgendes:
 
    a. Geben Sie Schlüssel und Zertifikate unter :guilabel:`zusätzliche Optionen für Apple Pay` erneut ein.
@@ -348,18 +346,14 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
 
    b. Wählen Sie :guilabel:`Zahlungs-Zertifikate übertragen (Livebetrieb)`.
 
-#. Wählen Sie unter :guilabel:`Betriebsmodus` den Eintrag :guilabel:`Livebetrieb`.
 #. Um unnötigen Speicherplatzverbrauch zu vermeiden, stellen Sie unter :guilabel:`Betriebsmodus` sicher, dass im Livebetrieb der Debug-Modus deaktiviert ist.
 #. Speichern Sie Ihre Einstellungen.
 
-.. todo: #tbd: EN: SEPA Lastschrift Secured / SEPA Lastschrift (abgesichert mit Unzer)
 
+Von einem Testsystem auf das Produktionssystem umschalten
+---------------------------------------------------------
 
-
-Webhook löschen und neu anlegen
--------------------------------
-
-Wenn Sie Unzer zuerst auf einem Testsystem installiert haben, generieren Sie den Webhook für die URL des Produktionssystems neu.
+Wenn Sie Unzer zuerst auf einem dedizierten Testsystem installiert haben, generieren Sie den Webhook für die URL des Produktionssystems neu.
 
 Sie erhalten sonst auf Ihrem Produktionssystem keine Statusmeldungen, und Sie können die Bestellungen Ihrer Kunden nicht abwickeln.
 
@@ -371,7 +365,6 @@ Löschen und generieren Sie einen Webhook neu auch in dem Fall, dass Sie aus and
 
 |background|
 
-
 Wenn der Webhook auf Ihrem Testsystem auch dann noch aktiv ist, wenn Sie das Testsystem nicht nutzen, werden die Statusmeldungen, die Unzer an ihr Produktionssystem sendet, auch an Ihr Testsystem gesendet.
 
 Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem Webhook verbunden ist. Das kann die Performance Ihrer Unzer-Anbindung vermindern.
@@ -381,11 +374,11 @@ Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem W
 1. Tun Sie auf Ihrem dedizierten Testsystem Folgendes:
 
    a. Wählen Sie :menuselection:`Erweiterungen --> Module --> Unzer Payment-Modul für OXID --> Einstell.`.
-   b. Wählen Sie unter :guilabel:`Zugangsdaten` die Schaltfläche :guilabel:`Webhook für diesen Shop löschen`.
+   b. Wählen Sie unter :guilabel:`Zugangsdaten` die Schaltfläche :guilabel:`Webhook für diesen Shop löschen` (siehe :ref:`oxdamc03`).
 #. Wiederholen Sie Schritt 1 auf Ihrem Produktionssystem.
-#. Geben Sie unter :guilabel:`Zugangsdaten` Ihre Unzer-Zugangsdaten neu ein.
-#. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren`.
-#. Verifizieren Sie die URL, die als Teil des registrierten Webhooks angezeigt wird.
+#. Geben Sie unter :guilabel:`Zugangsdaten` Ihre Unzer-Zugangsdaten neu ein (:ref:`oxdamc02`, Pos. 1).
+#. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren` (:ref:`oxdamc02`, Pos. 2).
+#. Verifizieren Sie die URL, die als Teil des registrierten Webhooks angezeigt wird (siehe :ref:`oxdamc03`).
 #. Wenn Sie :productname:`Apple Pay` benutzen, geben Sie unter :menuselection:`Einstell. --> Zusätzliche Optionen für Apple Pay` die Zertifikate und Schlüssel ein, die Sie in Ihrem Apple-Entwickler-Konto erzeugt und lokal gespeichert (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Zugangsdaten erstellen`).
 
 

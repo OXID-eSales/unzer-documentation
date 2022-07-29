@@ -24,9 +24,6 @@ Moduldokumentation
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
 
 ..
-   Apple Pay-Zugangsdaten erstellen <applepay/applepay-zertifikate.rst>
-
-..
    Update <update>
 
 .. image:: media/icons/home.png

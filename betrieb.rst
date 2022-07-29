@@ -66,11 +66,9 @@ Nehmen Sie beispielsweise Rückzahlungen vor oder beheben Sie die Ursachen von Z
       .. _oxdamd04:
 
       .. figure:: /media/screenshots/oxdamd04.png
-         :alt: Unzer Short-ID und Unzer Type-ID
+         :alt: Unzer Trace-ID und Unzer Type-ID
 
-         Abb.: Unzer Trace-ID und Unzer Kunden-ID
+         Abb.: Unzer Trace-ID und Unzer Type-ID
 
-
-.. todo: #tbd EN: Terminlogie: OK"Successful", "Pending" usw. Erfolg/Ausstehend/Fehler
 
 .. Intern: oxdamd, Status:
