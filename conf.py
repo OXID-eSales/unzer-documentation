@@ -78,7 +78,7 @@ release = '1'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'de'
+language = 'en'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -136,7 +136,7 @@ html_theme = 'sphinx_rtd_theme'
 html_context = {
     'current_version': '1.0',
     'versions':
-        [('1.0', 'https://docs.oxid-esales.com/modules/unzer/de/1.0/'),
+        [('1.0', 'https://docs.oxid-esales.com/modules/unzer/en/1.0/'),
          ],
     'languages':
        [('DE', 'https://docs.oxid-esales.com/modules/unzer/de/1.0/'),
@@ -149,7 +149,7 @@ html_context = {
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
     'github_user': 'OXID-eSales',
     'github_repo': 'unzer-documentation',
-    'github_version': '1.0-de/'
+    'github_version': '1.0-en/'
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -164,7 +164,7 @@ html_theme_path = ['_themes']
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-html_title = 'Unzer | Moduldokumentation'
+html_title = 'Unzer | Module Documentation'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -276,11 +276,11 @@ rst_prolog = """
 # A string of reStructuredText that will be included at the beginning of every source file that is read.
 rst_epilog = """
 .. |link| image:: /media/icons/link.png
-.. |procedure| replace:: **Vorgehen**
-.. |prerequisites| replace:: **Voraussetzungen**
-.. |result| replace:: **Resultat**
-.. |background| replace:: **Hintergrund**
-.. |example| replace:: **Beispiel**
+.. |procedure| replace:: **Procedure**
+.. |prerequisites| replace:: **Prerequisites**
+.. |result| replace:: **Result**
+.. |background| replace:: **Background**
+.. |example| replace:: **Example**
 .. |br| raw:: html
 
    <br />

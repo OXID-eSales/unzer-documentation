@@ -1,4 +1,4 @@
-:productname:`Apple Pay` unterstützt folgende Währungen:
+:productname:`Apple Pay` supports the following currencies:
 
 * AUD
 * CHF

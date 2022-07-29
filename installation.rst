@@ -1,33 +1,33 @@
 Installation
 ============
 
-Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Version 6.2.
+Install Unzer Payment OXID for OXID eShop version 6.2 or higher.
 
 |prerequisites|
 
-* Sie haben den OXID eShop 6.2 oder höher installiert.
-* Sie haben Transportverschlüsselung (`https`) konfiguriert.
+* You have installed OXID eShop 6.2 or higher.
+* You have configured transport encryption (`https`).
 
-   a. Öffnen Sie im Verzeichnis `<Root-Verzeichnis des eShops>/source` die Datei `config.inc.php`.
-   b. Stellen Sie sicher dass für die Basis-URL (Parameter `sShopURL`) https eingestellt ist.
-   
-      Beispiel:
-   
+   a. In the `<root directory of the eShop>/source` directory, open the `config.inc.php` file.
+   b. Make sure that https is set for the base URL (`shopURL` parameter).
+
+      Example:
+
       .. code::
-   
-         $this->sShopURL     = 'https://www.example.org';
+
+         $this->sShopURL = 'https://www.example.org';
 
 |procedure|
 
-1. Öffnen Sie eine Shell und wechseln Sie ins Root-Verzeichnis des Shops (in dem die Datei :file:`composer.json` liegt).
-   Beispiel:
+1. Open a shell and change to the root directory of the store (where the :file:`composer.json` file is located).
+   Example:
 
    .. code:: bash
 
       cd /var/www/oxideshop/
 
 
-#. Führen Sie folgende Befehle aus:
+#. Execute the following commands:
 
    .. code:: bash
 
@@ -38,23 +38,23 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
 
 |result|
 
-Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Administrationsbereich unter :menuselection:`Erweiterungen --> Module` (:ref:`oxdamb01`).
-
+When the installation process is finished, the module appears in the administration area under :menuselection:`Extensions --> Modules` (:ref:`oxdamb01`).
 
 .. _oxdamb01:
 
 .. figure:: /media/screenshots/oxdamb01.png
-   :alt: Unzer Payment für OXID erfolgreich installiert
+   :alt: Unzer Payment for OXID installed
 
-   Abb.: Unzer Payment für OXID erfolgreich installiert
-
-
-
-Nächster Schritt: Um :productname:`Unzer Payment` zu konfigurieren, wählen Sie :guilabel:`Weiter`.
+   Fig.: Unzer Payment for OXID installed
 
 
+
+Next step: To configure :productname:`Unzer Payment`, choose :guilabel:`Next`.
 
 
 
 
-.. Intern: oxdamb, Status:
+
+
+.. Internal: oxdamb, status:
+

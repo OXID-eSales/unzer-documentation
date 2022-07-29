@@ -1,5 +1,5 @@
-Moduldokumentation
-==================
+Module Documentation
+====================
 
 .. image:: media/unzer-logo.png
     :alt: Unzer-Logo
@@ -13,18 +13,15 @@ Moduldokumentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Unzer Payment für OXID
+   :caption: Unzer Payment for OXID
 
-   Wofür/Wofür nicht? <einfuehrung>
+   For what?/Where not? <introduction>
    Installation <installation>
-   Konfiguration <konfiguration>
-   Betrieb <betrieb>
+   Configuration <configuration>
+   Operation <operation>
 
 ..
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
-
-..
-   Apple Pay-Zugangsdaten erstellen <applepay/applepay-zertifikate.rst>
 
 ..
    Update <update>
