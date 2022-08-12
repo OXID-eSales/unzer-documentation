@@ -31,8 +31,7 @@ Install Unzer Payment OXID for OXID eShop version 6.2 or higher.
 
    .. code:: bash
 
-      composer config repositories.oscunzer composer https://unzer-module.packages.oxid-esales.com/
-      composer require oxid-solution-catalysts/unzer ^1.0.0
+      composer require oxid-esales/unzer ^1.0.0
       composer install
 
 
