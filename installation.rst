@@ -31,8 +31,7 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
 
    .. code:: bash
 
-      composer config repositories.oscunzer composer https://unzer-module.packages.oxid-esales.com/
-      composer require oxid-solution-catalysts/unzer ^1.0.0
+      composer require oxid-esales/unzer ^1.0.0
       composer install
 
 
