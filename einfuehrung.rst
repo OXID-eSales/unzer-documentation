@@ -258,13 +258,9 @@ Wo kann ich mich registrieren?
 Händlerkonto bei Unzer registrieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Eröffnen Sie ein Händlerkonto bei Unzer. Sie haben folgende Möglichkeiten:
+Um ein Händlerkonto bei Unzer anzulegen, lassen Sie Unzer ein individuelles Angebot für Sie machen.
 
-
-* Empfohlen: Lassen Sie Unzer ein individuelles Angebot für Sie machen.
-  |br|
-  Rufen Sie dazu das Kontaktformular unter `www.unzer.com/de/kontakt-vertrieb <https://www.unzer.com/de/kontakt-vertrieb/>`_.
-* Registrieren Sie sich direkt unter `www.unzer.com/de/direct <https://www.unzer.com/de/direct/>`_.
+Rufen Sie dazu das Kontaktformular unter `www.unzer.com/de/kontakt-vertrieb <https://www.unzer.com/de/kontakt-vertrieb/>`_ auf.
 
 Sobald alle Fragen geklärt sind, sendet Ihnen Unzer die Anmeldeinformationen, die Sie zum Konfigurieren brauchen.
 

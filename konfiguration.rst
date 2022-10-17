@@ -87,7 +87,7 @@ Registrieren Sie einen Webhook, um Ihren eShop mit Unzer zu verbinden.
    * Production Public-Key
    * Production Private-Key
 
-Weitere Informationen zum Registrieren bei Unzer finden Sie unter `unzer.com/de/direct <https://www.unzer.com/de/direct/>`_.
+Weitere Informationen über das Authentifizieren bei Unzer finden Sie unter `docs.unzer.com/server-side-integration/api-basics/authentication <https://docs.unzer.com/server-side-integration/api-basics/authentication/>`_.
 
 
 |procedure|
