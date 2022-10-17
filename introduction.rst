@@ -256,12 +256,9 @@ Where can I register?
 Registering a merchant account with Unzer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Open a merchant account with Unzer. You have the following options:
+To create a merchant account with Unzer, let Unzer make a custom offer for you.
 
-* Recommended: Let Unzer make an individual offer for you.
-  |br|
-  To do so, call the contact form at `www.unzer.com/en/kontakt-vertrieb <https://www.unzer.com/en/kontakt-vertrieb/>`_.
-* Register directly at `https://www.unzer.com/en/direct/ <https://www.unzer.com/de/direct/>`_.
+To do so, call the contact form at `www.unzer.com/en/kontakt-vertrieb <https://www.unzer.com/en/kontakt-vertrieb/>`_.
 
 Once all questions are answered, Unzer will send you the login information you need to configure.
 

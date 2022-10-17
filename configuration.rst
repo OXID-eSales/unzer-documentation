@@ -90,7 +90,7 @@ Register a webhook to connect your eShop with Unzer.
    * Production Public-Key
    * Production Private-Key
 
-For more information about registering with Unzer, visit `unzer.com/en/direct <https://www.unzer.com/en/direct/>`_.
+For more information about authenticating with Unzer, see `docs.unzer.com/server-side-integration/api-basics/authentication <https://docs.unzer.com/server-side-integration/api-basics/authentication/>`_.
 
 
 |procedure|
