@@ -20,6 +20,8 @@ Moduldokumentation
    Konfiguration <konfiguration>
    Betrieb <betrieb>
 
+.. todo: #ML: gibt es changelogs für 1.0 und 2.0?
+
 ..
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
 

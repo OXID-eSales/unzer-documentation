@@ -1,11 +1,11 @@
 Installation
 ============
 
-Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Version 6.2.
+Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Version 7.0.
 
 |prerequisites|
 
-* Sie haben den OXID eShop 6.2 oder höher installiert.
+* Sie haben den OXID eShop 7.0 oder höher installiert.
 * Sie haben Transportverschlüsselung (`https`) konfiguriert.
 
    a. Öffnen Sie im Verzeichnis `<Root-Verzeichnis des eShops>/source` die Datei `config.inc.php`.
@@ -27,12 +27,13 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop ab Versio
       cd /var/www/oxideshop/
 
 
-#. Führen Sie folgende Befehle aus:
+#. Führen Sie folgenden Befehl aus:
 
    .. code:: bash
 
-      composer require oxid-esales/unzer ^1.0.0
+      composer require oxid-esales/unzer ^2.0.0
 
+.. todo: #ML/#ES: verifizieren: composer require oxid-esales/unzer ^2.0.0
 
 |result|
 
