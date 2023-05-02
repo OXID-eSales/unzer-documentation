@@ -69,7 +69,7 @@ author = 'OXID eSales AG'
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = '1.1'
 # The full version, including alpha/beta/rc tags.
 release = '1'
 
@@ -134,13 +134,14 @@ todo_include_todos = True
 html_theme = 'sphinx_rtd_theme'
 
 html_context = {
-    'current_version': '1.0',
+    'current_version': '1.1',
     'versions':
         [('1.0', 'https://docs.oxid-esales.com/modules/unzer/de/1.0/'),
+         ('1.1', 'https://docs.oxid-esales.com/modules/unzer/de/1.1/'),
          ],
     'languages':
-       [('DE', 'https://docs.oxid-esales.com/modules/unzer/de/1.0/'),
-        ('EN', 'https://docs.oxid-esales.com/modules/unzer/en/1.0/')],
+       [('DE', 'https://docs.oxid-esales.com/modules/unzer/de/1.1/'),
+        ('EN', 'https://docs.oxid-esales.com/modules/unzer/en/1.1/')],
     'css_files': [('_static/oxid.css')],
     'theme_logo_only': True,
     'show_sphinx': False,
@@ -149,7 +150,7 @@ html_context = {
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
     'github_user': 'OXID-eSales',
     'github_repo': 'unzer-documentation',
-    'github_version': '1.0-de/'
+    'github_version': '1.1-de/'
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme

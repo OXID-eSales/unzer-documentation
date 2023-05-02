@@ -230,7 +230,7 @@ Stellen Sie deshalb beim Konfigurieren sicher, dass Ihr OXID eShop nur diejenige
 .. include:: /_static/reuse/apple-pay-currencies.rst
 
 
-Weitere Informationen zum Konfigurieren der Währungen Ihres OXID eShops finden Sie unter :ref:`konfiguration:Optional: Korrekte Währungseinstellungen sicherstellen`.
+Weitere Informationen zum Konfigurieren der Währungen Ihres OXID eShops finden Sie unter :ref:`konfiguration:Optional: Korrekte Apple Pay-Währungseinstellungen sicherstellen`.
 
 Wo finde ich weitere Informationen?
 -----------------------------------
