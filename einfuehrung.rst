@@ -16,6 +16,12 @@ Welche Märkte sind abgedeckt?
 
 Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
+.. todo: #EC/#ML: Unzer Buy Now, Pay Later: welche Märkte: DE, AU, Weltweit?
+            Länder wie Kauf auf Rechnung plus Schweiz?
+.. todo: #EC: Wie ist der richtige Name?
+         * Unzer upaylater
+         * Unzer Buy Now, Pay Later
+
 
 =================== ========================================================
 Markt               Zahlungsmethode
@@ -186,6 +192,7 @@ Sofort Überweisung (Klarna Pay now)	            Ungarn
 Sofort Überweisung (Klarna Pay now)	            Vereinigte Staaten
 Unzer Bank Transfer	(Überweisung)               Deutschland
 Unzer Bank Transfer	(Überweisung)               Österreich
+Unzer Buy Now, Pay Later
 Vorkasse	                                    Belgien
 Vorkasse	                                    Deutschland
 Vorkasse	                                    Estland

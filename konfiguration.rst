@@ -94,6 +94,8 @@ Weitere Informationen über das Authentifizieren bei Unzer finden Sie unter `doc
 
 1. Geben Sie unter :menuselection:`Einstell. --> Zugangsdaten` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein (:ref:`oxdamc02`, Pos. 1).
 #. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren` (:ref:`oxdamc02`, Pos. 2).
+   |br|
+   Die Schaltfläche ist nur aktiv, wenn Sie :code:`https` haben.
 
 
 .. _oxdamc02:
@@ -119,7 +121,7 @@ Die URL Ihres registrierten Webhooks wird angezeigt (:ref:`oxdamc03`). Ihr Shop 
 Optionen für Kreditkarten/PayPal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Legen Sie fest, ob für den eShop Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen nur reserviert werden sollen.
+Legen Sie für Zahlungen mit Kreditkarten und PayPal fest, ob für den eShop Zahlungen sofort eingezogen werden sollen, oder ob die Zahlungen nur reserviert werden sollen.
 
 ----------------------------------------------------------------------
 
@@ -248,8 +250,83 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
    Debitkartenzahlungen werden seltener genutzt als Kreditkartenzahlungen. Wenn Sie beispielsweise Kreditkarten für zuverlässiger halten, dann markieren Sie diesen Kartentyp als einzig zulässigen.
 #. Speichern Sie Ihre Einstellungen.
 
-Optional: Korrekte Währungseinstellungen sicherstellen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Zugangsdaten für Unzer upaylater eingeben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo: #tbd: ia
+
+Wenn Sie :productname:`Unzer upaylater` nutzen wollen, geben Sie die öffentlichen und privaten Schlüssel ein, die Unzer Ihnen bereitgestellt hat.
+
+|prerequisites|
+
+* Je nach dem, welche Kombination von Währung und Kundentyp Sie mit Unzer vereinbart haben, haben Sie jeweils folgende Daten bereitliegen, die Ihnen Unzer mit Einrichtung Ihres Händlerkontos bereitgestellt hat:
+
+   * Sandbox Public-Key
+   * Sandbox Private-Key
+   * Production Public-Key
+   * Production Private-Key
+
+
+
+.. todo: #EC: gibt es spezifische Doku? --
+        Wird es Infos geben unter  https://docs.unzer.com/payment-methods/?
+        Weitere Informationen über das Authentifizieren bei Unzer finden Sie unter `docs.unzer.com/server-side-integration/api-basics/authentication <https://docs.unzer.com/server-side-integration/api-basics/authentication/>`_.
+
+.. todo: #tbd: Verifizieren :menuselection:`Einstell. --> zusätzliche Optionen für Unzer Rechnung (Paylater)`
+
+|procedure|
+
+1. Geben Sie unter :menuselection:`Einstell. --> zusätzliche Optionen für Unzer Rechnung (Paylater)` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein (:ref:`oxdamc04`).
+#. Speichern Sie Ihre Einstellungen.
+
+.. note::
+
+   **Übereinstimmung von Währungen und Zugangsdaten**
+
+   Die Zahlungsart upaylater wird im Checkout nur angeboten, wenn Sie
+
+   * die zum Schlüsselpaar passende Währung (EUR oder CHF) konfiguriert haben
+   * die zu den konfigurierten Währungen passenden Schlüsselpaare eingegeben
+
+   Stellen Sie sicher, dass Sie unter :menuselection:`Stammdaten --> Grundeinstellungen --> Einstell. --> Weitere Einstellungen` die gewünschten Währungen konfiguriert haben.
+
+.. _oxdamc04:
+
+.. figure:: /media/screenshots/oxdamc04.png
+   :alt: Schlüsselpaare für Unzer upaylater eingeben
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Schlüsselpaare für Unzer upaylater eingeben
+
+
+
+|result|
+
+Im Checkout erscheint bei Privatkunden (B2C) automatisch eine zusätzliche Abfrage des Geburtsdatums (:ref:`oxdamc05`).
+
+Geschäftskunden (B2B) erkennt das System automatisch an einem Eintrag im Eingabefeld :guilabel:`Firmenname`. Zusätzlich zum Geburtsdatum muss ein Geschäftskunde die Rechtsform seines Unternehmens angeben.
+
+Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzung des Kunden.
+
+.. todo: #EC: Wenn ich in einer schlechten Gegen wohne und zu jung bin, kann es dann sein, dass ich wegen schlechter Bonität den Checkout nicht abschließen kann?
+
+.. todo: #ML: Wie mache ich die Spracheinstellungen, so dass die Abfrage auch auf Englisch erscheint? -- Müsste es eine Sprach-Konfiguration wie bei Adyen geben? EN ist aktiv bei mir
+.. todo: #ML: Die Liste der Rechtsformen wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?
+.. todo: #ML: Der Ausdruck "Bitte Wert angeben." verschwindet nicht, wenn ich Werte angebe.
+
+
+.. _oxdamc05:
+
+.. figure:: /media/screenshots/oxdamc05.png
+   :alt: Geburtsdatum und Rechtsform angeben
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Geburtsdatum und Rechtsform angeben
+
+Optional: Korrekte Apple Pay-Währungseinstellungen sicherstellen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Stellen Sie sicher, dass die Währungen, die Ihr OXID eShop unterstützt, übereinstimmen mit den Währungen, die :productname:`Apple Pay` unterstützt.
 
