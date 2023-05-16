@@ -16,12 +16,21 @@ Welche Märkte sind abgedeckt?
 
 Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
-.. todo: #EC/#ML: Unzer Buy Now, Pay Later: welche Märkte: DE, AU, Weltweit?
-            Länder wie Kauf auf Rechnung plus Schweiz?
-.. todo: #EC: Wie ist der richtige Name?
-         * Unzer upaylater
-         * Unzer Buy Now, Pay Later
+.. todo: #EC: Welche Unzer-Zahlungsarten gibt es mit 1.1?:
+    Hinzu kmomt: Unzer Kauf auf Rechnung (Paylater)
+    "Unzer Kauf auf Rechnung" wird "Unzer Kauf auf Rechnung (alt)"? -- bleibt auf jeden Fall vorläufig drin.
+    #EC: Das alte Unzer Kauf auf Rechnung erwähnen wir in den folgenden Tabellen nicht mehr, korrekt? Nur in Release Note
 
+.. todo: #EC Gemäß https://docs.unzer.com/payment-methods/
+         folgende deprecated, kommen aber gleichzeitig noch in Liste der Zahlungsarten vo:
+            Ratenzahlung mit Unzer	(Unzer Installment) also weg aus Liste?
+            [Deprecated] Unzer Invoice
+            [Deprecated] Unzer Invoice Secured
+        Wo kommt Unzer Kauf auf Rechnung (Paylater) in https://docs.unzer.com/payment-methods/ vor?
+
+.. todo: #EC/#ML: Unzer Kauf auf Rechnung (Paylater) welche Märkte?
+        - DE, AU, CH
+        - Länder wie Kauf auf Rechnung plus Schweiz?
 
 =================== ========================================================
 Markt               Zahlungsmethode
@@ -32,22 +41,22 @@ Weltweit	        Kartenzahlung
 Weltweit	        PayPal
 Weltweit	        WeChat
 Australien	        Sofort Überweisung (Klarna Pay now)
-Belgien	            Unzer Kauf auf Rechnung
+Belgien	            Unzer Kauf auf Rechnung (Paylater)
 Belgien	            Vorkasse
 Belgien	            SEPA-Lastschrift
 Belgien	            Sofort Überweisung (Klarna Pay now)
 Belgien             Bancontact
 Dänemark	        Sofort Überweisung (Klarna Pay now)
-Deutschland	        Unzer Kauf auf Rechnung
+Deutschland	        Unzer Kauf auf Rechnung (Paylater)
 Deutschland	        Vorkasse
 Deutschland	        SEPA-Lastschrift
 Deutschland	        Giropay
 Deutschland	        Ratenzahlung mit Unzer
-Deutschland	        Unzer Kauf auf Rechnung
+Deutschland	        Unzer Kauf auf Rechnung (Paylater)
 Deutschland	        SEPA Lastschrift (abgesichert mit Unzer)
 Deutschland	        Sofort Überweisung (Klarna Pay now)
 Deutschland	        Unzer Bank Transfer (Überweisung)
-Estland	            Unzer Kauf auf Rechnung
+Estland	            Unzer Kauf auf Rechnung (Paylater)
 Estland	            Vorkasse
 Estland	            SEPA-Lastschrift
 Finnland	        Unzer Kauf auf Rechnung
@@ -55,56 +64,56 @@ Finnland	        Vorkasse
 Finnland	        SEPA-Lastschrift
 Finnland	        Sofort Überweisung (Klarna Pay now)
 Frankreich	        Sofort Überweisung (Klarna Pay now)
-Griechenland	    Unzer Kauf auf Rechnung
+Griechenland	    Unzer Kauf auf Rechnung (Paylater)
 Griechenland	    Vorkasse
 Griechenland	    SEPA-Lastschrift
 Großbritannien	    Sofort Überweisung (Klarna Pay now)
-Irland	            Unzer Kauf auf Rechnung
+Irland	            Unzer Kauf auf Rechnung (Paylater)
 Irland	            Vorkasse
 Irland	            SEPA-Lastschrift
-Italien	            Unzer Kauf auf Rechnung
+Italien	            Unzer Kauf auf Rechnung (Paylater)
 Italien	            Vorkasse
 Italien	            SEPA-Lastschrift
-Lettland	        Unzer Kauf auf Rechnung
+Lettland	        Unzer Kauf auf Rechnung (Paylater)
 Lettland	        Vorkasse
 Lettland	        SEPA-Lastschrift
-Litauen	            Unzer Kauf auf Rechnung
+Litauen	            Unzer Kauf auf Rechnung (Paylater)
 Litauen	            Vorkasse
 Litauen	            SEPA-Lastschrift
-Luxemburg	        Unzer Kauf auf Rechnung
+Luxemburg	        Unzer Kauf auf Rechnung (Paylater)
 Luxemburg	        Vorkasse
 Luxemburg	        SEPA-Lastschrift
-Malta	            Unzer Kauf auf Rechnung
+Malta	            Unzer Kauf auf Rechnung (Paylater)
 Malta	            Vorkasse
 Malta	            SEPA-Lastschrift
 Niederlande	        iDEAL
-Niederlande	        Unzer Kauf auf Rechnung
+Niederlande	        Unzer Kauf auf Rechnung (Paylater)
 Niederlande	        Vorkasse
 Niederlande	        SEPA-Lastschrift
 Niederlande	        Sofort Überweisung (Klarna Pay now)
 Norwegen	        Sofort Überweisung (Klarna Pay now)
 Österreich	        eps Überweisung (Electronic Payment Standard)
 Österreich	        Ratenzahlung mit Unzer
-Österreich	        Unzer Kauf auf Rechnung
+Österreich	        Unzer Kauf auf Rechnung (Paylater)
 Österreich	        Vorkasse
 Österreich	        SEPA-Lastschrift
 Österreich	        Unzer Bank Transfer (Überweisung)
 Polen	            Przelewy24
 Polen	            Sofort Überweisung (Klarna Pay now)
-Portugal	        Unzer Kauf auf Rechnung
+Portugal	        Unzer Kauf auf Rechnung (Paylater)
 Portugal	        Vorkasse
 Portugal	        SEPA-Lastschrift
 Portugal	        Sofort Überweisung (Klarna Pay now)
 Schweden	        Sofort Überweisung (Klarna Pay now)
 Schweiz     	    Sofort Überweisung (Klarna Pay now)
-Slowakei	        Unzer Kauf auf Rechnung
+Slowakei	        Unzer Kauf auf Rechnung (Paylater)
 Slowakei	        Vorkasse
 Slowakei	        SEPA-Lastschrift
 Slowakei	        Sofort Überweisung (Klarna Pay now)
-Slowenien	        Unzer Kauf auf Rechnung
+Slowenien	        Unzer Kauf auf Rechnung (Paylater)
 Slowenien	        Vorkasse
 Slowenien	        SEPA-Lastschrift
-Spanien	            Unzer Kauf auf Rechnung
+Spanien	            Unzer Kauf auf Rechnung (Paylater)
 Spanien	            Vorkasse
 Spanien	            SEPA-Lastschrift
 Spanien	            Sofort Überweisung (Klarna Pay now)
@@ -112,7 +121,7 @@ Italien	            Sofort Überweisung (Klarna Pay now)
 Tschechien	        Sofort Überweisung (Klarna Pay now)
 Ungarn	            Sofort Überweisung (Klarna Pay now)
 Vereinigte Staaten	Sofort Überweisung (Klarna Pay now)
-Zypern	            Unzer Kauf auf Rechnung
+Zypern	            Unzer Kauf auf Rechnung (Paylater)
 Zypern	            Vorkasse
 Zypern	            SEPA-Lastschrift
 =================== ========================================================
@@ -134,24 +143,24 @@ PayPal	                                        Weltweit
 Przelewy24	                                    Polen
 Ratenzahlung mit Unzer	                        Deutschland
 Ratenzahlung mit Unzer	                        Österreich
-Kauf auf Rechnung                   	        Belgien
-Kauf auf Rechnung                   	        Deutschland
-Kauf auf Rechnung                   	        Estland
-Kauf auf Rechnung                   	        Finnland
-Kauf auf Rechnung                   	        Griechenland
-Kauf auf Rechnung                   	        Irland
-Kauf auf Rechnung                   	        Italien
-Kauf auf Rechnung                   	        Lettland
-Kauf auf Rechnung                   	        Litauen
-Kauf auf Rechnung                   	        Luxemburg
-Kauf auf Rechnung                   	        Malta
-Kauf auf Rechnung                   	        Niederlande
-Kauf auf Rechnung                   	        Österreich
-Kauf auf Rechnung                   	        Portugal
-Kauf auf Rechnung                   	        Slowakei
-Kauf auf Rechnung                   	        Slowenien
-Kauf auf Rechnung                   	        Spanien
-Kauf auf Rechnung                   	        Zypern
+Unzer Kauf auf Rechnung (Paylater)              Belgien
+Unzer Kauf auf Rechnung (Paylater)              Deutschland
+Unzer Kauf auf Rechnung (Paylater)              Estland
+Unzer Kauf auf Rechnung (Paylater)              Finnland
+Unzer Kauf auf Rechnung (Paylater)              Griechenland
+Unzer Kauf auf Rechnung (Paylater)              Irland
+Unzer Kauf auf Rechnung (Paylater)              Italien
+Unzer Kauf auf Rechnung (Paylater)              Lettland
+Unzer Kauf auf Rechnung (Paylater)              Litauen
+Unzer Kauf auf Rechnung (Paylater)              Luxemburg
+Unzer Kauf auf Rechnung (Paylater)              Malta
+Unzer Kauf auf Rechnung (Paylater)              Niederlande
+Unzer Kauf auf Rechnung (Paylater)              Österreich
+Unzer Kauf auf Rechnung (Paylater)              Portugal
+Unzer Kauf auf Rechnung (Paylater)              Slowakei
+Unzer Kauf auf Rechnung (Paylater)              Slowenien
+Unzer Kauf auf Rechnung (Paylater)              Spanien
+Unzer Kauf auf Rechnung (Paylater)              Zypern
 SEPA-Lastschrift	                            Belgien
 SEPA-Lastschrift	                            Deutschland
 SEPA-Lastschrift	                            Estland
@@ -192,7 +201,6 @@ Sofort Überweisung (Klarna Pay now)	            Ungarn
 Sofort Überweisung (Klarna Pay now)	            Vereinigte Staaten
 Unzer Bank Transfer	(Überweisung)               Deutschland
 Unzer Bank Transfer	(Überweisung)               Österreich
-Unzer Buy Now, Pay Later
 Vorkasse	                                    Belgien
 Vorkasse	                                    Deutschland
 Vorkasse	                                    Estland
@@ -237,6 +245,8 @@ Wo finde ich weitere Informationen?
 
 Zahlungsmethoden
 ^^^^^^^^^^^^^^^^
+
+.. todo: #EC: Sind die URLs aktuell
 
 Welche Zahlungsmethoden Sie zu welchen Konditionen nutzen wollen, vereinbaren Sie individuell mit Unzer.
 

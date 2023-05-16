@@ -312,7 +312,7 @@ Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzu
 .. todo: #EC: Wenn ich in einer schlechten Gegen wohne und zu jung bin, kann es dann sein, dass ich wegen schlechter Bonität den Checkout nicht abschließen kann?
 
 .. todo: #ML: Wie mache ich die Spracheinstellungen, so dass die Abfrage auch auf Englisch erscheint? -- Müsste es eine Sprach-Konfiguration wie bei Adyen geben? EN ist aktiv bei mir
-.. todo: #ML: Die Liste der Rechtsformen wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?
+.. todo: #EC/#ML: Die Liste der Rechtsformen wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?
 .. todo: #ML: Der Ausdruck "Bitte Wert angeben." verschwindet nicht, wenn ich Werte angebe.
 
 
@@ -414,7 +414,7 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
 
    a. Geben Sie Schlüssel und Zertifikate unter :guilabel:`zusätzliche Optionen für Apple Pay` erneut ein.
       |br|
-      Sie haben die Zertifikate und Schlüssel in Ihrem Apple-Entwickler-Konto erzeugt und lokal gespeichert (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Zugangsdaten erstellen`).
+      Sie haben dazu die Zertifikate und Schlüssel in Ihrem Apple-Entwickler-Konto erzeugt und lokal gespeichert (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Zugangsdaten erstellen`).
 
       * Zertifikat zur Zahlungsabwicklung (Datei :file:`apple_pay.pem`)
       * Privater Schlüssel zur Zahlungsabwicklung (Datei :file:`privatekey.key`)

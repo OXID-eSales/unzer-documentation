@@ -131,7 +131,7 @@ Lassen Sie das Zertifikat von Apple signieren.
 
 Sie haben folgende Dateien gespeichert:
 
-* das Händler-ertifikat, in unserem Beispiel die Datei :file:`merchant_id.pem`
+* das Händler-Zertifikat, in unserem Beispiel die Datei :file:`merchant_id.pem`
 * den dazugehörigen privaten Schlüssel zum Händler-Zertifikat im Format PKCS#8, in unserem Beispiel die Datei :file:`merchant_id.key`
 
 
