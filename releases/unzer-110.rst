@@ -36,7 +36,7 @@ Neue oder geänderte Funktionen
 Korrekturen
 -----------
 
-.. todo: #ML: Gibt es bug fixes in 1.1?
+.. todo: #tbd: Gibt es bug fixes in 1.1?: ja: im https://github.com/OXID-eSales/unzer-module/blob/b-6.3.x/CHANGELOG.md
 
 Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer/blob/v1.1.0/CHANGELOG.md.
 
@@ -54,7 +54,7 @@ Voraussetzungen
 Vorgehen
 ^^^^^^^^
 
-.. todo: #ML/tbd: verifizieren
+.. todo: #tbd: verifizieren: stimmt
 
 Führen Sie den folgenden Befehl aus.
 

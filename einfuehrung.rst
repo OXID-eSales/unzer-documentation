@@ -31,6 +31,18 @@ Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden
 .. todo: #EC/#ML: Unzer Kauf auf Rechnung (Paylater) welche Märkte?
         - DE, AU, CH
         - Länder wie Kauf auf Rechnung plus Schweiz?
+        Siehe https://github.com/OXID-eSales/unzer-module/blob/b-6.3.x/CHANGELOG.md:
+        New country restrictions based on the Unzer documentation
+        ALIPAY: DE, AT, BE, IT, ES, NL
+        Installment: DE, AT, CH (payment method deprecated) (Ratenzahlung mit Unzer)
+        Unzer Invoice (Paylater): DE, AT, CH, NL
+        Prepayment: all Countries
+        SEPA Direct Debit: DE, AT
+        Sofort: DE, AT, BE, IT, ES, NL
+        WeChat: AT, BE, DK, FI, FR, DE, ES, GB, GR, HU, IE, IS, IT, LI, LU, MT, NL, NO, PT, SE
+        Australien	 : nein: Österreich       Sofort Überweisung (Klarna Pay now)
+
+.. todo: Definitionseinschränkungen für Währungen ergänzen: verfügbar mit RC6
 
 =================== ========================================================
 Markt               Zahlungsmethode
@@ -228,7 +240,7 @@ Welche Währungen unterstützt Apple Pay?
 
 Wenn Sie :productname:`Apple Pay` nutzen, dann berücksichtigen Sie folgende Einschränkung:
 
-.. todo: #ML: verify the following: "Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt."
+.. todo: #tbd: verify the following: "Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt." -- stimmt für alle Zahlungsarten
    " -- no restriction at the moment, verification would have to go in: ML provides feedback, text will then be true
 
 Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.

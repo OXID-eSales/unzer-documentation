@@ -227,7 +227,7 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 #. Geben Sie im Feld :guilabel:`Firma` Ihren Firmennamen ein.
 #. Markieren Sie unter :guilabel:`Unterstützte Kreditkarten` das Kreditkarten-Unternehmen, deren Kreditkarte Ihrem Apple Pay-Konto zugeordnet ist.
 
-.. todo: #ML: Ist das Feld Firma weggefallen? "Geben Sie im Feld :guilabel:`Firma` Ihren Firmennamen ein."
+.. todo: #tbd: Ist das Feld Firma weggefallen? "Geben Sie im Feld :guilabel:`Firma` Ihren Firmennamen ein." -- ja, ist weg; Firma nur bei Paylater: KAuf auf Rechnung: für B2B
 
    .. attention::
 
@@ -311,9 +311,9 @@ Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzu
 
 .. todo: #EC: Wenn ich in einer schlechten Gegen wohne und zu jung bin, kann es dann sein, dass ich wegen schlechter Bonität den Checkout nicht abschließen kann?
 
-.. todo: #ML: Wie mache ich die Spracheinstellungen, so dass die Abfrage auch auf Englisch erscheint? -- Müsste es eine Sprach-Konfiguration wie bei Adyen geben? EN ist aktiv bei mir
+.. todo: #tbd: Wie mache ich die Spracheinstellungen, so dass die Abfrage auch auf Englisch erscheint? -- Müsste es eine Sprach-Konfiguration wie bei Adyen geben? EN ist aktiv bei mir: müsste jetzt richtig sein
 .. todo: #EC/#ML: Die Liste der Rechtsformen wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?
-.. todo: #ML: Der Ausdruck "Bitte Wert angeben." verschwindet nicht, wenn ich Werte angebe.
+.. todo: #tbd: Der Ausdruck "Bitte Wert angeben." verschwindet nicht, wenn ich Werte angebe. -- technisch nicht vermeidbar
 
 
 .. _oxdamc05:
