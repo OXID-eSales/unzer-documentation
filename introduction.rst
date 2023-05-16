@@ -19,96 +19,87 @@ With the :productname:`Unzer Payment for OXID` module, offer payment methods pop
 ==============  ========================================
 Market          Payment method
 ==============  ========================================
-Worldwide       Alipay
 Worldwide       Apple Pay
 Worldwide       Cards
 Worldwide       PayPal
-Worldwide       WeChat
-Australia       Sofort Bank Transfer (Klarna Pay now)
+Worldwide       Unzer Prepayment
+Austria         Alipay
+Austria         Sofort Bank Transfer (Klarna Pay now)
 Austria         eps Bank Transfer (Electronic Payment Standard)
-Austria         Unzer Installment
-Austria         Unzer Invoice
-Austria         Unzer Prepayment
+Austria         Unzer Invoice (Paylater)
 Austria         Unzer Direct Debit (SEPA Direct Debit)
 Austria         Unzer Bank Transfer
-Belgium         Unzer Invoice
-Belgium         Unzer Prepayment
+Austria         WeChat
+Belgium         Alipay
 Belgium         Unzer Direct Debit (SEPA Direct Debit)
 Belgium         Sofort Bank Transfer (Klarna Pay now)
 Belgium         Bancontact
-Cyprus          Unzer Invoice
-Cyprus          Unzer Prepayment
+Belgium         WeChat
 Cyprus          Unzer Direct Debit (SEPA Direct Debit)
 Czech Republic  Sofort Bank Transfer (Klarna Pay now)
 Denmark         Sofort Bank Transfer (Klarna Pay now)
-Estonia         Unzer Invoice
-Estonia         Unzer Prepayment
+Denmark         WeChat
 Estonia         Unzer Direct Debit (SEPA Direct Debit)
-Finland         Unzer Invoice
-Finland         Unzer Prepayment
 Finland         Unzer Direct Debit (SEPA Direct Debit)
 Finland         Sofort Bank Transfer (Klarna Pay now)
+Finland         WeChat
 France          Sofort Bank Transfer (Klarna Pay now)
-Germany         Unzer Invoice
-Germany         Unzer Prepayment
+France          WeChat
+Germany         Unzer Invoice (Paylater)
 Germany         Unzer Direct Debit (SEPA Direct Debit)
+Germany         Alipay
 Germany         Giropay
-Germany         Unzer Installment
 Germany         Unzer Invoice
 Germany         Unzer Direct Debit (SEPA Direct Debit) (secured with Unzer)
 Germany         Sofort Bank Transfer (Klarna Pay now)
 Germany         Unzer Bank Transfer (wire transfer)
-Greece          Unzer Invoice
-Greece          Unzer Prepayment
+Germany         WeChat
 Greece          Unzer Direct Debit (SEPA Direct Debit)
+Greece          WeChat
 Great Britain   Sofort Bank Transfer (Klarna Pay now)
+Great Britain   WeChat
 Hungary         Sofort Bank Transfer (Klarna Pay now)
-Ireland         Unzer Invoice
-Ireland         Unzer Prepayment
+Hungary         WeChat
 Ireland         Unzer Direct Debit (SEPA Direct Debit)
-Italy           Unzer Invoice
-Italy           Unzer Prepayment
+Ireland         WeChat
 Italy           Unzer Direct Debit (SEPA Direct Debit)
+Italy           Alipay
 Italy           Sofort Bank Transfer (Klarna Pay now)
-Latvia          Unzer Invoice
-Latvia          Unzer Prepayment
+Italy           WeChat
 Latvia          Unzer Direct Debit (SEPA Direct Debit)
-Lithuania       Unzer Invoice
-Lithuania       Unzer Prepayment
+Liechtenstein   WeChat
 Lithuania       Unzer Direct Debit (SEPA Direct Debit)
 Luxembourg      Unzer Invoice
-Luxembourg      Unzer Prepayment
 Luxembourg      Unzer Direct Debit (SEPA Direct Debit)
-Malta           Unzer Invoice
-Malta           Unzer Prepayment
+Luxembourg      WeChat
 Malta           Unzer Direct Debit (SEPA Direct Debit)
+Malta           WeChat
 Netherlands     iDEAL
-Netherlands     Unzer Invoice
-Netherlands     Unzer Prepayment
+Netherlands     Alipay
+Netherlands     Unzer Invoice (Paylater)
 Netherlands     Unzer Direct Debit (SEPA Direct Debit)
 Netherlands     Sofort Bank Transfer (Klarna Pay now)
+Netherlands     WeChat
 Norway          Sofort Bank Transfer (Klarna Pay now)
+Norway          WeChat
 Poland          Przelewy24
 Poland          Sofort Bank Transfer (Klarna Pay now)
-Portugal        Unzer Invoice
-Portugal        Unzer Prepayment
 Portugal        Unzer Direct Debit (SEPA Direct Debit)
 Portugal        Sofort Bank Transfer (Klarna Pay now)
+Portugal        WeChat
 Sweden          Sofort Bank Transfer (Klarna Pay now)
+Sweden          WeChat
 Switzerland     Sofort Bank Transfer (Klarna Pay now)
-Slovakia        Unzer Invoice
-Slovakia        Unzer Prepayment
 Slovakia        Unzer Direct Debit (SEPA Direct Debit)
 Slovakia        Sofort Bank Transfer (Klarna Pay now)
 Slovenia        Unzer Invoice
-Slovenia        Unzer Prepayment
 Slovenia        Unzer Direct Debit (SEPA Direct Debit)
-Spain           Unzer Invoice
-Spain           Unzer Prepayment
 Spain           Unzer Direct Debit (SEPA Direct Debit)
+Spain           Alipay
 Spain           Sofort Bank Transfer (Klarna Pay now)
+Spain           WeChat
+Switzerland     Unzer Invoice (Paylater)
 United States   Sofort Bank Transfer (Klarna Pay now)
-
 ==============  ========================================
 
 
@@ -141,7 +132,7 @@ Instant Bank Transfer (Klarna Pay now)          United Kingdom
 PayPal                                          Worldwide
 Przelewy24                                      Poland
 SEPA Direct Debit (secured with Unzer)          Germany
-SEPA Direct Debit (secured with Unzer)          Australia
+SEPA Direct Debit (secured with Unzer)          Austria
 SEPA Direct Debit (secured with Unzer)          Belgium
 SEPA Direct Debit (secured with Unzer)          Denmark
 SEPA Direct Debit (secured with Unzer)          Germany
@@ -168,45 +159,30 @@ Unzer Direct Debit (SEPA Direct Debit)          Portugal
 Unzer Direct Debit (SEPA Direct Debit)          Slovakia
 Unzer Direct Debit (SEPA Direct Debit)          Slovenia
 Unzer Direct Debit (SEPA Direct Debit)          Spain
-Unzer Installment                               Austria
-Unzer Installment                               Germany
-Unzer Invoice                                   Austria
-Unzer Invoice                                   Belgium
-Unzer Invoice                                   Cyprus
-Unzer Invoice                                   Estonia
-Unzer Invoice                                   Finland
-Unzer Invoice                                   Germany
-Unzer Invoice                                   Greece
-Unzer Invoice                                   Ireland
-Unzer Invoice                                   Italy
-Unzer Invoice                                   Latvia
-Unzer Invoice                                   Lithuania
-Unzer Invoice                                   Luxembourg
-Unzer Invoice                                   Malta
-Unzer Invoice                                   Netherlands
-Unzer Invoice                                   Portugal
-Unzer Invoice                                   Slovakia
-Unzer Invoice                                   Slovenia
-Unzer Invoice                                   Spain
-Unzer Prepayment                                Austria
-Unzer Prepayment                                Belgium
-Unzer Prepayment                                Cyprus
-Unzer Prepayment                                Estonia
-Unzer Prepayment                                Finland
-Unzer Prepayment                                Germany
-Unzer Prepayment                                Greece
-Unzer Prepayment                                Ireland
-Unzer Prepayment                                Italy
-Unzer Prepayment                                Latvia
-Unzer Prepayment                                Lithuania
-Unzer Prepayment                                Luxembourg
-Unzer Prepayment                                Malta
-Unzer Prepayment                                Netherlands
-Unzer Prepayment                                Portugal
-Unzer Prepayment                                Slovakia
-Unzer Prepayment                                Slovenia
-Unzer Prepayment                                Spain
-WeChat                                          Worldwide
+Unzer Invoice (Paylater)                        Austria
+Unzer Invoice (Paylater)                        Germany
+Unzer Invoice (Paylater)                        Netherlands
+Unzer Invoice (Paylater)                        Switzerland
+Unzer Prepayment                                Worldwide
+WeChat	                                        Austria
+WeChat                                          Belgium
+WeChat	                                        Denmark
+WeChat	                                        Finland
+WeChat	                                        France
+WeChat	                                        Germany
+WeChat	                                        Greece
+WeChat	                                        Great Britain
+WeChat	                                        Ireland
+WeChat	                                        Italy
+WeChat	                                        Liechtenstein
+WeChat	                                        Luxembourg
+WeChat	                                        Malta
+WeChat	                                        Netherlands
+WeChat	                                        Norway
+WeChat	                                        Portugal
+WeChat	                                        Sweden
+WeChat	                                        Spain
+WeChat	                                        Hungary
 =============================================== ================
 
 
