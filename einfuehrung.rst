@@ -28,115 +28,119 @@ Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden
             [Deprecated] Unzer Invoice Secured
         Wo kommt Unzer Kauf auf Rechnung (Paylater) in https://docs.unzer.com/payment-methods/ vor?
 
-.. todo: #EC/#ML: Unzer Kauf auf Rechnung (Paylater) welche Märkte?
-        - DE, AU, CH
-        - Länder wie Kauf auf Rechnung plus Schweiz?
-        Siehe https://github.com/OXID-eSales/unzer-module/blob/b-6.3.x/CHANGELOG.md:
-        New country restrictions based on the Unzer documentation
-        ALIPAY: DE, AT, BE, IT, ES, NL
-        Installment: DE, AT, CH (payment method deprecated) (Ratenzahlung mit Unzer)
-        Unzer Invoice (Paylater): DE, AT, CH, NL
-        Prepayment: all Countries
+.. todo: Siehe https://github.com/OXID-eSales/unzer-module/blob/b-6.3.x/CHANGELOG.md:
+        New country restrictions based on the Unzer documentation:
+        done DE+EN: ALIPAY: DE, AT, BE, IT, ES, NL
+        done DE+EN: Entf. Installment: DE, AT, CH (payment method deprecated) (Ratenzahlung mit Unzer)
+        done DE+EN: Unzer Invoice (Paylater): DE, AT, CH, NL
+        done: DE+EN: Prepayment: all Countries
+        done: DE+EN  : WeChat: AT, BE, DK, FI, FR, DE, ES, GB, GR, HU, IE, IS, IT, LI, LU, MT, NL, NO, PT, SE
+        done: Australien	 : nein: Österreich       Sofort Überweisung (Klarna Pay now)
+.. todo: #EC: Was sind die offizielen Namen der folgenden Zahlungsarten auf EN und DE?
         SEPA Direct Debit: DE, AT
         Sofort: DE, AT, BE, IT, ES, NL
-        WeChat: AT, BE, DK, FI, FR, DE, ES, GB, GR, HU, IE, IS, IT, LI, LU, MT, NL, NO, PT, SE
-        Australien	 : nein: Österreich       Sofort Überweisung (Klarna Pay now)
 
 .. todo: Definitionseinschränkungen für Währungen ergänzen: verfügbar mit RC6
 
-=================== ========================================================
-Markt               Zahlungsmethode
-=================== ========================================================
-Weltweit	        Alipay
-Weltweit	        Apple Pay
-Weltweit	        Kartenzahlung
-Weltweit	        PayPal
-Weltweit	        WeChat
-Australien	        Sofort Überweisung (Klarna Pay now)
-Belgien	            Unzer Kauf auf Rechnung (Paylater)
-Belgien	            Vorkasse
-Belgien	            SEPA-Lastschrift
-Belgien	            Sofort Überweisung (Klarna Pay now)
-Belgien             Bancontact
-Dänemark	        Sofort Überweisung (Klarna Pay now)
-Deutschland	        Unzer Kauf auf Rechnung (Paylater)
-Deutschland	        Vorkasse
-Deutschland	        SEPA-Lastschrift
-Deutschland	        Giropay
-Deutschland	        Ratenzahlung mit Unzer
-Deutschland	        Unzer Kauf auf Rechnung (Paylater)
-Deutschland	        SEPA Lastschrift (abgesichert mit Unzer)
-Deutschland	        Sofort Überweisung (Klarna Pay now)
-Deutschland	        Unzer Bank Transfer (Überweisung)
-Estland	            Unzer Kauf auf Rechnung (Paylater)
-Estland	            Vorkasse
-Estland	            SEPA-Lastschrift
-Finnland	        Unzer Kauf auf Rechnung
-Finnland	        Vorkasse
-Finnland	        SEPA-Lastschrift
-Finnland	        Sofort Überweisung (Klarna Pay now)
-Frankreich	        Sofort Überweisung (Klarna Pay now)
-Griechenland	    Unzer Kauf auf Rechnung (Paylater)
-Griechenland	    Vorkasse
-Griechenland	    SEPA-Lastschrift
-Großbritannien	    Sofort Überweisung (Klarna Pay now)
-Irland	            Unzer Kauf auf Rechnung (Paylater)
-Irland	            Vorkasse
-Irland	            SEPA-Lastschrift
-Italien	            Unzer Kauf auf Rechnung (Paylater)
-Italien	            Vorkasse
-Italien	            SEPA-Lastschrift
-Lettland	        Unzer Kauf auf Rechnung (Paylater)
-Lettland	        Vorkasse
-Lettland	        SEPA-Lastschrift
-Litauen	            Unzer Kauf auf Rechnung (Paylater)
-Litauen	            Vorkasse
-Litauen	            SEPA-Lastschrift
-Luxemburg	        Unzer Kauf auf Rechnung (Paylater)
-Luxemburg	        Vorkasse
-Luxemburg	        SEPA-Lastschrift
-Malta	            Unzer Kauf auf Rechnung (Paylater)
-Malta	            Vorkasse
-Malta	            SEPA-Lastschrift
-Niederlande	        iDEAL
-Niederlande	        Unzer Kauf auf Rechnung (Paylater)
-Niederlande	        Vorkasse
-Niederlande	        SEPA-Lastschrift
-Niederlande	        Sofort Überweisung (Klarna Pay now)
-Norwegen	        Sofort Überweisung (Klarna Pay now)
-Österreich	        eps Überweisung (Electronic Payment Standard)
-Österreich	        Ratenzahlung mit Unzer
-Österreich	        Unzer Kauf auf Rechnung (Paylater)
-Österreich	        Vorkasse
-Österreich	        SEPA-Lastschrift
-Österreich	        Unzer Bank Transfer (Überweisung)
-Polen	            Przelewy24
-Polen	            Sofort Überweisung (Klarna Pay now)
-Portugal	        Unzer Kauf auf Rechnung (Paylater)
-Portugal	        Vorkasse
-Portugal	        SEPA-Lastschrift
-Portugal	        Sofort Überweisung (Klarna Pay now)
-Schweden	        Sofort Überweisung (Klarna Pay now)
-Schweiz     	    Sofort Überweisung (Klarna Pay now)
-Slowakei	        Unzer Kauf auf Rechnung (Paylater)
-Slowakei	        Vorkasse
-Slowakei	        SEPA-Lastschrift
-Slowakei	        Sofort Überweisung (Klarna Pay now)
-Slowenien	        Unzer Kauf auf Rechnung (Paylater)
-Slowenien	        Vorkasse
-Slowenien	        SEPA-Lastschrift
-Spanien	            Unzer Kauf auf Rechnung (Paylater)
-Spanien	            Vorkasse
-Spanien	            SEPA-Lastschrift
-Spanien	            Sofort Überweisung (Klarna Pay now)
-Italien	            Sofort Überweisung (Klarna Pay now)
-Tschechien	        Sofort Überweisung (Klarna Pay now)
-Ungarn	            Sofort Überweisung (Klarna Pay now)
-Vereinigte Staaten	Sofort Überweisung (Klarna Pay now)
-Zypern	            Unzer Kauf auf Rechnung (Paylater)
-Zypern	            Vorkasse
-Zypern	            SEPA-Lastschrift
-=================== ========================================================
+======================= ========================================================
+Markt                   Zahlungsmethode
+======================= ========================================================
+Weltweit	            Apple Pay
+Weltweit	            Kartenzahlung
+Weltweit	            PayPal
+Weltweit	            Unzer Vorkasse
+Belgien	                Unzer Kauf auf Rechnung (Paylater)
+Belgien 	            Alipay
+Belgien	                SEPA-Lastschrift
+Belgien	                Sofort Überweisung (Klarna Pay now)
+Belgien	                WeChat
+Belgien                 Bancontact
+Dänemark	            Sofort Überweisung (Klarna Pay now)
+Dänemark                WeChat
+Deutschland	            Unzer Kauf auf Rechnung (Paylater)
+Deutschland	            Alipay
+Deutschland	            SEPA-Lastschrift
+Deutschland	            Giropay
+Deutschland	            Unzer Kauf auf Rechnung (Paylater)
+Deutschland	            SEPA Lastschrift (abgesichert mit Unzer)
+Deutschland	            Sofort Überweisung (Klarna Pay now)
+Deutschland	            Unzer Bank Transfer (Überweisung)
+Deutschland             WeChat
+Estland	                Unzer Kauf auf Rechnung (Paylater)
+Estland	                SEPA-Lastschrift
+Finnland	            Unzer Kauf auf Rechnung
+Finnland	            SEPA-Lastschrift
+Finnland	            Sofort Überweisung (Klarna Pay now)
+Finnland                WeChat
+Frankreich	            Sofort Überweisung (Klarna Pay now)
+Frankreich	            WeChat
+Griechenland	        Unzer Kauf auf Rechnung (Paylater)
+Griechenland	        SEPA-Lastschrift
+Griechenland          	WeChat
+Großbritannien	        Sofort Überweisung (Klarna Pay now)
+Großbritannien      	WeChat
+Irland	                Unzer Kauf auf Rechnung (Paylater)
+Irland	                SEPA-Lastschrift
+Irland	                WeChat
+Island	                WeChat
+Italien	                Unzer Kauf auf Rechnung (Paylater)
+Italien 	            Alipay
+Italien	                SEPA-Lastschrift
+Italien	                WeChat
+Lettland	            Unzer Kauf auf Rechnung (Paylater)
+Lettland	            SEPA-Lastschrift
+Liechtenstein           WeChat
+Litauen	                Unzer Kauf auf Rechnung (Paylater)
+Litauen	                SEPA-Lastschrift
+Luxemburg	            Unzer Kauf auf Rechnung (Paylater)
+Luxemburg	            SEPA-Lastschrift
+Luxemburg	            WeChat
+Malta	                Unzer Kauf auf Rechnung (Paylater)
+Malta	                SEPA-Lastschrift
+Malta   	            WeChat
+Niederlande	            Alipay
+Niederlande	            iDEAL
+Niederlande	            Unzer Kauf auf Rechnung (Paylater)
+Niederlande	            SEPA-Lastschrift
+Niederlande	            Sofort Überweisung (Klarna Pay now)
+Niederlande	            WeChat
+Norwegen	            Sofort Überweisung (Klarna Pay now)
+Norwegen	            WeChat
+Österreich	            Alipay
+Österreich	            eps Überweisung (Electronic Payment Standard)
+Österreich	            Unzer Kauf auf Rechnung (Paylater)
+Österreich	            Sofort Überweisung (Klarna Pay now)
+Österreich	            SEPA-Lastschrift
+Österreich	            Unzer Bank Transfer (Überweisung)
+Österreich              WeChat
+Polen	                Przelewy24
+Polen	                Sofort Überweisung (Klarna Pay now)
+Portugal	            Unzer Kauf auf Rechnung (Paylater)
+Portugal	            SEPA-Lastschrift
+Portugal	            Sofort Überweisung (Klarna Pay now)
+Portugal	            WeChat
+Schweden	            Sofort Überweisung (Klarna Pay now)
+Schweden	            WeChat
+Schweiz 	            Unzer Kauf auf Rechnung (Paylater)
+Schweiz     	        Sofort Überweisung (Klarna Pay now)
+Slowakei	            Unzer Kauf auf Rechnung (Paylater)
+Slowakei	            SEPA-Lastschrift
+Slowakei	            Sofort Überweisung (Klarna Pay now)
+Slowenien	            Unzer Kauf auf Rechnung (Paylater)
+Slowenien	            SEPA-Lastschrift
+Spanien	                Unzer Kauf auf Rechnung (Paylater)
+Spanien 	            Alipay
+Spanien	                SEPA-Lastschrift
+Spanien	                Sofort Überweisung (Klarna Pay now)
+Spanien	                WeChat
+Italien	                Sofort Überweisung (Klarna Pay now)
+Tschechien	            Sofort Überweisung (Klarna Pay now)
+Ungarn	                Sofort Überweisung (Klarna Pay now)
+Ungarn	                WeChat
+Vereinigte Staaten	    Sofort Überweisung (Klarna Pay now)
+Zypern	                Unzer Kauf auf Rechnung (Paylater)
+Zypern	                SEPA-Lastschrift
+======================= ========================================================
 
 Welche Märkte sind abgedeckt (sortiert nach Zahlungsmethoden)?
 --------------------------------------------------------------
@@ -144,7 +148,12 @@ Welche Märkte sind abgedeckt (sortiert nach Zahlungsmethoden)?
 =============================================== ================
 Zahlungsmethode                                 Markt
 =============================================== ================
-Alipay	                                        Weltweit
+Alipay	                                        Belgien
+Alipay	                                        Deutschland
+Alipay	                                        Niederlande
+Alipay	                                        Österreich
+Alipay	                                        Italen
+Alipay	                                        Spanien
 Apple Pay                                       Weltweit
 Bancontact	                                    Belgien
 eps Überweisung (Electronic Payment Standard)	Österreich
@@ -153,26 +162,10 @@ iDEAL	                                        Niederlande
 Kartenzahlung                                   Weltweit
 PayPal	                                        Weltweit
 Przelewy24	                                    Polen
-Ratenzahlung mit Unzer	                        Deutschland
-Ratenzahlung mit Unzer	                        Österreich
-Unzer Kauf auf Rechnung (Paylater)              Belgien
 Unzer Kauf auf Rechnung (Paylater)              Deutschland
-Unzer Kauf auf Rechnung (Paylater)              Estland
-Unzer Kauf auf Rechnung (Paylater)              Finnland
-Unzer Kauf auf Rechnung (Paylater)              Griechenland
-Unzer Kauf auf Rechnung (Paylater)              Irland
-Unzer Kauf auf Rechnung (Paylater)              Italien
-Unzer Kauf auf Rechnung (Paylater)              Lettland
-Unzer Kauf auf Rechnung (Paylater)              Litauen
-Unzer Kauf auf Rechnung (Paylater)              Luxemburg
-Unzer Kauf auf Rechnung (Paylater)              Malta
 Unzer Kauf auf Rechnung (Paylater)              Niederlande
 Unzer Kauf auf Rechnung (Paylater)              Österreich
-Unzer Kauf auf Rechnung (Paylater)              Portugal
-Unzer Kauf auf Rechnung (Paylater)              Slowakei
-Unzer Kauf auf Rechnung (Paylater)              Slowenien
-Unzer Kauf auf Rechnung (Paylater)              Spanien
-Unzer Kauf auf Rechnung (Paylater)              Zypern
+Unzer Kauf auf Rechnung (Paylater)              Schweiz
 SEPA-Lastschrift	                            Belgien
 SEPA-Lastschrift	                            Deutschland
 SEPA-Lastschrift	                            Estland
@@ -192,7 +185,6 @@ SEPA-Lastschrift	                            Slowenien
 SEPA-Lastschrift	                            Spanien
 SEPA-Lastschrift	                            Zypern
 SEPA Lastschrift (abgesichert mit Unzer)	    Deutschland
-Sofort Überweisung (Klarna Pay now)	            Australien
 Sofort Überweisung (Klarna Pay now)	            Belgien
 Sofort Überweisung (Klarna Pay now)	            Dänemark
 Sofort Überweisung (Klarna Pay now)	            Deutschland
@@ -201,6 +193,7 @@ Sofort Überweisung (Klarna Pay now)	            Frankreich
 Sofort Überweisung (Klarna Pay now)	            Großbritannien
 Sofort Überweisung (Klarna Pay now)	            Niederlande
 Sofort Überweisung (Klarna Pay now)	            Norwegen
+Sofort Überweisung (Klarna Pay now)	            Österreich
 Sofort Überweisung (Klarna Pay now)	            Polen
 Sofort Überweisung (Klarna Pay now)	            Portugal
 Sofort Überweisung (Klarna Pay now)	            Schweden
@@ -213,25 +206,26 @@ Sofort Überweisung (Klarna Pay now)	            Ungarn
 Sofort Überweisung (Klarna Pay now)	            Vereinigte Staaten
 Unzer Bank Transfer	(Überweisung)               Deutschland
 Unzer Bank Transfer	(Überweisung)               Österreich
-Vorkasse	                                    Belgien
-Vorkasse	                                    Deutschland
-Vorkasse	                                    Estland
-Vorkasse	                                    Finnland
-Vorkasse	                                    Griechenland
-Vorkasse	                                    Irland
-Vorkasse	                                    Italien
-Vorkasse	                                    Lettland
-Vorkasse	                                    Litauen
-Vorkasse	                                    Luxemburg
-Vorkasse	                                    Malta
-Vorkasse	                                    Niederlande
-Vorkasse	                                    Österreich
-Vorkasse	                                    Portugal
-Vorkasse	                                    Slowakei
-Vorkasse	                                    Slowenien
-Vorkasse	                                    Spanien
-Vorkasse	                                    Zypern
-WeChat	                                        Weltweit
+Unzer Vorkasse	                                Weltweit
+WeChat                                          Belgien
+WeChat	                                        Deutschland
+WeChat	                                        Dänemark
+WeChat	                                        Finnland
+WeChat	                                        Frankreich
+WeChat	                                        Griechenland
+WeChat	                                        Großbritannien
+WeChat	                                        Irland
+WeChat	                                        Italien
+WeChat	                                        Liechtenstein
+WeChat	                                        Luxemburg
+WeChat	                                        Malta
+WeChat	                                        Niederlande
+WeChat	                                        Norwegen
+WeChat	                                        Österreich
+WeChat	                                        Portugal
+WeChat	                                        Schweden
+WeChat	                                        Spanien
+WeChat	                                        Ungarn
 =============================================== ================
 
 

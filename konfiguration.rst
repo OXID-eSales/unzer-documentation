@@ -227,8 +227,6 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
 #. Geben Sie im Feld :guilabel:`Firma` Ihren Firmennamen ein.
 #. Markieren Sie unter :guilabel:`Unterstützte Kreditkarten` das Kreditkarten-Unternehmen, deren Kreditkarte Ihrem Apple Pay-Konto zugeordnet ist.
 
-.. todo: #tbd: Ist das Feld Firma weggefallen? "Geben Sie im Feld :guilabel:`Firma` Ihren Firmennamen ein." -- ja, ist weg; Firma nur bei Paylater: KAuf auf Rechnung: für B2B
-
    .. attention::
 
       **Konversion gefährdet**

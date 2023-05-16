@@ -32,6 +32,11 @@ Neue oder geänderte Funktionen
 .. todo: #EC: Muss der Shopbetreiber an dieser Stelle etwas wissen über die unterschiedliche Risikobewerrtung von B2C und B2B-Kunden? Wirkt es sich auf die Konditionen aus oder trägt Unzer das Risiko?  -- muss mit Customer Center besprochen werden; sollte auf docs page beschrieben sein: EC prüft.
         #EC: Was ist die URL der docs page? -- https://docs.unzer.com/payment-methods/ ?
 
+* Beachten Sie Einschränkungen bei den Ländern, für die Sie bestimmte Zahlungsarten anbieten können.
+
+  Weitere Informationen finden Sie im `Changelog <https://github.com/OXID-eSales/unzer/blob/v1.1.0/CHANGELOG.md>`_.
+
+  Die aktuelle gültigen Länder finden Sie unter :ref:`einfuehrung:Welche Märkte sind abgedeckt?`.
 
 Korrekturen
 -----------
