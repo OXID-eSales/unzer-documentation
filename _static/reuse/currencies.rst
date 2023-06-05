@@ -26,16 +26,21 @@ EUR      SEPA Lastschrift (Direct Debit)
 EUR      Unzer Kauf auf Rechnung (Paylater)
 EUR      Unzer Vorkasse
 EUR      WeChat
+GBP      AliPay
 GBP      ApplePay
 GBP      WeChat
+HKD      AliPay
 HRK      ApplePay
 HUF      ApplePay
 ISK      ApplePay
 NOK      ApplePay
+NZD      AliPay
 PLN      ApplePay
 PLN      Przelewy24
 RON      ApplePay
 SEK      ApplePay
+SGD      AliPay
+USD      AliPay
 USD      ApplePay
 USD      WeChat
 ======== ================
