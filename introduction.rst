@@ -28,7 +28,6 @@ Austria         Sofort
 Austria         eps Bank Transfer (Electronic Payment Standard)
 Austria         Unzer Invoice (Paylater)
 Austria         Unzer Direct Debit (SEPA Direct Debit)
-Austria         Unzer Bank Transfer
 Austria         WeChat
 Belgium         Alipay
 Belgium         Sofort
@@ -43,7 +42,6 @@ Germany         Alipay
 Germany         Giropay
 Germany         Unzer Invoice
 Germany         Sofort
-Germany         Unzer Bank Transfer (wire transfer)
 Germany         WeChat
 Greece          WeChat
 Great Britain   WeChat
@@ -95,8 +93,6 @@ Sofort                                          Netherlands
 Sofort                                          Spain
 PayPal                                          Worldwide
 Przelewy24                                      Poland
-Unzer Bank Transfer                             Austria
-Unzer Bank Transfer                             Germany
 Unzer Direct Debit (SEPA Direct Debit)          Austria
 Unzer Direct Debit (SEPA Direct Debit)          Germany
 Unzer Invoice (Paylater)                        Austria
@@ -161,10 +157,7 @@ Conditions
 
 To find out which conditions you benefit from when working with Unzer, see `www.unzer.com/en/price <https://www.unzer.com/en/price/>`_.
 
-Likewise, you agree with Unzer whether, for example,
-
-* you want to offer your customers payment by installments, and at what interest rate
-* it might make sense to offer delayed payment for your products
+Likewise, you agree with Unzer whether, for example, if it might make sense to offer delayed payment for your products
   |br|
   Delayed payment can be useful, for example, for individualized products that you only manufacture to order.
 
