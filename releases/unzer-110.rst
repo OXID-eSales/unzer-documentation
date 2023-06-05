@@ -16,9 +16,9 @@ Neue oder geänderte Funktionen
 
   .. todo: #EC/#ML: Als Altkunde: Kann ich Unzer Kauf auf Rechnung und Unzer Kauf auf Rechnung (Paylater) parallel nutzen, oder muss ich ich entscheiden und dann entsprechend neu konfigurieren?
 
-  .. todo: #EC: Ist das die offizielle URL/Infoquelle?: https://docs.unzer.com/payment-methods/ ?
+  .. todo: #EC: Ist das die offizielle URL/Infoquelle zu Unzer Kauf auf Rechnung (Paylater)?: https://docs.unzer.com/payment-methods/ ?
 
-  Weitere Informationen finden Sie unter `Buy Now, Pay Later <https://www.unzer.com/de/press/articles/unzer-launches-buy-now-pay-later/>`_.
+  Weitere Informationen finden Sie unter `docs.unzer.com/payment-methods <https://docs.unzer.com/payment-methods/>`_.
 
   Um :productname:`Unzer Kauf auf Rechnung (Paylater)` zu nutzen, tun Sie Folgendes:
 
@@ -34,16 +34,14 @@ Neue oder geänderte Funktionen
 
 * Beachten Sie Einschränkungen bei den Ländern, für die Sie bestimmte Zahlungsarten anbieten können.
 
-  Weitere Informationen finden Sie im `Changelog <https://github.com/OXID-eSales/unzer/blob/v1.1.0/CHANGELOG.md>`_.
+  Weitere Informationen finden Sie im `Changelog <https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md>`_.
 
   Die aktuelle gültigen Länder finden Sie unter :ref:`einfuehrung:Welche Märkte sind abgedeckt?`.
 
 Korrekturen
 -----------
 
-.. todo: #tbd: Gibt es bug fixes in 1.1?: ja: im https://github.com/OXID-eSales/unzer-module/blob/b-6.3.x/CHANGELOG.md
-
-Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer/blob/v1.1.0/CHANGELOG.md.
+Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md.
 
 
 Update

@@ -20,7 +20,7 @@ Moduldokumentation
    Konfiguration <konfiguration>
    Betrieb <betrieb>
    Release Notes <releases/unzer-110>
-   Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.1.0/CHANGELOG.md>
+   Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md>
 
 ..
    Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
