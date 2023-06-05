@@ -24,82 +24,52 @@ Worldwide       Cards
 Worldwide       PayPal
 Worldwide       Unzer Prepayment
 Austria         Alipay
-Austria         Sofort Bank Transfer (Klarna Pay now)
+Austria         Sofort
 Austria         eps Bank Transfer (Electronic Payment Standard)
 Austria         Unzer Invoice (Paylater)
 Austria         Unzer Direct Debit (SEPA Direct Debit)
 Austria         Unzer Bank Transfer
 Austria         WeChat
 Belgium         Alipay
-Belgium         Unzer Direct Debit (SEPA Direct Debit)
-Belgium         Sofort Bank Transfer (Klarna Pay now)
+Belgium         Sofort
 Belgium         Bancontact
 Belgium         WeChat
-Cyprus          Unzer Direct Debit (SEPA Direct Debit)
-Czech Republic  Sofort Bank Transfer (Klarna Pay now)
-Denmark         Sofort Bank Transfer (Klarna Pay now)
 Denmark         WeChat
-Estonia         Unzer Direct Debit (SEPA Direct Debit)
-Finland         Unzer Direct Debit (SEPA Direct Debit)
-Finland         Sofort Bank Transfer (Klarna Pay now)
 Finland         WeChat
-France          Sofort Bank Transfer (Klarna Pay now)
 France          WeChat
 Germany         Unzer Invoice (Paylater)
 Germany         Unzer Direct Debit (SEPA Direct Debit)
 Germany         Alipay
 Germany         Giropay
 Germany         Unzer Invoice
-Germany         Unzer Direct Debit (SEPA Direct Debit) (secured with Unzer)
-Germany         Sofort Bank Transfer (Klarna Pay now)
+Germany         Sofort
 Germany         Unzer Bank Transfer (wire transfer)
 Germany         WeChat
-Greece          Unzer Direct Debit (SEPA Direct Debit)
 Greece          WeChat
-Great Britain   Sofort Bank Transfer (Klarna Pay now)
 Great Britain   WeChat
-Hungary         Sofort Bank Transfer (Klarna Pay now)
 Hungary         WeChat
-Ireland         Unzer Direct Debit (SEPA Direct Debit)
 Ireland         WeChat
-Italy           Unzer Direct Debit (SEPA Direct Debit)
 Italy           Alipay
-Italy           Sofort Bank Transfer (Klarna Pay now)
+Italy           Sofort
 Italy           WeChat
-Latvia          Unzer Direct Debit (SEPA Direct Debit)
 Liechtenstein   WeChat
-Lithuania       Unzer Direct Debit (SEPA Direct Debit)
 Luxembourg      Unzer Invoice
-Luxembourg      Unzer Direct Debit (SEPA Direct Debit)
 Luxembourg      WeChat
-Malta           Unzer Direct Debit (SEPA Direct Debit)
 Malta           WeChat
 Netherlands     iDEAL
 Netherlands     Alipay
 Netherlands     Unzer Invoice (Paylater)
-Netherlands     Unzer Direct Debit (SEPA Direct Debit)
-Netherlands     Sofort Bank Transfer (Klarna Pay now)
+Netherlands     Sofort
 Netherlands     WeChat
-Norway          Sofort Bank Transfer (Klarna Pay now)
 Norway          WeChat
 Poland          Przelewy24
-Poland          Sofort Bank Transfer (Klarna Pay now)
-Portugal        Unzer Direct Debit (SEPA Direct Debit)
-Portugal        Sofort Bank Transfer (Klarna Pay now)
 Portugal        WeChat
-Sweden          Sofort Bank Transfer (Klarna Pay now)
 Sweden          WeChat
-Switzerland     Sofort Bank Transfer (Klarna Pay now)
-Slovakia        Unzer Direct Debit (SEPA Direct Debit)
-Slovakia        Sofort Bank Transfer (Klarna Pay now)
 Slovenia        Unzer Invoice
-Slovenia        Unzer Direct Debit (SEPA Direct Debit)
-Spain           Unzer Direct Debit (SEPA Direct Debit)
 Spain           Alipay
-Spain           Sofort Bank Transfer (Klarna Pay now)
+Spain           Sofort
 Spain           WeChat
 Switzerland     Unzer Invoice (Paylater)
-United States   Sofort Bank Transfer (Klarna Pay now)
 ==============  ========================================
 
 
@@ -117,48 +87,18 @@ Card Payment                                    Worldwide
 eps Überweisung (Electronic Payment Standard)   Austria
 Giropay                                         Germany
 iDEAL                                           Netherlands
-Instant Bank Transfer (Klarna Pay now)          Czech Republic
-Instant Bank Transfer (Klarna Pay now)          Finland
-Instant Bank Transfer (Klarna Pay now)          France
-Instant Bank Transfer (Klarna Pay now)          Hungary
-Instant Bank Transfer (Klarna Pay now)          Italy
-Instant Bank Transfer (Klarna Pay now)          Norway
-Instant Bank Transfer (Klarna Pay now)          Poland
-Instant Bank Transfer (Klarna Pay now)          Portugal
-Instant Bank Transfer (Klarna Pay now)          Slovakia
-Instant Bank Transfer (Klarna Pay now)          Spain
-Instant Bank Transfer (Klarna Pay now)          Sweden
-Instant Bank Transfer (Klarna Pay now)          United Kingdom
+Sofort                                          Austria
+Sofort                                          Belgium
+Sofort                                          Germany
+Sofort                                          Italy
+Sofort                                          Netherlands
+Sofort                                          Spain
 PayPal                                          Worldwide
 Przelewy24                                      Poland
-SEPA Direct Debit (secured with Unzer)          Germany
-SEPA Direct Debit (secured with Unzer)          Austria
-SEPA Direct Debit (secured with Unzer)          Belgium
-SEPA Direct Debit (secured with Unzer)          Denmark
-SEPA Direct Debit (secured with Unzer)          Germany
-SEPA Direct Debit (secured with Unzer)          Netherlands
-SEPA Direct Debit (secured with Unzer)          Switzerland
-SEPA Direct Debit (secured with Unzer)          United States
 Unzer Bank Transfer                             Austria
 Unzer Bank Transfer                             Germany
 Unzer Direct Debit (SEPA Direct Debit)          Austria
-Unzer Direct Debit (SEPA Direct Debit)          Belgium
-Unzer Direct Debit (SEPA Direct Debit)          Cyprus
-Unzer Direct Debit (SEPA Direct Debit)          Estonia
-Unzer Direct Debit (SEPA Direct Debit)          Finland
 Unzer Direct Debit (SEPA Direct Debit)          Germany
-Unzer Direct Debit (SEPA Direct Debit)          Greece
-Unzer Direct Debit (SEPA Direct Debit)          Ireland
-Unzer Direct Debit (SEPA Direct Debit)          Italy
-Unzer Direct Debit (SEPA Direct Debit)          Latvia
-Unzer Direct Debit (SEPA Direct Debit)          Lithuania
-Unzer Direct Debit (SEPA Direct Debit)          Luxembourg
-Unzer Direct Debit (SEPA Direct Debit)          Malta
-Unzer Direct Debit (SEPA Direct Debit)          Netherlands
-Unzer Direct Debit (SEPA Direct Debit)          Portugal
-Unzer Direct Debit (SEPA Direct Debit)          Slovakia
-Unzer Direct Debit (SEPA Direct Debit)          Slovenia
-Unzer Direct Debit (SEPA Direct Debit)          Spain
 Unzer Invoice (Paylater)                        Austria
 Unzer Invoice (Paylater)                        Germany
 Unzer Invoice (Paylater)                        Netherlands
