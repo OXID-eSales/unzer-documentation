@@ -1,9 +1,7 @@
 Unzer Payment für OXID V. 1.1
 =============================
 
-.. todo: #DP: wann ist Release?
-
-Release-Datum: 30.05.2023
+Release-Datum: 02.06.2023
 
 Neue oder geänderte Funktionen
 ------------------------------
@@ -11,8 +9,7 @@ Neue oder geänderte Funktionen
 * Nutzen Sie die Buy Now, Pay Later-Zahlungsart :productname:`Unzer Kauf auf Rechnung (Paylater)`.
 
   .. todo: #EC: Stimmt die folgende Aussage? Was ist aus Altkundensicht der Unterschied zu Unzer Kauf auf Rechnung (Paylater), welche Vorteile habe ich durch einen Umstieg?
-
-  Zusätzlich zum bisherigen Zahlen auf Rechnung ermöglichen Sie Ihren Kunden damit auch Ratenkauf und Bezahlen per Lastschrift.
+        Zusätzlich zum bisherigen Zahlen auf Rechnung ermöglichen Sie Ihren Kunden damit auch Ratenkauf und Bezahlen per Lastschrift.
 
   .. todo: #EC/#ML: Als Altkunde: Kann ich Unzer Kauf auf Rechnung und Unzer Kauf auf Rechnung (Paylater) parallel nutzen, oder muss ich ich entscheiden und dann entsprechend neu konfigurieren?
 
@@ -32,9 +29,10 @@ Neue oder geänderte Funktionen
 .. todo: #EC: Muss der Shopbetreiber an dieser Stelle etwas wissen über die unterschiedliche Risikobewerrtung von B2C und B2B-Kunden? Wirkt es sich auf die Konditionen aus oder trägt Unzer das Risiko?  -- muss mit Customer Center besprochen werden; sollte auf docs page beschrieben sein: EC prüft.
         #EC: Was ist die URL der docs page? -- https://docs.unzer.com/payment-methods/ ?
 
-* Beachten Sie Einschränkungen bei den Ländern, für die Sie bestimmte Zahlungsarten anbieten können.
+* Beachten Sie Einschränkungen bei den Ländern und Währungen, für die Sie bestimmte Zahlungsarten anbieten können.
 
-  Die aktuelle gültigen Länder finden Sie unter :ref:`einfuehrung:Welche Märkte sind abgedeckt?`.
+  * Die aktuelle gültigen Länder finden Sie unter :ref:`einfuehrung:Welche Märkte sind abgedeckt?`.
+  * Die aktuelle gültigen Währungen finden Sie unter :ref:`einfuehrung:Welche Währungen sind abgedeckt?`.
 
   Weitere Informationen finden Sie im `Changelog <https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md>`_.
 
@@ -53,11 +51,10 @@ Voraussetzungen
 ^^^^^^^^^^^^^^^
 
 * Sie haben OXID eShop V. 6.1.x bis 6.5.x.
+* Sie haben Unzer Payment für OXID V. 1.0.x.
 
 Vorgehen
 ^^^^^^^^
-
-.. todo: #tbd: verifizieren: stimmt
 
 Führen Sie den folgenden Befehl aus.
 

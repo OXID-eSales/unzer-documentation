@@ -264,17 +264,14 @@ Wenn Sie :productname:`Unzer upaylater` nutzen wollen, geben Sie die öffentlich
    * Production Public-Key
    * Production Private-Key
 
-
-
 .. todo: #EC: gibt es spezifische Doku? --
         Wird es Infos geben unter  https://docs.unzer.com/payment-methods/?
         Weitere Informationen über das Authentifizieren bei Unzer finden Sie unter `docs.unzer.com/server-side-integration/api-basics/authentication <https://docs.unzer.com/server-side-integration/api-basics/authentication/>`_.
 
-.. todo: #tbd: Verifizieren :menuselection:`Einstell. --> zusätzliche Optionen für Unzer Rechnung (Paylater)`
 
 |procedure|
 
-1. Geben Sie unter :menuselection:`Einstell. --> zusätzliche Optionen für Unzer Rechnung (Paylater)` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein (:ref:`oxdamc04`).
+1. Geben Sie unter :menuselection:`Einstell. --> zusätzliche Optionen für Unzer Rechnung (Paylater)` die von Unzer bereitgestellten Schlüssel in die entsprechenden Felder ein (:ref:`oxdamc04`).
 #. Speichern Sie Ihre Einstellungen.
 
 .. note::
@@ -307,12 +304,10 @@ Geschäftskunden (B2B) erkennt das System automatisch an einem Eintrag im Eingab
 
 Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzung des Kunden.
 
-.. todo: #EC: Wenn ich in einer schlechten Gegen wohne und zu jung bin, kann es dann sein, dass ich wegen schlechter Bonität den Checkout nicht abschließen kann?
+.. todo: #EC: Wenn ich in einer schlechten Gegend wohne und zu jung bin, kann es dann sein, dass ich wegen schlechter Bonität den Checkout nicht abschließen kann?
 
 .. todo: #tbd: Wie mache ich die Spracheinstellungen, so dass die Abfrage auch auf Englisch erscheint? -- Müsste es eine Sprach-Konfiguration wie bei Adyen geben? EN ist aktiv bei mir: müsste jetzt richtig sein
 .. todo: #EC/#ML: Die Liste der Rechtsformen wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?
-.. todo: #tbd: Der Ausdruck "Bitte Wert angeben." verschwindet nicht, wenn ich Werte angebe. -- technisch nicht vermeidbar
-
 
 .. _oxdamc05:
 
@@ -323,8 +318,8 @@ Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzu
 
    Abb.: Geburtsdatum und Rechtsform angeben
 
-Optional: Korrekte Währungseinstellungen sicherstellen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Empfohlen: Korrekte Währungseinstellungen sicherstellen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Stellen Sie sicher, dass die Währungen, die Ihr OXID eShop unterstützt, übereinstimmen mit den Währungen, die eine Zahlungsart unterstützt.
 
@@ -406,6 +401,12 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
    * Im Feld :guilabel:`Live öffentlicher Schlüssel` ist der :technicalname:`Production Public-Key`.
    * Im Feld :guilabel:`Live privater Schlüssel` ist der :technicalname:`Production Private-Key`.
 #. Wählen Sie unter :guilabel:`Betriebsmodus` den Eintrag :guilabel:`Livebetrieb` und wählen Sie :guilabel:`Speichern`.
+
+   .. todo: #ML: Was hat es mit dem Hinweis unter Module - Unzer - Stamm auf sich? -- Warum ist das wichtig?, Was steht da, was noch nicht in Doku?
+        "Vor dem Start bitte lesen und prüfen:
+                Go-live checklist
+                Prüfen Sie Ihren Account und Ihre Zahlarten direkt bei Unzer"
+
 #. Wenn Sie :productname:`Apple Pay` nutzen, tun Sie Folgendes:
 
    a. Geben Sie Schlüssel und Zertifikate unter :guilabel:`zusätzliche Optionen für Apple Pay` erneut ein.

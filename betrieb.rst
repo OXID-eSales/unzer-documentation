@@ -7,7 +7,7 @@ Nehmen Sie beispielsweise Rückzahlungen vor oder beheben Sie die Ursachen von Z
 
 |procedure|
 
-1. Wählen Sie :menuselection:`Bestellungen verwalten --> Bestellungen`.
+1. Wählen Sie :menuselection:`Bestellungen --> Bestellungen verwalten`.
 #. Wählen Sie die Bestellung.
 #. Zeigen Sie auf der Registerkarte :guilabel:`Unzer` die Daten der Transaktion an.
 #. Prüfen Sie den Status des Zahlungsvorgangs:

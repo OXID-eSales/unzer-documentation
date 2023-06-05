@@ -16,23 +16,17 @@ Welche Märkte sind abgedeckt?
 
 Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
-.. todo: #EC: Welche Unzer-Zahlungsarten gibt es mit 1.1?:
-    Hinzu kmomt: Unzer Kauf auf Rechnung (Paylater)
+.. todo: Unzer-Zahlungsarten mit 1.1? Info:
     "Unzer Kauf auf Rechnung" wird "Unzer Kauf auf Rechnung (alt)"? -- bleibt auf jeden Fall vorläufig drin.
-    #EC: Das alte Unzer Kauf auf Rechnung erwähnen wir in den folgenden Tabellen nicht mehr, korrekt? Nur in Release Note
+    #tbd: Das alte Unzer Kauf auf Rechnung erwähnen wir in den folgenden Tabellen nicht mehr Evt. in Release Note
 
-.. todo: #EC Gemäß https://docs.unzer.com/payment-methods/
+.. todo: Gemäß https://docs.unzer.com/payment-methods/
          folgende deprecated, kommen aber gleichzeitig noch in Liste der Zahlungsarten vo:
             Ratenzahlung mit Unzer	(Unzer Installment) also weg aus Liste?
-            [Deprecated] Unzer Invoice
-            [Deprecated] Unzer Invoice Secured
+            [Deprecated] Unzer Invoice -- Unzer Kauf auf Rechnung
+            [Deprecated] Unzer Invoice Secured -- Unzer Kauf auf Rechnung
         Wo kommt Unzer Kauf auf Rechnung (Paylater) in https://docs.unzer.com/payment-methods/ vor?
 
-.. todo: Siehe https://github.com/OXID-eSales/unzer-module/blob/b-6.3.x/CHANGELOG.md:
-        Definitionen: https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/src/Core/UnzerDefinitions.php
-        Done:New country restrictions based on the Unzer documentation:
-
-.. todo: #ia: Definitionseinschränkungen für Währungen ergänzen: verfügbar mit RC6
 
 ======================= ========================================================
 Markt                   Zahlungsmethode
@@ -41,13 +35,11 @@ Weltweit	            Apple Pay
 Weltweit	            Kartenzahlung
 Weltweit	            PayPal
 Weltweit	            Unzer Vorkasse
-Belgien	                Unzer Kauf auf Rechnung (Paylater)
 Belgien 	            Alipay
 Belgien	                Sofort
 Belgien	                WeChat
 Belgien                 Bancontact
 Dänemark                WeChat
-Deutschland	            Unzer Kauf auf Rechnung (Paylater)
 Deutschland	            Alipay
 Deutschland	            SEPA-Lastschrift
 Deutschland	            Giropay
@@ -55,25 +47,17 @@ Deutschland	            Unzer Kauf auf Rechnung (Paylater)
 Deutschland	            Sofort
 Deutschland	            Unzer Bank Transfer (Überweisung)
 Deutschland             WeChat
-Estland	                Unzer Kauf auf Rechnung (Paylater)
 Finnland	            Unzer Kauf auf Rechnung
 Finnland                WeChat
 Frankreich	            WeChat
-Griechenland	        Unzer Kauf auf Rechnung (Paylater)
 Griechenland          	WeChat
 Großbritannien      	WeChat
-Irland	                Unzer Kauf auf Rechnung (Paylater)
 Irland	                WeChat
 Island	                WeChat
-Italien	                Unzer Kauf auf Rechnung (Paylater)
 Italien 	            Alipay
 Italien	                WeChat
-Lettland	            Unzer Kauf auf Rechnung (Paylater)
 Liechtenstein           WeChat
-Litauen	                Unzer Kauf auf Rechnung (Paylater)
-Luxemburg	            Unzer Kauf auf Rechnung (Paylater)
 Luxemburg	            WeChat
-Malta	                Unzer Kauf auf Rechnung (Paylater)
 Malta   	            WeChat
 Niederlande	            Alipay
 Niederlande	            iDEAL
@@ -89,19 +73,14 @@ Norwegen	            WeChat
 Österreich	            Unzer Bank Transfer (Überweisung)
 Österreich              WeChat
 Polen	                Przelewy24
-Portugal	            Unzer Kauf auf Rechnung (Paylater)
 Portugal	            WeChat
 Schweden	            WeChat
 Schweiz 	            Unzer Kauf auf Rechnung (Paylater)
-Slowakei	            Unzer Kauf auf Rechnung (Paylater)
-Slowenien	            Unzer Kauf auf Rechnung (Paylater)
-Spanien	                Unzer Kauf auf Rechnung (Paylater)
 Spanien 	            Alipay
 Spanien	                Sofort
 Spanien	                WeChat
 Italien	                Sofort
 Ungarn	                WeChat
-Zypern	                Unzer Kauf auf Rechnung (Paylater)
 ======================= ========================================================
 
 Welche Märkte sind abgedeckt (sortiert nach Zahlungsmethoden)?
@@ -160,8 +139,8 @@ WeChat	                                        Spanien
 WeChat	                                        Ungarn
 =============================================== ================
 
-Unterstützte Währungen
-----------------------
+Welche Währungen sind abgedeckt?
+--------------------------------
 
 .. include:: /_static/reuse/currencies.rst
 
@@ -173,7 +152,7 @@ Unterstützte Währungen
 
    Stellen Sie deshalb beim Konfigurieren sicher, dass Ihr OXID eShop nur diejenigen Währungen anbietet, die von den gewühlten Zahlungsarten unterstützt werden.
 
-   Weitere Informationen zum Konfigurieren der Währungen Ihres OXID eShops finden Sie unter :ref:`konfiguration:Optional: Korrekte Währungseinstellungen sicherstellen`.
+   Weitere Informationen zum Konfigurieren der Währungen Ihres OXID eShops finden Sie unter :ref:`konfiguration:Empfohlen: Korrekte Währungseinstellungen sicherstellen`.
 
 Wo finde ich weitere Informationen?
 -----------------------------------
