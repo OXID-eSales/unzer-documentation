@@ -20,13 +20,6 @@ Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden
     "Unzer Kauf auf Rechnung" wird "Unzer Kauf auf Rechnung (alt)"? -- bleibt auf jeden Fall vorläufig drin.
     #tbd: Das alte Unzer Kauf auf Rechnung erwähnen wir in den folgenden Tabellen nicht mehr Evt. in Release Note
 
-.. todo: Gemäß https://docs.unzer.com/payment-methods/
-         folgende deprecated, kommen aber gleichzeitig noch in Liste der Zahlungsarten vo:
-            Ratenzahlung mit Unzer	(Unzer Installment) also weg aus Liste?
-            [Deprecated] Unzer Invoice -- Unzer Kauf auf Rechnung
-            [Deprecated] Unzer Invoice Secured -- Unzer Kauf auf Rechnung
-        Wo kommt Unzer Kauf auf Rechnung (Paylater) in https://docs.unzer.com/payment-methods/ vor?
-
 
 ======================= ========================================================
 Markt                   Zahlungsmethode
@@ -45,7 +38,6 @@ Deutschland	            SEPA-Lastschrift
 Deutschland	            Giropay
 Deutschland	            Unzer Kauf auf Rechnung (Paylater)
 Deutschland	            Sofort
-Deutschland	            Unzer Bank Transfer (Überweisung)
 Deutschland             WeChat
 Finnland	            Unzer Kauf auf Rechnung
 Finnland                WeChat
@@ -70,7 +62,6 @@ Norwegen	            WeChat
 Österreich	            Unzer Kauf auf Rechnung (Paylater)
 Österreich	            Sofort
 Österreich	            SEPA-Lastschrift
-Österreich	            Unzer Bank Transfer (Überweisung)
 Österreich              WeChat
 Polen	                Przelewy24
 Portugal	            WeChat
@@ -115,8 +106,6 @@ Sofort                                          Niederlande
 Sofort                                          Österreich
 Sofort                                          Spanien
 Sofort                                          Italien
-Unzer Bank Transfer	(Überweisung)               Deutschland
-Unzer Bank Transfer	(Überweisung)               Österreich
 Unzer Vorkasse	                                Weltweit
 WeChat                                          Belgien
 WeChat	                                        Deutschland
@@ -176,10 +165,7 @@ Konditionen
 
 Von welchen Konditionen Sie bei der Zusammenarbeit mit Unzer profitieren, erfahren Sie unter `www.unzer.com/de/online-loesungen-preise <https://www.unzer.com/de/online-loesungen-preise/>`_.
 
-Ebenfalls vereinbaren Sie mit Unzer beispielsweise,
-
-* ob Sie Ihren Kunden Ratenzahlung anbieten wollen, und zu welchem Zinssatz
-* ob es für Ihre Produkte eventuell sinnvoll ist, verzögerten Zahlung anzubieten
+Ebenfalls vereinbaren Sie mit Unzer beispielsweise, ob es für Ihre Produkte eventuell sinnvoll ist, verzögerten Zahlung anzubieten
   |br|
   Verzögerte Zahlung kann beispielsweise sinnvoll sein bei individualisierten Produkten, die Sie erst auf Bestellung fertigen.
 
