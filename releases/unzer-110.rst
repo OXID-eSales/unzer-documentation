@@ -29,7 +29,6 @@ Corrections
 
 For the corrections, see the changelog (GitHub) under https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md.
 
-
 Update
 ------
 
