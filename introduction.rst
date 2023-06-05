@@ -126,8 +126,8 @@ WeChat	                                        Hungary
 =============================================== ================
 
 
-Which currencies are supported?
--------------------------------
+Which currencies are covered?
+-----------------------------
 
 .. include:: /_static/reuse/currencies.rst
 

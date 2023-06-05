@@ -19,12 +19,7 @@ Module Documentation
    Installation <installation>
    Configuration <configuration>
    Operation <operation>
-
-..
-   Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
-
-..
-   Update <update>
+   Release Notes <releases/unzer-110>
 
 .. image:: media/icons/home.png
    :width: 0 px
