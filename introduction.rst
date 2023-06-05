@@ -126,18 +126,20 @@ WeChat	                                        Hungary
 =============================================== ================
 
 
-Which currencies does Apple Pay support?
-----------------------------------------
+Which currencies are supported?
+-------------------------------
 
-If you use :productname:`Apple Pay`, consider the following restriction:
+.. include:: /_static/reuse/currencies.rst
 
-If you offer currencies in your OXID eShop that :productname:`Apple Pay` does not support, the :productname:`Apple Pay` button will not be displayed.
+.. note::
 
-Therefore, when configuring, make sure that your OXID eShop offers only those currencies supported by :productname:`Apple Pay`.
+   **Ensuring correct currency settings**
 
-.. include:: /_static/reuse/apple-pay-currencies.rst
+   If you offer currencies in your OXID eShop that a payment method does not support, the respective button will not be displayed in the checkout.
 
-For more information about configuring the currencies of your OXID eShop, see :ref:`configuration:Optional: Ensuring correct currency settings`.
+   Therefore, when configuring, make sure that your OXID eShop offers only those currencies that are supported by the selected payment types.
+
+   For more information about configuring the currencies of your OXID eShop, see :ref:`configuration:Recommended: Ensuring correct currency settings`.
 
 Where can I find more information?
 ----------------------------------

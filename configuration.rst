@@ -248,12 +248,12 @@ To do this, generate the following :productname:`Apple Pay` credentials, have th
    Debit card payments are used less frequently than credit card payments. For example, if you consider credit cards more reliable, choose this card type as the only one allowed.
 #. Save your settings.
 
-Optional: Ensuring correct currency settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Recommended: Ensuring correct currency settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Make sure that the currencies your OXID eShop supports match the currencies that :productname:`Apple Pay` supports.
+Make sure that the currencies that your OXID eShop supports match the currencies that a payment method supports.
 
-However, you can`t go wrong: For currencies that :productname:`Apple Pay` does not support, only the :productname:`Apple Pay` button will not be displayed.
+However, nothing can go wrong: For currencies that a payment method does not support, only the respective button for the payment method is not displayed in the checkout.
 
 .. include:: /_static/reuse/apple-pay-currencies.rst
 
@@ -266,9 +266,8 @@ However, you can`t go wrong: For currencies that :productname:`Apple Pay` does n
    #. In the input field for currencies, check whether you want to add or remove currencies.
 #. To ensure a clean configuration, do the following:
 
-   #. Under :menuselection:`Shop Settings --> Payment Methods`, for the :productname:`Apple Pay` payment type, choose the :guilabel:`Country` tab.
-   #. Make sure that only those countries are assigned that have the currencies supported by :productname:`Apple Pay`.
-
+   a. Under :menuselection:`Shop Settings --> Payment Methods`, for the respective payment type, choose the :guilabel:`Country` tab.
+   #. Make sure that only those countries are assigned whose currency is supported by the payment type.
 
 Other: Ensuring optimum performance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
