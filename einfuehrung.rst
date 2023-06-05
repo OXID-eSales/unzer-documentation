@@ -32,7 +32,7 @@ Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden
         Definitionen: https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/src/Core/UnzerDefinitions.php
         Done:New country restrictions based on the Unzer documentation:
 
-.. todo: #tbd: Definitionseinschränkungen für Währungen ergänzen: verfügbar mit RC6
+.. todo: #ia: Definitionseinschränkungen für Währungen ergänzen: verfügbar mit RC6
 
 ======================= ========================================================
 Markt                   Zahlungsmethode
@@ -160,23 +160,20 @@ WeChat	                                        Spanien
 WeChat	                                        Ungarn
 =============================================== ================
 
+Unterstützte Währungen
+----------------------
 
-Welche Währungen unterstützt Apple Pay?
----------------------------------------
+.. include:: /_static/reuse/currencies.rst
 
-Wenn Sie :productname:`Apple Pay` nutzen, dann berücksichtigen Sie folgende Einschränkung:
+.. note::
 
-.. todo: #tbd: verify the following: "Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt." -- stimmt für alle Zahlungsarten
-   " -- no restriction at the moment, verification would have to go in: ML provides feedback, text will then be true
+   **Korrekte Währungseinstellungen sicherstellen**
 
-Wenn Sie in Ihrem OXID eShop Währungen anbieten, die :productname:`Apple Pay` nicht unterstützt, dann wird die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
+   Wenn Sie in Ihrem OXID eShop Währungen anbieten, die eine Zahlungsart nicht unterstützt, dann wird jeweilige Schaltfläche nicht im Checkout angezeigt.
 
-Stellen Sie deshalb beim Konfigurieren sicher, dass Ihr OXID eShop nur diejenigen Währungen anbietet, die :productname:`Apple Pay` unterstützt.
+   Stellen Sie deshalb beim Konfigurieren sicher, dass Ihr OXID eShop nur diejenigen Währungen anbietet, die von den gewühlten Zahlungsarten unterstützt werden.
 
-.. include:: /_static/reuse/apple-pay-currencies.rst
-
-
-Weitere Informationen zum Konfigurieren der Währungen Ihres OXID eShops finden Sie unter :ref:`konfiguration:Optional: Korrekte Apple Pay-Währungseinstellungen sicherstellen`.
+   Weitere Informationen zum Konfigurieren der Währungen Ihres OXID eShops finden Sie unter :ref:`konfiguration:Optional: Korrekte Währungseinstellungen sicherstellen`.
 
 Wo finde ich weitere Informationen?
 -----------------------------------

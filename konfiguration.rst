@@ -323,15 +323,14 @@ Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzu
 
    Abb.: Geburtsdatum und Rechtsform angeben
 
-Optional: Korrekte Apple Pay-Währungseinstellungen sicherstellen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Optional: Korrekte Währungseinstellungen sicherstellen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Stellen Sie sicher, dass die Währungen, die Ihr OXID eShop unterstützt, übereinstimmen mit den Währungen, die :productname:`Apple Pay` unterstützt.
+Stellen Sie sicher, dass die Währungen, die Ihr OXID eShop unterstützt, übereinstimmen mit den Währungen, die eine Zahlungsart unterstützt.
 
-Schiefgehen kann allerdings nichts: Bei Währungen, die :productname:`Apple Pay` nicht unterstützt, wird lediglich die :productname:`Apple Pay`-Schaltfläche nicht angezeigt.
+Schiefgehen kann allerdings nichts: Bei Währungen, die eine Zahlungsart nicht unterstützt, wird lediglich die jeweilige Schaltfläche für die Zahlungsart nicht im Checkout angezeigt.
 
-
-.. include:: /_static/reuse/apple-pay-currencies.rst
+.. include:: /_static/reuse/currencies.rst
 
 |procedure|
 
@@ -342,9 +341,8 @@ Schiefgehen kann allerdings nichts: Bei Währungen, die :productname:`Apple Pay`
    #. Prüfen Sie in dem Eingabefeld für Währungen, ob Sie Währungen hinzufügen oder entfernen wollen.
 #. Um eine saubere Konfiguration sicherzustellen, tun Sie Folgendes:
 
-   #. Wählen Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` für die Zahlungsart :productname:`Apple Pay` die Registerkarte :guilabel:`Länder`.
-   #. Stellen Sie sicher, dass nur solche Länder zugeordnet sind, welche die von :productname:`Apple Pay` unterstützten Währungen haben.
-
+   a. Wählen Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` für die entsprechende Zahlungsart die Registerkarte :guilabel:`Länder`.
+   #. Stellen Sie sicher, dass nur solche Länder zugeordnet sind, deren Währung von der Zahlungsart unterstützt wird.
 
 Sonstiges: Optimale Performance sicherstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

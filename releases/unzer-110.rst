@@ -34,9 +34,9 @@ Neue oder geänderte Funktionen
 
 * Beachten Sie Einschränkungen bei den Ländern, für die Sie bestimmte Zahlungsarten anbieten können.
 
-  Weitere Informationen finden Sie im `Changelog <https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md>`_.
-
   Die aktuelle gültigen Länder finden Sie unter :ref:`einfuehrung:Welche Märkte sind abgedeckt?`.
+
+  Weitere Informationen finden Sie im `Changelog <https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md>`_.
 
 Korrekturen
 -----------
