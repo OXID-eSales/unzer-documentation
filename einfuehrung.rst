@@ -39,7 +39,6 @@ Deutschland	            Giropay
 Deutschland	            Unzer Kauf auf Rechnung (Paylater)
 Deutschland	            Sofort
 Deutschland             WeChat
-Finnland	            Unzer Kauf auf Rechnung
 Finnland                WeChat
 Frankreich	            WeChat
 Griechenland          	WeChat

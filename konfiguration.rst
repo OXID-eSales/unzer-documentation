@@ -93,7 +93,8 @@ Weitere Informationen über das Authentifizieren bei Unzer finden Sie unter `doc
 |procedure|
 
 1. Geben Sie unter :menuselection:`Einstell. --> Zugangsdaten` die von Unzer bereitgestellten Keys in die entsprechenden Felder ein (:ref:`oxdamc02`, Pos. 1).
-#. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren` (:ref:`oxdamc02`, Pos. 2).
+#. Wählen Sie :guilabel:`Speichern`.
+#. Wählen Sie unter :guilabel:`Webhook Einstellungen` die Schaltfläche :guilabel:`Webhooks anlegen` (:ref:`oxdamc02`, Pos. 2).
    |br|
    Die Schaltfläche ist nur aktiv, wenn Sie :code:`https` haben.
 
@@ -108,14 +109,7 @@ Weitere Informationen über das Authentifizieren bei Unzer finden Sie unter `doc
 
 |result|
 
-Die URL Ihres registrierten Webhooks wird angezeigt (:ref:`oxdamc03`). Ihr Shop ist mit Unzer verbunden.
-
-.. _oxdamc03:
-
-.. figure:: /media/screenshots/oxdamc03.png
-   :alt: Registrierter Webhook
-
-   Abb.: Registrierter Webhook
+Die ID Ihres registrierten Webhooks wird angezeigt (:ref:`oxdamc02`, Pos. 3). Ihr Shop ist mit Unzer verbunden.
 
 
 Optionen für Kreditkarten/PayPal
@@ -226,12 +220,10 @@ Dazu generieren Sie die folgenden :productname:`Apple Pay`-Zugangsdaten, lassen 
    Debitkartenzahlungen werden seltener genutzt als Kreditkartenzahlungen. Wenn Sie beispielsweise Kreditkarten für zuverlässiger halten, dann markieren Sie diesen Kartentyp als einzig zulässigen.
 #. Speichern Sie Ihre Einstellungen.
 
-Zugangsdaten für Unzer upaylater eingeben
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Zugangsdaten für Unzer Kauf auf Rechnung (Paylater) eingeben
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo: #tbd: ia
-
-Wenn Sie :productname:`Unzer upaylater` nutzen wollen, geben Sie die öffentlichen und privaten Schlüssel ein, die Unzer Ihnen bereitgestellt hat.
+Wenn Sie :productname:`Unzer Kauf auf Rechnung (Paylater)` nutzen wollen, geben Sie die öffentlichen und privaten Schlüssel ein, die Unzer Ihnen bereitgestellt hat.
 
 |prerequisites|
 
@@ -249,14 +241,21 @@ Wenn Sie :productname:`Unzer upaylater` nutzen wollen, geben Sie die öffentlich
 
 |procedure|
 
-1. Geben Sie unter :menuselection:`Einstell. --> zusätzliche Optionen für Unzer Rechnung (Paylater)` die von Unzer bereitgestellten Schlüssel in die entsprechenden Felder ein (:ref:`oxdamc04`).
+.. todo: Pos.-Nr. neu/zusätzlich
+
+1. Geben Sie unter :menuselection:`Einstell. --> zusätzliche Optionen für Unzer Rechnung (Paylater)` die von Unzer bereitgestellten Schlüssel in die entsprechenden Felder ein.
+
+   Stellen Sie dabei sicher, dass Sie pro Kunden-Art (in unserem Beispiel nur B2C) das Schlüsselpaar für beide Währungen (EUR und CHF)  (:ref:`oxdamc04`, Pos. 1 und 2) eingeben.
+
 #. Speichern Sie Ihre Einstellungen.
+#. Um sicherzustellen, dass Zahlungsinformationen von Unzer an Ihre OXID eShop zurückgesendet werden, wählen Sie unter :guilabel:`Webhook Einstellungen` die Schaltfläche :guilabel:`Webhooks anlegen`.
+
 
 .. note::
 
    **Übereinstimmung von Währungen und Zugangsdaten**
 
-   Die Zahlungsart upaylater wird im Checkout nur angeboten, wenn Sie
+   Die Zahlungsart Unzer Kauf auf Rechnung (Paylater) wird im Checkout nur angeboten, wenn Sie
 
    * die zum Schlüsselpaar passende Währung (EUR oder CHF) konfiguriert haben
    * die zu den konfigurierten Währungen passenden Schlüsselpaare eingegeben
@@ -266,17 +265,19 @@ Wenn Sie :productname:`Unzer upaylater` nutzen wollen, geben Sie die öffentlich
 .. _oxdamc04:
 
 .. figure:: /media/screenshots/oxdamc04.png
-   :alt: Schlüsselpaare für Unzer upaylater eingeben
+   :alt: Schlüsselpaare für Unzer Kauf auf Rechnung (Paylater) eingeben
    :width: 650
    :class: with-shadow
 
-   Abb.: Schlüsselpaare für Unzer upaylater eingeben
+   Abb.: Schlüsselpaare für Unzer Kauf auf Rechnung (Paylater) eingeben
 
 
 
 |result|
 
-Im Checkout erscheint bei Privatkunden (B2C) automatisch eine zusätzliche Abfrage des Geburtsdatums (:ref:`oxdamc05`).
+Unter :guilabel:`Webhook Einstellungen` werden Webhooks für die Zahlungsarten angezeigt (siehe :ref:`oxdamc03`, Pos. 3).
+
+Im Checkout erscheint bei Privatkunden (B2C) automatisch eine zusätzliche Abfrage des Geburtsdatums (:ref:`oxdamc05`, Pos. 1).
 
 Geschäftskunden (B2B) erkennt das System automatisch an einem Eintrag im Eingabefeld :guilabel:`Firmenname`. Zusätzlich zum Geburtsdatum muss ein Geschäftskunde die Rechtsform seines Unternehmens angeben.
 
@@ -285,16 +286,16 @@ Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzu
 .. todo: #EC: Wenn ich in einer schlechten Gegend wohne und zu jung bin, kann es dann sein, dass ich wegen schlechter Bonität den Checkout nicht abschließen kann?
 
 .. todo: #tbd: Wie mache ich die Spracheinstellungen, so dass die Abfrage auch auf Englisch erscheint? -- Müsste es eine Sprach-Konfiguration wie bei Adyen geben? EN ist aktiv bei mir: müsste jetzt richtig sein
-.. todo: #EC/#ML: Die Liste der Rechtsformen wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?
+.. todo: #EC/#ML: Die Liste der "Unternehmensform"" wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?: Was istmit den Einträgen gemeint, warum ist es wichtig/wie wirkt es sich aus?
 
 .. _oxdamc05:
 
 .. figure:: /media/screenshots/oxdamc05.png
-   :alt: Geburtsdatum und Rechtsform angeben
+   :alt: Geburtsdatum und Unternehmensform angeben
    :width: 650
    :class: with-shadow
 
-   Abb.: Geburtsdatum und Rechtsform angeben
+   Abb.: Geburtsdatum und Unternehmensform angeben
 
 Empfohlen: Korrekte Währungseinstellungen sicherstellen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -357,6 +358,11 @@ Der Betriebsmodus :guilabel:`Sandbox` ist standardmäßig eingestellt.
 
 Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in diesem Fall die Anweisungen unter :ref:`konfiguration:Von einem Testsystem auf das Produktionssystem umschalten`.
 
+|prerequisites|
+
+* Um den Live-Betrieb starten zu können, haben Sie ein Unzer Insights-Konto (https://insights.unzer.com/signin) angelegt.
+
+  Weitere Informationen finden Sie in der `Go-live checklist <https://docs.unzer.com/online-payments/go-live-checklist/>`_.
 
 |procedure|
 
@@ -379,12 +385,6 @@ Empfehlung: Nutzen Sie zum Testen ein dediziertes Testsystem. Beachten Sie in di
    * Im Feld :guilabel:`Live öffentlicher Schlüssel` ist der :technicalname:`Production Public-Key`.
    * Im Feld :guilabel:`Live privater Schlüssel` ist der :technicalname:`Production Private-Key`.
 #. Wählen Sie unter :guilabel:`Betriebsmodus` den Eintrag :guilabel:`Livebetrieb` und wählen Sie :guilabel:`Speichern`.
-
-   .. todo: #ML: Was hat es mit dem Hinweis unter Module - Unzer - Stamm auf sich? -- Warum ist das wichtig?, Was steht da, was noch nicht in Doku?
-        "Vor dem Start bitte lesen und prüfen:
-                Go-live checklist
-                Prüfen Sie Ihren Account und Ihre Zahlarten direkt bei Unzer"
-
 #. Wenn Sie :productname:`Apple Pay` nutzen, tun Sie Folgendes:
 
    a. Geben Sie Schlüssel und Zertifikate unter :guilabel:`zusätzliche Optionen für Apple Pay` erneut ein.
@@ -426,15 +426,25 @@ Dies erzeugt bei Unzer eine unnötige Systemlast auf dem System, das mit Ihrem W
 1. Tun Sie auf Ihrem dedizierten Testsystem Folgendes:
 
    a. Wählen Sie :menuselection:`Erweiterungen --> Module --> Unzer Payment-Modul für OXID --> Einstell.`.
-   b. Wählen Sie unter :guilabel:`Zugangsdaten` die Schaltfläche :guilabel:`Webhook für diesen Shop löschen` (siehe :ref:`oxdamc03`).
+   b. Wählen Sie unter :guilabel:`Webhook Einstellungen` die Schaltfläche :guilabel:`Webhooks löschen` (:ref:`oxdamc03`, Pos. 1).
 #. Wiederholen Sie Schritt 1 auf Ihrem Produktionssystem.
-#. Geben Sie unter :guilabel:`Zugangsdaten` Ihre Unzer-Zugangsdaten neu ein (:ref:`oxdamc02`, Pos. 1).
-#. Wählen Sie die Schaltfläche :guilabel:`Webhook für diesen Shop registrieren` (:ref:`oxdamc02`, Pos. 2).
-#. Verifizieren Sie die URL, die als Teil des registrierten Webhooks angezeigt wird (siehe :ref:`oxdamc03`).
+#. Geben Sie unter :guilabel:`Zugangsdaten` Ihre Unzer-Zugangsdaten neu ein (:ref:`oxdamc02`, Pos. 1) und wählen Sie :guilabel:`Speichern`.
 #. Wenn Sie :productname:`Apple Pay` benutzen, geben Sie unter :menuselection:`Einstell. --> Zusätzliche Optionen für Apple Pay` die Zertifikate und Schlüssel ein, die Sie in Ihrem Apple-Entwickler-Konto erzeugt und lokal gespeichert (siehe :ref:`applepay/applepay-zertifikate:Apple Pay-Zugangsdaten erstellen`).
+#. Wenn Sie Unzer Kauf auf Rechnung (Paylater) verwenden, geben Sie die nötigen Schlüssel ein (siehe :ref:`konfiguration:Zugangsdaten für Unzer Kauf auf Rechnung (Paylater) eingeben`.
+#. Wählen Sie unter :guilabel:`Webhook Einstellungen` die Schaltfläche :guilabel:`Webhooks anlegen` (:ref:`oxdamc03`, Pos. 2).
 
+.. _oxdamc03:
+
+.. figure:: /media/screenshots/oxdamc03.png
+   :alt: Webhooks anlegen und IDs anzeigen
+   :width: 650
+   :class: with-shadow
+
+   Abb.: Webhooks anlegen und IDs anzeigen
 
 |result|
+
+Die Webhook-IDs Ihres OXID eShops und Ihrer registrierten Zahlungsarten werden angzeigt (:ref:`oxdamc03`, Pos. 3).
 
 Ihr Produktionssystem erhält von Unzer die Statusmeldungen über die Zahlungsvorgänge Ihrer Kunden.
 |br|
