@@ -96,7 +96,10 @@ For more information about authenticating with Unzer, see `docs.unzer.com/server
 |procedure|
 
 1. Under :menuselection:`Setting --> Access Data`, enter the keys provided by Unzer into the corresponding fields (:ref:`oxdamc02`, item 1).
-#. Choose the :guilabel:`Register webhook for this shop` button (:ref:`oxdamc02`, item 2).
+#. Choose :guilabel:`Save`.
+#. Under :menuselection:`Webhook Settings`, choose the :guilabel:`Create Webhooks` button (:ref:`oxdamc02`, item 2).
+   |br|
+   The button is active only if you have :code:`https`.
 
 .. _oxdamc02:
 
@@ -108,14 +111,7 @@ For more information about authenticating with Unzer, see `docs.unzer.com/server
 
 |result|
 
-The URL of your registered webhook is displayed (:ref:`oxdamc03`). Your store is connected to Unzer.
-
-.. _oxdamc03:
-
-.. figure:: /media/screenshots/oxdamc03.png
-   :alt: Registered webhook
-
-   Fig.: Registered Webhook
+The ID of your registered shop webhook is displayed (:ref:`oxdamc02`, item 3). Your store is connected to Unzer.
 
 
 Credit card/PayPal options
@@ -227,8 +223,8 @@ To do this, generate the following :productname:`Apple Pay` credentials, have th
    Debit card payments are used less frequently than credit card payments. For example, if you consider credit cards more reliable, choose this card type as the only one allowed.
 #. Save your settings.
 
-Entering access data for Unzer purchase on account (Paylater)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Entering access data for Unzer Invoice (Paylater)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to use the :productname:`Unzer Invoice (Paylater)` payment method, enter the public and private keys provided by Unzer.
 
@@ -248,6 +244,7 @@ If you want to use the :productname:`Unzer Invoice (Paylater)` payment method, e
    Make sure that you enter the key pair for both currencies (EUR and CHF) (:ref:`oxdamc04`, item 1 and 2) for each customer type (in our example only B2C).
 
 #. Save your settings.
+#. To ensure that payment information is sent back from Unzer to your OXID eShop, under :guilabel:`Webhook settings`, choose the :guilabel:`Create Webhooks` button.
 
 .. note::
 
@@ -270,6 +267,8 @@ If you want to use the :productname:`Unzer Invoice (Paylater)` payment method, e
    Figure: Entering key pairs for Unzer Invoice (Paylater)
 
 |result|
+
+Under :guilabel:`Webhook Settings`, the webhooks for the payment methods are displayed (:ref:`oxdamc03`, item 3).
 
 In the checkout, an additional query for the date of birth (:ref:`oxdamc05`, item 1) appears automatically for private customers (B2C).
 
@@ -416,15 +415,24 @@ This creates an unnecessary system load on the Unzer system that is connected to
 1. On your dedicated test system, do the following:
 
    a. Choose :menuselection:`Extensions --> Modules --> Unzer Payment Module for OXID --> Settings`.
-   b. Under :guilabel:`Access Data`, choose :guilabel:`Delete Webhook` (see :ref:`oxdamc03`).
+   b. Under :guilabel:`Webhook settings`, choose :guilabel:`Delete Webhooks` (:ref:`oxdamc03`, item 1).
 #. Repeat step 1 on your production system.
-#. Under :guilabel:`Access Data`, re-enter your Unzer access data (:ref:`oxdamc02`, item 1).
-#. Choose the :guilabel:`Register Webhook` button (:ref:`oxdamc02`, item 2).
-#. Verify the URL that is displayed as part of the registered webhook (see :ref:`oxdamc03`).
+#. Under :guilabel:`Access Data`, re-enter your Unzer access data (:ref:`oxdamc02`, item 1) and choose :guilabel:`Save`.
 #. If you use :productname:`Apple Pay`, under :menuselection:`Settings --> additional options for Apple Pay` enter the certificates and keys you created in your Apple developer account and stored locally (see :ref:`applepay/applepay-certificates:Creating Apple Pay access data`).
+#. If you use Unzer Invoice (Paylater), enter the required keys (see :ref:`configuration:Entering access data for Unzer Invoice (Paylater)`.
+#. Choose the :guilabel:`Create Webhooks` button (:ref:`oxdamc03`, item 2).
+
+.. _oxdamc03:
+
+.. figure:: /media/screenshots/oxdamc03.png
+   :alt: Creating webhooks and displaying the IDs
+
+   Fig.: Creating webhooks and displaying the IDs
 
 
 |result|
+
+The webhook IDs of your OXID eShop and your registered payment methods are displayed (:ref:`oxdamc03`, item 3).
 
 Your production system receives status reports from Unzer about your customers' payment transactions.
 |br|
