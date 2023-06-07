@@ -8,7 +8,7 @@ Neue oder geänderte Funktionen
 
 * Nutzen Sie die Buy Now, Pay Later-Zahlungsart :productname:`Unzer Kauf auf Rechnung (Paylater)`.
 
-  .. todo: #EC: Stimmt die folgende Aussage? Was ist aus Altkundensicht der Unterschied zu Unzer Kauf auf Rechnung (Paylater), welche Vorteile habe ich durch einen Umstieg?
+  .. todo: #EC/#ML: Stimmt die folgende Aussage? Was ist aus Altkundensicht der Unterschied zu Unzer Kauf auf Rechnung (Paylater), welche Vorteile habe ich durch einen Umstieg?
         Zusätzlich zum bisherigen Zahlen auf Rechnung ermöglichen Sie Ihren Kunden damit auch Ratenkauf und Bezahlen per Lastschrift.
 
   .. todo: #EC/#ML: Als Altkunde: Kann ich Unzer Kauf auf Rechnung und Unzer Kauf auf Rechnung (Paylater) parallel nutzen, oder muss ich ich entscheiden und dann entsprechend neu konfigurieren?

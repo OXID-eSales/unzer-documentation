@@ -165,28 +165,6 @@ Wenn Sie für Zahlung per PayPal oder Kartenzahlung :guilabel:`Autorisieren` gew
 Bei allen anderen von Unzer unterstützten Zahlungsarten wird die Zahlung sofort mit der Bestellung ausgelöst.
 
 
-Optionen für Ratenzahlung: Unzer-Zinssatz eingeben
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Geben Sie den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
-
-
-
-.. ATTENTION::
-
-   **Konversion gefährdet**
-
-   Aus technischen Gründen müssen Sie den Ratenzahlungszinssatz, den Sie mit Unzer vereinbart haben, manuell eingeben.
-
-   Wenn Sie versehentlich einen abweichenden Wert eingeben, ist kein Checkout möglich, und Ihr Kunde springt wahrscheinlich ab.
-
-   Vergewissern Sie sich, dass Sie den exakt richtigen Wert wie mit Unzer vereinbart eingeben.
-
-|procedure|
-
-1. Tragen Sie unter :guilabel:`zusätzliche Optionen für Ratenzahlung` den Zinssatz für Ratenzahlungen ein, den Sie mit Unzer vereinbart haben.
-#. Speichern Sie Ihre Einstellungen.
-
 Optionen für Apple Pay: Zugangsdaten eingeben
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
