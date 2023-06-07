@@ -166,27 +166,6 @@ If you have chosen :guilabel:`Authorize` for payment by PayPal or card payment, 
 
 For all other payment methods supported by Unzer, the payment is triggered immediately with the order.
 
-
-Options for payment by installments: Entering the Unzer interest rate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Enter the interest rate for installment payments that you have agreed upon with Unzer.
-
-.. ATTENTION::
-
-   **Conversion at risk**
-
-   For technical reasons, you must manually enter the installment interest rate you have agreed upon with Unzer.
-
-   If you accidentally enter a different value, no checkout will be possible, and your customer will probably reject your shop.
-
-   Make sure you enter the exact correct value as agreed with Unzer.
-
-|procedure|
-
-1. Under :guilabel:`additional options for installment`, enter the interest rate for installment payments that you have agreed on with Unzer.
-#. Save your settings.
-
 Options for Apple Pay: Entering your credentials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
