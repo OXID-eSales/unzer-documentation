@@ -19,9 +19,7 @@ Moduldokumentation
    Installation <installation>
    Konfiguration <konfiguration>
    Betrieb <betrieb>
-
-..
-   Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer/blob/v1.0.0/CHANGELOG.md>
+   Changelog (GitHub) ➜ <https://github.com/OXID-eSales/unzer-module/blob/v1.0.1/CHANGELOG.md>
 
 ..
    Update <update>
