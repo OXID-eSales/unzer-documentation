@@ -37,7 +37,7 @@ To use the features and fixes of :productname:`Unzer Payment for OXID` V. 1.1.0,
 Requirements
 ^^^^^^^^^^^^
 
-* You have OXID eShop V. 6.1.x to 6.5.x.
+* You have OXID eShop V. 6.3.x to 6.5.x.
 * You have Unzer Payment for OXID V. 1.0.x.
 
 Procedure

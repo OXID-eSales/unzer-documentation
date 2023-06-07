@@ -1,11 +1,11 @@
 Installation
 ============
 
-Install Unzer Payment OXID for OXID eShop version 6.2 or higher.
+Install Unzer Payment OXID for OXID eShop version 6.3 to 6.5.
 
 |prerequisites|
 
-* You have installed OXID eShop 6.2 or higher.
+* You have installed OXID eShop 6.3 6.3 to 6.5.
 * You have configured transport encryption (`https`).
 
    a. In the `<root directory of the eShop>/source` directory, open the `config.inc.php` file.
