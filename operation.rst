@@ -7,7 +7,7 @@ For example, make refunds or resolve the causes of payment problems.
 
 |procedure|
 
-1. Choose :menuselection:`Orders --> Administer Orders`.
+1. Choose :menuselection:`Administer Orders --> Orders`.
 #. Choose the purchase order.
 #. On the :guilabel:`Unzer` tab, display the transaction data.
 #. Verify the status of the payment transaction:

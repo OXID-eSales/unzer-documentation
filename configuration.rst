@@ -227,6 +227,66 @@ To do this, generate the following :productname:`Apple Pay` credentials, have th
    Debit card payments are used less frequently than credit card payments. For example, if you consider credit cards more reliable, choose this card type as the only one allowed.
 #. Save your settings.
 
+Entering access data for Unzer purchase on account (Paylater)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to use the :productname:`Unzer Invoice (Paylater)` payment method, enter the public and private keys provided by Unzer.
+
+|prerequisites|
+
+* Depending on the combination of currency and customer type you have agreed on with Unzer, you have the following data ready, which Unzer has provided you with when you set up your merchant account:
+
+   * Sandbox Public-Key
+   * Sandbox Private-Key
+   * Production Public-Key
+   * Production Private-Key
+
+|procedure|
+
+1. Under :menuselection:`Settings --> Additional Options for Unzer Invoice (Paylater)`, in the appropriate fields, enter the keys provided by Unzer.
+
+   Make sure that you enter the key pair for both currencies (EUR and CHF) (:ref:`oxdamc04`, item 1 and 2) for each customer type (in our example only B2C).
+
+#. Save your settings.
+
+.. note::
+
+   **Match currencies and credentials**.
+
+   The payment method Unzer Invoice (Paylater) will only be offered in the checkout if you have
+
+   * configured the currency that matches the key pair (EUR or CHF)
+   * entered the key pairs tat match the configured currencies
+
+   Under :menuselection:`Master Settings --> Core Settings --> Settings --> Other settings`, make sure that you have configured the desired currencies.
+
+.. _oxdamc04:
+
+.. figure:: /media/screenshots/oxdamc04.png
+   :alt: Entering key pairs for Unzer Invoice (Paylater)
+   :width: 650
+   :class: with-shadow
+
+   Figure: Entering key pairs for Unzer Invoice (Paylater)
+
+|result|
+
+In the checkout, an additional query for the date of birth (:ref:`oxdamc05`, item 1) appears automatically for private customers (B2C).
+
+Business customers (B2B) are automatically recognized by the system by an entry in the :guilabel:`company name` input field. In addition to the date of birth, a business customer must specify the legal form of his company.
+
+From the information about the customer, Unzer calculates a credit rating of the customer.
+
+.. _oxdamc05:
+
+.. figure:: /media/screenshots/oxdamc05.png
+   :alt: Specifying the date of birth and company form
+   :width: 650
+   :class: with-shadow
+
+   Figure: Specifying the date of birth and company form
+
+
 Recommended: Ensuring correct currency settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -287,6 +347,11 @@ The operating mode :guilabel:`Sandbox` is set by default.
 
 Recommendation: Use a dedicated test system for testing. In this case, follow the instructions in :ref:`configuration:Switching from a test system to the production system`.
 
+|prerequisites|
+
+* To start live operation, you have created an Unzer Insights account (https://insights.unzer.com/signin).
+
+  For more information, see the `Go-live checklist <https://docs.unzer.com/online-payments/go-live-checklist/>`_.
 
 |procedure|
 
