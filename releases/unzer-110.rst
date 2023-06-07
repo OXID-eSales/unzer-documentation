@@ -50,7 +50,7 @@ Um die Funktionen und Korrekturen von :productname:`Unzer Payment für OXID` V. 
 Voraussetzungen
 ^^^^^^^^^^^^^^^
 
-* Sie haben OXID eShop V. 6.1.x bis 6.5.x.
+* Sie haben OXID eShop V. 6.3.x bis 6.5.x.
 * Sie haben Unzer Payment für OXID V. 1.0.x.
 
 Vorgehen

@@ -286,7 +286,7 @@ Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzu
 .. todo: #EC: Wenn ich in einer schlechten Gegend wohne und zu jung bin, kann es dann sein, dass ich wegen schlechter Bonität den Checkout nicht abschließen kann?
 
 .. todo: #tbd: Wie mache ich die Spracheinstellungen, so dass die Abfrage auch auf Englisch erscheint? -- Müsste es eine Sprach-Konfiguration wie bei Adyen geben? EN ist aktiv bei mir: müsste jetzt richtig sein
-.. todo: #EC/#ML: Die Liste der "Unternehmensform"" wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?: Was istmit den Einträgen gemeint, warum ist es wichtig/wie wirkt es sich aus?
+.. todo: #LS/#EC/#ML: Die Liste der "Unternehmensform"" wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?: Was istmit den Einträgen gemeint, warum ist es wichtig/wie wirkt es sich aus?
 
 .. _oxdamc05:
 
