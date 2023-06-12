@@ -137,6 +137,7 @@ html_context = {
     'current_version': '1.0',
     'versions':
         [('1.0', 'https://docs.oxid-esales.com/modules/unzer/en/1.0/'),
+        ('1.1', 'https://docs.oxid-esales.com/modules/unzer/en/1.1/'),
          ],
     'languages':
        [('DE', 'https://docs.oxid-esales.com/modules/unzer/de/1.0/'),
