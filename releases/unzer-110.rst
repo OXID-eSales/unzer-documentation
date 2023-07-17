@@ -22,17 +22,17 @@ New or changed functions
   * For the current valid countries, see :ref:`introduction:Which markets are covered?`.
   * For the current valid currencies, see :ref:`introduction:Which currencies are covered?`.
 
-  For more information, see the `Changelog <https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md>`_.
+  For more information, see the `Changelog <https://github.com/OXID-eSales/unzer-module/blob/v1.1.1/CHANGELOG.md>`_.
 
 Corrections
 -----------
 
-For the corrections, see the changelog (GitHub) under https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md.
+For the corrections, see the changelog (GitHub) under https://github.com/OXID-eSales/unzer-module/blob/v1.1.1/CHANGELOG.md.
 
 Update
 ------
 
-To use the features and fixes of :productname:`Unzer Payment for OXID` V. 1.1.0, make an update.
+To use the features and fixes of :productname:`Unzer Payment for OXID` V. 1.1.x, make an update.
 
 Requirements
 ^^^^^^^^^^^^
