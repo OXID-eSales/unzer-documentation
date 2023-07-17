@@ -34,18 +34,18 @@ Neue oder geänderte Funktionen
   * Die aktuelle gültigen Länder finden Sie unter :ref:`einfuehrung:Welche Märkte sind abgedeckt?`.
   * Die aktuelle gültigen Währungen finden Sie unter :ref:`einfuehrung:Welche Währungen sind abgedeckt?`.
 
-  Weitere Informationen finden Sie im `Changelog <https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md>`_.
+  Weitere Informationen finden Sie im `Changelog <https://github.com/OXID-eSales/unzer-module/blob/v1.1.1/CHANGELOG.md>`_.
 
 Korrekturen
 -----------
 
-Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.1.0/CHANGELOG.md.
+Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.1.1/CHANGELOG.md.
 
 
 Update
 ------
 
-Um die Funktionen und Korrekturen von :productname:`Unzer Payment für OXID` V. 1.1.0 zu nutzen, machen Sie ein Update.
+Um die Funktionen und Korrekturen von :productname:`Unzer Payment für OXID` V. 1.1.0 und höher zu nutzen, machen Sie ein Update.
 
 Voraussetzungen
 ^^^^^^^^^^^^^^^
