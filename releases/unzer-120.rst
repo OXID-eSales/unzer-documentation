@@ -15,7 +15,7 @@ new Paymentmethod Unzer installment (Paylater), Unzer Ratenzahlung
 	Unzer Ratenzahlung (Paylater)
 
 #ML: Welche Länder/Währungen sind abgedeckt
-#ML: Muss ich Onboarding neu machen?
+#ML: Muss ich Onboarding neu machen? -- nein, im Unzer backend freischalten lassen und dann im Shop
 
 
 Korrekturen

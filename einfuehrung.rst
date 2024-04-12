@@ -91,21 +91,38 @@ eps Überweisung (Electronic Payment Standard)	Österreich
 Giropay	                                        Deutschland
 iDEAL	                                        Niederlande
 Kartenzahlung                                   Weltweit
+
 PayPal	                                        Weltweit
 Przelewy24	                                    Polen
+
+.. todo: #ML: Kauf auf Rechnung neue Länder?
+'countries' => ['BE', 'DE', 'EE', 'FI', 'FR', 'GR', 'IE', 'IT', 'LV',
+'LT', 'LU', 'MT', 'NL', 'PT', 'SK', 'SI', 'ES', 'CY', 'AT'],
+'currencies' => [],
 Unzer Kauf auf Rechnung (Paylater)              Deutschland
 Unzer Kauf auf Rechnung (Paylater)              Niederlande
 Unzer Kauf auf Rechnung (Paylater)              Österreich
 Unzer Kauf auf Rechnung (Paylater)              Schweiz
+
+.. todo: #ML: Neu: Ratenkauf offizieller Name?
+Ratenkauf tbd             'countries' => ['DE', 'AT', 'CH', 'NL'],
+            'currencies' => ['EUR', 'CHF'],
+
 SEPA-Lastschrift	                            Deutschland
 SEPA-Lastschrift	                            Österreich
+.. todo: #ML: Länderabdeckung erweitert:           'countries' => ['BE', 'DE', 'EE', 'FI', 'FR', 'GR', 'IE', 'IT', 'LV',
+'LT', 'LU', 'MT', 'NL', 'PT', 'SK', 'SI', 'ES', 'CY', 'AT'],
+
+
 Sofort                                          Belgien
 Sofort                                          Deutschland
 Sofort                                          Niederlande
 Sofort                                          Österreich
 Sofort                                          Spanien
 Sofort                                          Italien
+
 Unzer Vorkasse	                                Weltweit
+
 WeChat                                          Belgien
 WeChat	                                        Deutschland
 WeChat	                                        Dänemark
