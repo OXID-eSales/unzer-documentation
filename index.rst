@@ -19,7 +19,7 @@ Module Documentation
    Installation <installation>
    Configuration <configuration>
    Operation <operation>
-   Release Notes <releases/unzer-110>
+   Release Notes <releases/index>
 
 .. image:: media/icons/home.png
    :width: 0 px
