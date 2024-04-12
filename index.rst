@@ -19,7 +19,7 @@ Moduldokumentation
    Installation <installation>
    Konfiguration <konfiguration>
    Betrieb <betrieb>
-   Release Notes <releases/unzer-110>
+   Release Notes <releases/index>
 
 
 .. image:: media/icons/home.png
