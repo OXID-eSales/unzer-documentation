@@ -16,61 +16,73 @@ Welche Märkte sind abgedeckt?
 
 Bieten Sie mit dem Modul :productname:`Unzer Payment für OXID` die in folgenden Märkten beliebten Zahlungsmethoden an.
 
-.. todo: Unzer-Zahlungsarten mit 1.1? Info:
-    "Unzer Kauf auf Rechnung" wird "Unzer Kauf auf Rechnung (alt)"? -- bleibt auf jeden Fall vorläufig drin.
-    #tbd: Das alte Unzer Kauf auf Rechnung erwähnen wir in den folgenden Tabellen nicht mehr Evt. in Release Note
-
-
 ======================= ========================================================
 Markt                   Zahlungsmethode
 ======================= ========================================================
-Weltweit	            Apple Pay
-Weltweit	            Kartenzahlung
-Weltweit	            PayPal
-Weltweit	            Unzer Vorkasse
-Belgien 	            Alipay
-Belgien	                Sofort
-Belgien	                WeChat
+Weltweit                Apple Pay
+Weltweit                Kartenzahlung
+Weltweit                PayPal
+Weltweit                Unzer Vorkasse
+Belgien                 Alipay
 Belgien                 Bancontact
+Belgien                 SEPA-Lastschrift
+Belgien                 Sofort
+Belgien                 WeChat
 Dänemark                WeChat
-Deutschland	            Alipay
-Deutschland	            SEPA-Lastschrift
-Deutschland	            Giropay
-Deutschland	            Unzer Kauf auf Rechnung (Paylater)
-Deutschland	            Sofort
+Deutschland             Alipay
+Deutschland             Giropay
+Deutschland             SEPA-Lastschrift
+Deutschland             Sofort
+Deutschland             Unzer Kauf auf Rechnung (Paylater)
 Deutschland             WeChat
+Estland                 SEPA-Lastschrift
+Finnland                SEPA-Lastschrift
 Finnland                WeChat
-Frankreich	            WeChat
-Griechenland          	WeChat
-Großbritannien      	WeChat
-Irland	                WeChat
-Island	                WeChat
-Italien 	            Alipay
-Italien	                WeChat
+Frankreich              SEPA-Lastschrift
+Frankreich              WeChat
+Griechenland            SEPA-Lastschrift
+Griechenland            WeChat
+Großbritannien          WeChat
+Irland                  SEPA-Lastschrift
+Irland                  WeChat
+Island                  WeChat
+Italien                 Alipay
+Italien                 SEPA-Lastschrift
+Italien                 Sofort
+Italien                 WeChat
+Lettland                SEPA-Lastschrift
+Litauen                 SEPA-Lastschrift
 Liechtenstein           WeChat
-Luxemburg	            WeChat
-Malta   	            WeChat
-Niederlande	            Alipay
-Niederlande	            iDEAL
-Niederlande	            Unzer Kauf auf Rechnung (Paylater)
-Niederlande	            Sofort
-Niederlande	            WeChat
-Norwegen	            WeChat
-Österreich	            Alipay
-Österreich	            eps Überweisung (Electronic Payment Standard)
-Österreich	            Unzer Kauf auf Rechnung (Paylater)
-Österreich	            Sofort
-Österreich	            SEPA-Lastschrift
+Luxemburg               SEPA-Lastschrift
+Luxemburg               WeChat
+Malta                   SEPA-Lastschrift
+Malta                   WeChat
+Niederlande             Alipay
+Niederlande             iDEAL
+Niederlande             SEPA-Lastschrift
+Niederlande             Sofort
+Niederlande             Unzer Kauf auf Rechnung (Paylater)
+Niederlande             WeChat
+Norwegen                WeChat
+Österreich              Alipay
+Österreich              eps Überweisung (Electronic Payment Standard)
+Österreich              SEPA-Lastschrift
+Österreich              Sofort
+Österreich              Unzer Kauf auf Rechnung (Paylater)
 Österreich              WeChat
-Polen	                Przelewy24
-Portugal	            WeChat
-Schweden	            WeChat
-Schweiz 	            Unzer Kauf auf Rechnung (Paylater)
-Spanien 	            Alipay
-Spanien	                Sofort
-Spanien	                WeChat
-Italien	                Sofort
-Ungarn	                WeChat
+Polen                   Przelewy24
+Portugal                SEPA-Lastschrift
+Portugal                WeChat
+Schweden                WeChat
+Schweiz                 Unzer Kauf auf Rechnung (Paylater)
+Slowakei                SEPA-Lastschrift
+Slowenien               SEPA-Lastschrift
+Spanien                 Alipay
+Spanien                 SEPA-Lastschrift
+Spanien                 Sofort
+Spanien                 WeChat
+Ungarn                  WeChat
+Zypern                  SEPA-Lastschrift
 ======================= ========================================================
 
 Welche Märkte sind abgedeckt (sortiert nach Zahlungsmethoden)?
@@ -91,38 +103,42 @@ eps Überweisung (Electronic Payment Standard)	Österreich
 Giropay	                                        Deutschland
 iDEAL	                                        Niederlande
 Kartenzahlung                                   Weltweit
-
 PayPal	                                        Weltweit
 Przelewy24	                                    Polen
-
-.. todo: #ML: Kauf auf Rechnung neue Länder?
-'countries' => ['BE', 'DE', 'EE', 'FI', 'FR', 'GR', 'IE', 'IT', 'LV',
-'LT', 'LU', 'MT', 'NL', 'PT', 'SK', 'SI', 'ES', 'CY', 'AT'],
-'currencies' => [],
-Unzer Kauf auf Rechnung (Paylater)              Deutschland
-Unzer Kauf auf Rechnung (Paylater)              Niederlande
-Unzer Kauf auf Rechnung (Paylater)              Österreich
-Unzer Kauf auf Rechnung (Paylater)              Schweiz
-
-.. todo: #ML: Neu: Ratenkauf offizieller Name?
-Ratenkauf tbd             'countries' => ['DE', 'AT', 'CH', 'NL'],
-            'currencies' => ['EUR', 'CHF'],
-
+SEPA-Lastschrift	                            Belgien
 SEPA-Lastschrift	                            Deutschland
+SEPA-Lastschrift	                            Estland
+SEPA-Lastschrift	                            Finnland
+SEPA-Lastschrift	                            Frankreich
+SEPA-Lastschrift	                            Griechenland
+SEPA-Lastschrift	                            Irland
+SEPA-Lastschrift	                            Italien
+SEPA-Lastschrift	                            Lettland
+SEPA-Lastschrift	                            Litauen
+SEPA-Lastschrift	                            Luxemburg
+SEPA-Lastschrift	                            Malta
+SEPA-Lastschrift	                            Niederlande
 SEPA-Lastschrift	                            Österreich
-.. todo: #ML: Länderabdeckung erweitert:           'countries' => ['BE', 'DE', 'EE', 'FI', 'FR', 'GR', 'IE', 'IT', 'LV',
-'LT', 'LU', 'MT', 'NL', 'PT', 'SK', 'SI', 'ES', 'CY', 'AT'],
-
-
+SEPA-Lastschrift	                            Portugal
+SEPA-Lastschrift	                            Slowakei
+SEPA-Lastschrift	                            Slowenien
+SEPA-Lastschrift	                            Spanien
+SEPA-Lastschrift	                            Zypern
 Sofort                                          Belgien
 Sofort                                          Deutschland
 Sofort                                          Niederlande
 Sofort                                          Österreich
 Sofort                                          Spanien
 Sofort                                          Italien
-
+Unzer Ratenkauf                                 Deutschland
+Unzer Ratenkauf                                 Niederlande
+Unzer Ratenkauf                                 Österreich
+Unzer Ratenkauf                                 Schweiz
 Unzer Vorkasse	                                Weltweit
-
+Unzer Kauf auf Rechnung (Paylater)              Deutschland
+Unzer Kauf auf Rechnung (Paylater)              Niederlande
+Unzer Kauf auf Rechnung (Paylater)              Österreich
+Unzer Kauf auf Rechnung (Paylater)              Schweiz
 WeChat                                          Belgien
 WeChat	                                        Deutschland
 WeChat	                                        Dänemark
@@ -164,8 +180,6 @@ Wo finde ich weitere Informationen?
 
 Zahlungsmethoden
 ^^^^^^^^^^^^^^^^
-
-.. todo: #EC: Sind die URLs aktuell
 
 Welche Zahlungsmethoden Sie zu welchen Konditionen nutzen wollen, vereinbaren Sie individuell mit Unzer.
 

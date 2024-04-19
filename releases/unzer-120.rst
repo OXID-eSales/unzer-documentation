@@ -6,44 +6,69 @@ Release-Datum: #tbd
 Neue oder geänderte Funktionen
 ------------------------------
 
-.. todo: #tbd
+.. todo: #tbd EN: Unzer Installment
 
-new Paymentmethod Unzer installment (Paylater), Unzer Ratenzahlung
+Bieten Sie Ihren Kunden folgende erweiterten Zahlungsmöglichkeiten:
 
-#DR: Terminologie	in beiden Fällen "Paylater"? Wirkt verwirrend:
-	Unzer Rechnung (Paylater)
-	Unzer Ratenzahlung (Paylater)
+* Neue Zahlungsmethode Unzer Ratenkauf (EUR, CHF) für folgende Länder:
 
-#ML: Welche Länder/Währungen sind abgedeckt
-#ML: Muss ich Onboarding neu machen? -- nein, im Unzer backend freischalten lassen und dann im Shop
+  * Deutschland
+  * Niederlande
+  * Österreich
+  * Schweiz
+
+* Erweiterte Länderabdeckung für SEPA-Lastschrift
+
+  Außer Deutschland und Österreich sind nun auch folgende Länder abgedeckt:
+
+  * Belgien
+  * Estland
+  * Finnland
+  * Frankreich
+  * Griechenland
+  * Irland
+  * Italien
+  * Lettland
+  * Litauen
+  * Luxemburg
+  * Malta
+  * Niederlande
+  * Portugal
+  * Slowakei
+  * Slowenien
+  * Spanien
+  * Zypern
+
+Weitere Informationen über die verfügbaren Zahlungsmethoden finden Sie unter :ref:`einfuehrung:Wofür/Wofür nicht?`
 
 
 Korrekturen
 -----------
 
-.. todo: #tbd
+.. todo: #tbd: URL verifizieren
 
-Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.1.1/CHANGELOG.md.
-
+Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.2.0/CHANGELOG.md.
 
 Update
 ------
 
 Um die Funktionen und Korrekturen von :productname:`Unzer Payment für OXID` V. 1.2.0 und höher zu nutzen, machen Sie ein Update.
 
-Voraussetzungen
-^^^^^^^^^^^^^^^
+|prerequisites|
 
 .. todo: #ML/#ES: Kann ich direkt von 1.0 updaten?
 
 * Sie haben OXID eShop V. 6.3.x bis 6.5.x.
 * Sie haben Unzer Payment für OXID V. 1.x.
 
-Vorgehen
-^^^^^^^^
+|procedure|
 
-Führen Sie den folgenden Befehl aus.
+1. Führen Sie den folgenden Befehl aus.
 
-.. code:: bash
+   .. code:: bash
 
-   composer update
+      composer update
+
+#. Um die neue Zahlungsart Unzer Ratenkauf zu nutzen, lassen Sie sie freischalten.
+
+   Weitere Informationen finden Sie unter :ref:`einfuehrung:Wo finde ich weitere Informationen?`

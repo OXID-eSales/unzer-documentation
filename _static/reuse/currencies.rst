@@ -9,7 +9,8 @@ BGN      ApplePay
 CAD      AliPay
 CHF      AliPay
 CHF      ApplePay
-CHF      Unzer Vorkasse
+CHF      Unzer Kauf auf Rechnung (Paylater)
+CHF      Unzer Ratenkauf
 CHF      WeChat
 CNY      AliPay
 CNY      WeChat
@@ -22,8 +23,9 @@ EUR      EPS
 EUR      Giropay
 EUR      IDEAL
 EUR      Sofort
-EUR      SEPA Lastschrift (Direct Debit)
+EUR      SEPA-Lastschrift (Direct Debit)
 EUR      Unzer Kauf auf Rechnung (Paylater)
+EUR      Unzer Ratenkauf
 EUR      Unzer Vorkasse
 EUR      WeChat
 GBP      AliPay
