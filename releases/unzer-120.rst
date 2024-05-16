@@ -1,6 +1,8 @@
 Unzer Payment für OXID V. 1.2
 =============================
 
+.. todo: #DR: Datum bestimmen
+
 Release-Datum: #tbd
 
 Neue oder geänderte Funktionen
