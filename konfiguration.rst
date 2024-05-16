@@ -318,8 +318,8 @@ Schiefgehen kann allerdings nichts: Bei Währungen, die eine Zahlungsart nicht u
    a. Wählen Sie unter :menuselection:`Shopeinstellungen --> Zahlungsarten` für die entsprechende Zahlungsart die Registerkarte :guilabel:`Länder`.
    #. Stellen Sie sicher, dass nur solche Länder zugeordnet sind, deren Währung von der Zahlungsart unterstützt wird.
 
-Sonstiges: Optimale Performance sicherstellen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sonstiges: jQuery-Installation prüfen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Unzer nutzt für das Validieren von Formulareingaben jQuery.
 
@@ -344,6 +344,27 @@ Um Interferenzen zu verhindern, stellen Sie sicher, dass jQuery nicht für :prod
 
    * Wenn Ihr Theme jQuery benutzt, stellen Sie sicher, dass das Kontrollkästchen :guilabel:`Einbindung von jQuery über das Modul` deaktiviert ist.
    * Wenn Ihr Theme jQuery **nicht** benutzt, stellen Sie sicher, dass das Kontrollkästchen :guilabel:`Einbindung von jQuery über das Modul` aktiviert ist.
+
+Sonstiges: Zeitgrenze für das Erstellen von Bestellungen anpassen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Passen Sie bei Bedarf die Zeitgrenze für das Erstellen von Bestellungen an.
+
+.. todo: #ML/#ES: Zeitgrenze in Minuten, bis wann Bestellungen mittels Webhook erstellt werden" Der Default ist 5 Minuten.
+
+.. todo: #ML/#ES:: Wie sieht das UI aus?, bei mir ist Translationdatei nicht eingebunden
+
+.. todo: #ML: In welchem Fall ändere ich den Standardwert? Nach welchem Kriterium? Wie teste ich?
+
+|background|
+
+.. todo: #ML: Hintergrund erläutern
+
+Bei den Tests haben wir festgestellt, das Unzer schneller mit den Webhooks reagiert, als ein Kunde mglw. im Unzer-Checkout die Rückleitung benutzt.
+
+Darum hat die Rückleitung 5 Minuten lang "Vorfahrt" bevor der Webhook eingreift und ggf. die Bestellung heilt, wenn der Kunde beim Rücksprung länger als 5 Minuten hängen bleibt ...
+
+
 
 
 

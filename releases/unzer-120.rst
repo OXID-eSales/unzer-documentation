@@ -43,13 +43,25 @@ Bieten Sie Ihren Kunden folgende erweiterten Zahlungsmöglichkeiten:
 
 Weitere Informationen über die verfügbaren Zahlungsmethoden finden Sie unter :ref:`einfuehrung:Wofür/Wofür nicht?`
 
-
 Korrekturen
 -----------
 
-.. todo: #tbd: URL verifizieren
+* Speichern von unterbrochenen Bestellungen
 
-Korrekturen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.2.0/CHANGELOG.md.
+  .. todo: #ML: Feature oder Bugfix?: "If customers - for whatever reason - interrupt the order in the checkout, the order is still saved using a temporary order and Unzer's webhook"
+        Was ist der Hintergrund?, Auswirkung? (https://github.com/OXID-eSales/unzer-module/blob/b-6.3.x/CHANGELOG.md#120---unreleased---2024--)
+  .. todo: #ML: Müssen wir den Effekt illustrieren?
+
+* Behebung des Loberon-Bugs
+
+  .. todo: #ML: Um welches Symptom geht es beim Loberon-Bug?
+
+  Weitere Informationen finden Sie unter :ref:`konfiguration:Sonstiges: Zeitgrenze für das Erstellen von Bestellungen anpassen`
+
+
+.. todo: #tbd: URL Changelog verifizieren
+
+Weitere Informationen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.2.0/CHANGELOG.md.
 
 Update
 ------
