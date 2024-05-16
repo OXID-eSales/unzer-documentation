@@ -16,6 +16,8 @@ Aktualisieren Sie Ihre Installation des Unzer Payment-Moduls für OXID, wenn ein
 
 2. Führen Sie folgenden Befehl aus:
 
+   .. todo: #ML: Wie komme ich auf 1.2?
+
    .. code:: bash
 
       composer update
