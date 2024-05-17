@@ -352,6 +352,8 @@ Passen Sie bei Bedarf die Zeitgrenze für das Erstellen von Bestellungen an.
 
 .. todo: #ML/#ES: Zeitgrenze in Minuten, bis wann Bestellungen mittels Webhook erstellt werden" Der Default ist 5 Minuten.
 
+Wert erhöhen, wenn Symptom immer noch da, oder andere Symptome: ; Kunde kriegt nix mit; keine unabsicht. Bestellung
+
 .. todo: #ML/#ES:: Wie sieht das UI aus?, bei mir ist Translationdatei nicht eingebunden
 
 .. todo: #ML: In welchem Fall ändere ich den Standardwert? Nach welchem Kriterium? Wie teste ich?
@@ -359,6 +361,10 @@ Passen Sie bei Bedarf die Zeitgrenze für das Erstellen von Bestellungen an.
 |background|
 
 .. todo: #ML: Hintergrund erläutern
+
+ML: Kunde kommt von Unzer nicht zurück, weil er denkt ist fertig "Jetzt bestellen", muss aber sein, sonst keine Bestellung.
+Webhooks laufen ins leere, weile Bestellung nicht da; z.B. "ist bezahlt": Webhook kann Bestellung automatisch anlegen und abschließen.
+Unzerbestelleungen ohne OXID bestllungen;
 
 Bei den Tests haben wir festgestellt, das Unzer schneller mit den Webhooks reagiert, als ein Kunde mglw. im Unzer-Checkout die Rückleitung benutzt.
 
