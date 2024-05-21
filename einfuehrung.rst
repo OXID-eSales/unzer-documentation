@@ -34,6 +34,7 @@ Deutschland             Giropay
 Deutschland             SEPA-Lastschrift
 Deutschland             Sofort
 Deutschland             Unzer Kauf auf Rechnung (Paylater)
+Deutschland             Unzer Ratenkauf
 Deutschland             WeChat
 Estland                 SEPA-Lastschrift
 Finnland                SEPA-Lastschrift
@@ -62,6 +63,7 @@ Niederlande             iDEAL
 Niederlande             SEPA-Lastschrift
 Niederlande             Sofort
 Niederlande             Unzer Kauf auf Rechnung (Paylater)
+Niederlande             Unzer Ratenkauf
 Niederlande             WeChat
 Norwegen                WeChat
 Österreich              Alipay
@@ -69,12 +71,14 @@ Norwegen                WeChat
 Österreich              SEPA-Lastschrift
 Österreich              Sofort
 Österreich              Unzer Kauf auf Rechnung (Paylater)
+Österreich              Unzer Ratenkauf
 Österreich              WeChat
 Polen                   Przelewy24
 Portugal                SEPA-Lastschrift
 Portugal                WeChat
 Schweden                WeChat
 Schweiz                 Unzer Kauf auf Rechnung (Paylater)
+Schweiz                 Unzer Ratenkauf
 Slowakei                SEPA-Lastschrift
 Slowenien               SEPA-Lastschrift
 Spanien                 Alipay
@@ -84,6 +88,7 @@ Spanien                 WeChat
 Ungarn                  WeChat
 Zypern                  SEPA-Lastschrift
 ======================= ========================================================
+
 
 Welche Märkte sind abgedeckt (sortiert nach Zahlungsmethoden)?
 --------------------------------------------------------------

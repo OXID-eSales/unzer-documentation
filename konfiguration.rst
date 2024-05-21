@@ -1,7 +1,7 @@
 Konfiguration
 =============
 
-Machen Sie das :productname:`Unzer Payment für OXID` betriebsbereit.
+Machen Sie :productname:`Unzer Payment für OXID` betriebsbereit.
 
 
 Grundsätzliches Vorgehen
@@ -283,9 +283,6 @@ Geschäftskunden (B2B) erkennt das System automatisch an einem Eintrag im Eingab
 
 Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzung des Kunden.
 
-.. todo: #EC: Wenn ich in einer schlechten Gegend wohne und zu jung bin, kann es dann sein, dass ich wegen schlechter Bonität den Checkout nicht abschließen kann?
-
-.. todo: #tbd: Wie mache ich die Spracheinstellungen, so dass die Abfrage auch auf Englisch erscheint? -- Müsste es eine Sprach-Konfiguration wie bei Adyen geben? EN ist aktiv bei mir: müsste jetzt richtig sein
 .. todo: #LS/#EC/#ML: Die Liste der "Unternehmensform"" wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?: Was istmit den Einträgen gemeint, warum ist es wichtig/wie wirkt es sich aus?
 
 .. _oxdamc05:
@@ -348,30 +345,30 @@ Um Interferenzen zu verhindern, stellen Sie sicher, dass jQuery nicht für :prod
 Sonstiges: Zeitgrenze für das Erstellen von Bestellungen anpassen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Passen Sie bei Bedarf die Zeitgrenze für das Erstellen von Bestellungen an.
+Passen Sie bei Bedarf die Zeitgrenze für das automatische Erstellen von Bestellungen an.
 
-.. todo: #ML/#ES: Zeitgrenze in Minuten, bis wann Bestellungen mittels Webhook erstellt werden" Der Default ist 5 Minuten.
-
-Wert erhöhen, wenn Symptom immer noch da, oder andere Symptome: ; Kunde kriegt nix mit; keine unabsicht. Bestellung
-
-.. todo: #ML/#ES:: Wie sieht das UI aus?, bei mir ist Translationdatei nicht eingebunden
-
-.. todo: #ML: In welchem Fall ändere ich den Standardwert? Nach welchem Kriterium? Wie teste ich?
+Dies ist die Zeitspanne, die dem Kunden zur Verfügung steht, um den Checkout manuell abzuschließen.
 
 |background|
 
-.. todo: #ML: Hintergrund erläutern
+.. todo: EN: Time limit in minutes for creating paid orders via webhook
 
-ML: Kunde kommt von Unzer nicht zurück, weil er denkt ist fertig "Jetzt bestellen", muss aber sein, sonst keine Bestellung.
-Webhooks laufen ins leere, weile Bestellung nicht da; z.B. "ist bezahlt": Webhook kann Bestellung automatisch anlegen und abschließen.
-Unzerbestelleungen ohne OXID bestllungen;
+Unter bestimmten Bedingungen kann es vorkommen, dass eine Bestellung bei Unzer früher abgeschlossen wird als im OXID eShop.
 
-Bei den Tests haben wir festgestellt, das Unzer schneller mit den Webhooks reagiert, als ein Kunde mglw. im Unzer-Checkout die Rückleitung benutzt.
+Das kann beispielsweise sein, wenn der Kunde die Bezahlung auslöst, aber nicht in den OXID eShop zurückkehrt, um dort die Bestellung abzuschließen. Als Shop-Betreiber stellen Sie fest, dass es Unzer-Bestellungen gibt, denen keine Bestellungen in Ihrem OXID eShop entsprechen. Der Unzer-Webhook mit der Meldung, dass der Rechnungsbetrag bezahlt ist, ist in diesem Fall ins Leere gelaufen, weil technisch die Bestellung noch nicht angelegt war.
 
-Darum hat die Rückleitung 5 Minuten lang "Vorfahrt" bevor der Webhook eingreift und ggf. die Bestellung heilt, wenn der Kunde beim Rücksprung länger als 5 Minuten hängen bleibt ...
+Um dies zu vermeiden, legt der Webhook die Bestellung nach Ablauf der festgelegten Zeitgrenze automatisch an.
 
+Keine Sorge: Durch das automatische Erstellen der Bestellung wird keine Bestellung ausgelöst, die der Kunde nicht beabsichtigt hätte. Das System fängt lediglich den Fall ab, dass der Kunde den Checkout nicht korrekt abschließt. Aus Kundensicht ist die Bestellung mit dem Bezahlen abgeschlossen. Weil der Kunde das Checkout nicht korrekt abschließt, erhält er jedoch keine Bestellbestätigung.
 
+|procedure|
 
+Mit dem voreingestellten Standardwert von 5 Minuten tritt das Symptom in den meisten Fällen nicht auf.
+
+Tun Sie im Feld :guilabel:`Zeitgrenze in Minuten, bis wann Bestellungen mittels Webhook erstellt werden` Folgendes:
+
+* Wenn das Symptom dennoch auftritt, erhöhen Sie den Wert.
+* Umgekehrt: Wenn sich Kunden darüber beschweren, dass ihre Bestellungen im OXID eShop mit zu langer Verzögerung angezeigt werden, verringern Sie die Zeitgrenze.
 
 
 Betriebsmodus: eShop testen und Live-Betrieb aktivieren

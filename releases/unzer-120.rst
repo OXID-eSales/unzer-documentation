@@ -46,22 +46,15 @@ Weitere Informationen über die verfügbaren Zahlungsmethoden finden Sie unter :
 Korrekturen
 -----------
 
-* Speichern von unterbrochenen Bestellungen
+* Manchmal werden Bestellungen nach dem Bezahlen nicht korrekt abgeschlossen, beispielsweise weil Kunden nicht ins Checkout zurückkehren.
 
-  .. todo: #ML: Feature oder Bugfix?: "If customers - for whatever reason - interrupt the order in the checkout, the order is still saved using a temporary order and Unzer's webhook"
-        Was ist der Hintergrund?, Auswirkung? (https://github.com/OXID-eSales/unzer-module/blob/b-6.3.x/CHANGELOG.md#120---unreleased---2024--)
-  .. todo: #ML: Müssen wir den Effekt illustrieren? = Loberon
+  Das System verhindert diesen Fall durch das automatische Erstellen von Bestellungen nach einer Zeitgrenze.
 
-* Behebung des Loberon-Bugs
-
-  .. todo: #ML: Um welches Symptom geht es beim Loberon-Bug? -- Bugfix
+  Sollte das Problem dennoch auftreten, können Sie den Wert der Zeitgrenze anpassen.
 
   Weitere Informationen finden Sie unter :ref:`konfiguration:Sonstiges: Zeitgrenze für das Erstellen von Bestellungen anpassen`
 
-
-.. todo: #tbd: URL Changelog verifizieren
-
-Weitere Informationen finden Sie im Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.2.0/CHANGELOG.md.
+Siehe auch das Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.2.0/CHANGELOG.md.
 
 Update
 ------
