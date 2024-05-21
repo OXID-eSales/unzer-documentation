@@ -9,7 +9,6 @@ BGN      ApplePay
 CAD      AliPay
 CHF      AliPay
 CHF      ApplePay
-CHF      Unzer Prepayment
 CHF      WeChat
 CNY      AliPay
 CNY      WeChat

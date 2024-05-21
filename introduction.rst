@@ -32,9 +32,13 @@ Austria         WeChat
 Belgium         Alipay
 Belgium         Sofort
 Belgium         Bancontact
+Belgium         Unzer Direct Debit (SEPA Direct Debit)
 Belgium         WeChat
 Denmark         WeChat
+Estonia         Unzer Direct Debit (SEPA Direct Debit)
+Finland         Unzer Direct Debit (SEPA Direct Debit)
 Finland         WeChat
+France          Unzer Direct Debit (SEPA Direct Debit)
 France          WeChat
 Germany         Unzer Invoice (Paylater)
 Germany         Unzer Direct Debit (SEPA Direct Debit)
@@ -43,83 +47,121 @@ Germany         Giropay
 Germany         Unzer Invoice
 Germany         Sofort
 Germany         WeChat
+Greece          Unzer Direct Debit (SEPA Direct Debit)
 Greece          WeChat
 Great Britain   WeChat
 Hungary         WeChat
+Ireland         Unzer Direct Debit (SEPA Direct Debit)
 Ireland         WeChat
 Italy           Alipay
 Italy           Sofort
+Italy           Unzer Direct Debit (SEPA Direct Debit)
 Italy           WeChat
+Latvia          Unzer Direct Debit (SEPA Direct Debit)
+Lithuania       Unzer Direct Debit (SEPA Direct Debit)
 Liechtenstein   WeChat
 Luxembourg      Unzer Invoice
+Luxembourg      Unzer Direct Debit (SEPA Direct Debit)
 Luxembourg      WeChat
+Malta           Unzer Direct Debit (SEPA Direct Debit)
 Malta           WeChat
 Netherlands     iDEAL
 Netherlands     Alipay
-Netherlands     Unzer Invoice (Paylater)
 Netherlands     Sofort
+Netherlands     Unzer Direct Debit (SEPA Direct Debit)
+Netherlands     Unzer Invoice (Paylater)
 Netherlands     WeChat
 Norway          WeChat
 Poland          Przelewy24
+Portugal        Unzer Direct Debit (SEPA Direct Debit)
 Portugal        WeChat
-Sweden          WeChat
+Slovakia        Unzer Direct Debit (SEPA Direct Debit)
+Slovenia        Unzer Direct Debit (SEPA Direct Debit)
 Slovenia        Unzer Invoice
 Spain           Alipay
 Spain           Sofort
+Spain           Unzer Direct Debit (SEPA Direct Debit)
 Spain           WeChat
+Switzerland     Unzer Direct Debit (SEPA Direct Debit)
 Switzerland     Unzer Invoice (Paylater)
+Cyprus          Unzer Direct Debit (SEPA Direct Debit)
 ==============  ========================================
-
 
 
 Which markets are covered (sorted by payment method)?
 --------------------------------------------------------------
 
-=============================================== ================
-Payment method market
-=============================================== ================
-Alipay                                          Worldwide
+=============================================== =================
+Payment method                                  Market
+=============================================== =================
+Alipay                                          Belgium
+Alipay                                          Germany
+Alipay                                          Netherlands
+Alipay                                          Austria
+Alipay                                          Italy
+Alipay                                          Spain
 Apple Pay                                       Worldwide
 Bancontact                                      Belgium
-Card Payment                                    Worldwide
-eps Überweisung (Electronic Payment Standard)   Austria
+eps Bank Transfer (Electronic Payment Standard) Austria
 Giropay                                         Germany
 iDEAL                                           Netherlands
-Sofort                                          Austria
-Sofort                                          Belgium
-Sofort                                          Germany
-Sofort                                          Italy
-Sofort                                          Netherlands
-Sofort                                          Spain
+Card Payment                                    Worldwide
 PayPal                                          Worldwide
 Przelewy24                                      Poland
-Unzer Direct Debit (SEPA Direct Debit)          Austria
-Unzer Direct Debit (SEPA Direct Debit)          Germany
-Unzer Invoice (Paylater)                        Austria
+SEPA Direct Debit                               Belgium
+SEPA Direct Debit                               Germany
+SEPA Direct Debit                               Estonia
+SEPA Direct Debit                               Finland
+SEPA Direct Debit                               France
+SEPA Direct Debit                               Greece
+SEPA Direct Debit                               Ireland
+SEPA Direct Debit                               Italy
+SEPA Direct Debit                               Latvia
+SEPA Direct Debit                               Lithuania
+SEPA Direct Debit                               Luxembourg
+SEPA Direct Debit                               Malta
+SEPA Direct Debit                               Netherlands
+SEPA Direct Debit                               Austria
+SEPA Direct Debit                               Portugal
+SEPA Direct Debit                               Slovakia
+SEPA Direct Debit                               Slovenia
+SEPA Direct Debit                               Spain
+SEPA Direct Debit                               Cyprus
+Sofort                                          Belgium
+Sofort                                          Germany
+Sofort                                          Netherlands
+Sofort                                          Austria
+Sofort                                          Spain
+Sofort                                          Italy
+Unzer Installment                               Germany
+Unzer Installment                               Netherlands
+Unzer Installment                               Austria
+Unzer Installment                               Switzerland
+Unzer Prepayment                                Worldwide
 Unzer Invoice (Paylater)                        Germany
 Unzer Invoice (Paylater)                        Netherlands
+Unzer Invoice (Paylater)                        Austria
 Unzer Invoice (Paylater)                        Switzerland
-Unzer Prepayment                                Worldwide
-WeChat	                                        Austria
 WeChat                                          Belgium
-WeChat	                                        Denmark
-WeChat	                                        Finland
-WeChat	                                        France
-WeChat	                                        Germany
-WeChat	                                        Greece
-WeChat	                                        Great Britain
-WeChat	                                        Ireland
-WeChat	                                        Italy
-WeChat	                                        Liechtenstein
-WeChat	                                        Luxembourg
-WeChat	                                        Malta
-WeChat	                                        Netherlands
-WeChat	                                        Norway
-WeChat	                                        Portugal
-WeChat	                                        Sweden
-WeChat	                                        Spain
-WeChat	                                        Hungary
-=============================================== ================
+WeChat                                          Germany
+WeChat                                          Denmark
+WeChat                                          Finland
+WeChat                                          France
+WeChat                                          Greece
+WeChat                                          Great Britain
+WeChat                                          Ireland
+WeChat                                          Italy
+WeChat                                          Liechtenstein
+WeChat                                          Luxembourg
+WeChat                                          Malta
+WeChat                                          Netherlands
+WeChat                                          Norway
+WeChat                                          Austria
+WeChat                                          Portugal
+WeChat                                          Sweden
+WeChat                                          Spain
+WeChat                                          Hungary
+=============================================== =================
 
 
 Which currencies are covered?

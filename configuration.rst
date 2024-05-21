@@ -334,6 +334,32 @@ To avoid interference, make sure that jQuery is not included again separately fo
    * If your theme uses jQuery, make sure the :guilabel:`Include jQuery via the module` checkbox is deactivated.
    * If your theme **does not** use jQuery, make sure the :guilabel:`Include jQuery via the module` checkbox is activated.
 
+Other: Adjusting the time limit for creating orders
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If required, adjust the time limit for the automatic creation of orders.
+
+This is the amount of time the customer has to complete the checkout manually.
+
+|background|
+
+Under certain conditions, it can happen that an order is completed earlier at Unzer than in the OXID eShop.
+
+This can happen, for example, if the customer initiates the payment but does not return to the OXID eShop to complete the order there. As a store operator, you notice that there are Unzer orders that do not correspond to any orders in your OXID eShop. In this case, the Unzer webhook with the message that the invoice amount has been paid has come to nothing because the order has not yet been technically created.
+
+To avoid this, the webhook automatically creates the order after the specified time limit has expired.
+
+Don't worry: the automatic creation of the order does not trigger an order that the customer did not intend to place. The system merely intercepts the case that the customer does not complete the checkout correctly. From the customer's point of view, the order is completed with the payment. However, because the customer does not complete the checkout correctly, they do not receive an order confirmation.
+
+|procedure|
+
+With the preset default value of 5 minutes, the symptom does not occur in most cases.
+
+in the :guilabel:`Time limit in minutes for creating paid orders via webhook` field, do the following:
+
+* If the symptom does occur, increase the value.
+* Conversely: If customers complain that their orders are displayed in the OXID eShop with too long a delay, reduce the time limit.
+
 
 Operation mode: Testing the eShop and activating live operation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
