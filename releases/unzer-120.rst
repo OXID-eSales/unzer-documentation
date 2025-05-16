@@ -60,6 +60,7 @@ Um die Funktionen und Korrekturen von :productname:`Unzer Payment für OXID` V. 
 |prerequisites|
 
 * Sie haben OXID eShop V. 6.3.x bis 6.5.x.
+* YSie haben Unzer Payment für OXID V. 1.x.
 
 |procedure|
 
