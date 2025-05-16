@@ -1,14 +1,10 @@
 Unzer Payment für OXID V. 1.2
 =============================
 
-.. todo: #DR: Datum bestimmen
-
-Release-Datum: #tbd
+Release-Datum: 26.09.2024
 
 Neue oder geänderte Funktionen
 ------------------------------
-
-.. todo: #tbd EN: Unzer Installment
 
 Bieten Sie Ihren Kunden folgende erweiterten Zahlungsmöglichkeiten:
 
@@ -63,10 +59,7 @@ Um die Funktionen und Korrekturen von :productname:`Unzer Payment für OXID` V. 
 
 |prerequisites|
 
-.. todo: #ML/#ES: Kann ich direkt von 1.0 updaten?
-
 * Sie haben OXID eShop V. 6.3.x bis 6.5.x.
-* Sie haben Unzer Payment für OXID V. 1.x.
 
 |procedure|
 
