@@ -1,7 +1,7 @@
 Unzer Payment for OXID V. 1.2
 =============================
 
-Release date: 02-06-2023
+Release date: 26-09-2024
 
 New or changed functions
 ------------------------
