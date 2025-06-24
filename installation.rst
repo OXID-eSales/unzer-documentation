@@ -1,11 +1,11 @@
 Installation
 ============
 
-Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop Version 6.3 bis 6.5.
+Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop Version 7.x.
 
 |prerequisites|
 
-* Sie haben den OXID eShop 6.3 bis 6.5 installiert.
+* Sie haben den OXID eShop 7.x installiert.
 * Sie haben Transportverschlüsselung (`https`) konfiguriert.
 
    a. Öffnen Sie im Verzeichnis `<Root-Verzeichnis des eShops>/source` die Datei `config.inc.php`.
@@ -31,7 +31,7 @@ Installieren Sie das Unzer Payment-Modul für OXID für den OXID eShop Version 6
 
    .. code:: bash
 
-      composer require oxid-esales/unzer ^1.2.0
+      composer require oxid-esales/unzer ^2.2.0
 
 
 |result|
@@ -47,12 +47,6 @@ Sobald der Installationsprozess abgeschlossen ist, erscheint das Modul im Admini
    Abb.: Unzer Payment für OXID erfolgreich installiert
 
 
-
 Nächster Schritt: Um :productname:`Unzer Payment` zu konfigurieren, wählen Sie :guilabel:`Weiter`.
-
-
-
-
-
 
 .. Intern: oxdamb, Status:

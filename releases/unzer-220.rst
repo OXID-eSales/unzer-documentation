@@ -1,7 +1,7 @@
-Unzer Payment für OXID V. 1.2
+Unzer Payment für OXID V. 2.2
 =============================
 
-Release-Datum: 26.09.2024
+Release-Datum: 06.06.2025
 
 Neue oder geänderte Funktionen
 ------------------------------
@@ -50,26 +50,18 @@ Korrekturen
 
   Weitere Informationen finden Sie unter :ref:`konfiguration:Sonstiges: Zeitgrenze für das Erstellen von Bestellungen anpassen`
 
-Siehe auch das Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v1.2.0/CHANGELOG.md.
+Siehe auch das Changelog (GitHub) unter https://github.com/OXID-eSales/unzer-module/blob/v2.2.0/CHANGELOG.md.
 
-Update
-------
-
-Um die Funktionen und Korrekturen von :productname:`Unzer Payment für OXID` V. 1.2.0 und höher zu nutzen, machen Sie ein Update.
-
-|prerequisites|
-
-* Sie haben OXID eShop V. 6.3.x bis 6.5.x.
-* YSie haben Unzer Payment für OXID V. 1.x.
-
-|procedure|
-
-1. Führen Sie den folgenden Befehl aus.
-
-   .. code:: bash
-
-      composer update
-
-#. Um die neue Zahlungsart Unzer Ratenkauf zu nutzen, lassen Sie sie freischalten.
-
-   Weitere Informationen finden Sie unter :ref:`einfuehrung:Wo finde ich weitere Informationen?`
+.. todo: for later use
+    Update
+    ------
+    Um die Funktionen und Korrekturen von :productname:`Unzer Payment für OXID` V. 1.2.0 und höher zu nutzen, machen Sie ein Update.
+    |prerequisites|
+    * Sie haben OXID eShop V. 6.3.x bis 6.5.x.
+    * YSie haben Unzer Payment für OXID V. 1.x.
+    |procedure|
+    1. Führen Sie den folgenden Befehl aus.
+       .. code:: bash
+          composer update
+    #. Um die neue Zahlungsart Unzer Ratenkauf zu nutzen, lassen Sie sie freischalten.
+     Weitere Informationen finden Sie unter :ref:`einfuehrung:Wo finde ich weitere Informationen?`
