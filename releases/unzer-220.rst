@@ -1,14 +1,14 @@
-Unzer Payment for OXID V. 1.2
+Unzer Payment for OXID V. 2.2
 =============================
 
-Release date: 26-09-2024
+Release date: 06-06-2025
 
 New or changed functions
 ------------------------
 
 Offer your customers the following extended payment options:
 
-* New payment method Unzer installment (EUR, CHF) for the following countries:
+* Payment method Unzer installment (EUR, CHF) for the following countries:
 
   * Germany
   * Netherlands
@@ -51,26 +51,19 @@ Corrections
 
   For more information, see :ref:`configuration:Other: Adjusting the time limit for creating orders`
 
-See also the changelog (GitHub) under https://github.com/OXID-eSales/unzer-module/blob/v1.2.0/CHANGELOG.md.
+See also the changelog (GitHub) under https://github.com/OXID-eSales/unzer-module/blob/v2.2.0/CHANGELOG.md.
 
-
-Update
-------
-
-To use the features and fixes of :productname:`Unzer Payment for OXID` V. 1.2.x, make an update.
-
-Requirements
-^^^^^^^^^^^^
-
-* You have OXID eShop V. 6.3.x to 6.5.x.
-* You have Unzer Payment for OXID V. 1.x.
-
-Procedure
-^^^^^^^^^
-
-Execute the following command.
-
-.. code:: bash
-
-   composer update
+.. todo for later use
+    Update
+    ------
+    To use the features and fixes of :productname:`Unzer Payment for OXID` V. 1.2.x, make an update.
+    Requirements
+    ^^^^^^^^^^^^
+    * You have OXID eShop V. 7.x.
+    * You have Unzer Payment for OXID V. 2.x.
+    Procedure
+    ^^^^^^^^^
+    Execute the following command.
+    .. code:: bash
+       composer update
 
