@@ -283,8 +283,6 @@ Geschäftskunden (B2B) erkennt das System automatisch an einem Eintrag im Eingab
 
 Aus den Informationen über den Kunden berechnet Unzer eine Bonitätseinschätzung des Kunden.
 
-.. todo: #LS/#EC/#ML: Die Liste der "Unternehmensform"" wirkt wie maschinell aus dem Chinesischen übersetzt  -- wer klärt das mit Unzer?: Was istmit den Einträgen gemeint, warum ist es wichtig/wie wirkt es sich aus?
-
 .. _oxdamc05:
 
 .. figure:: /media/screenshots/oxdamc05.png
