@@ -12,7 +12,12 @@
           <dd><a href="{{ url }}">{{ slug }}</a></dd>
         {% endfor %}
       </dl>
-
+      <dl>
+        <dt>{{ _('OXID eShop Version 7.x') }}</dt>
+        {% for slug, url in versions70 %}
+        <dd><a href="{{ url }}">{{ slug }}</a></dd>
+        {% endfor %}
+      </dl>
       <dl>
         <dt>{{ _('Sprachen') }}</dt>
         {% for slug, url in languages %}
