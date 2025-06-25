@@ -140,6 +140,9 @@ html_context = {
         ('1.1', 'https://docs.oxid-esales.com/modules/unzer/en/1.1/'),
         ('1.2', 'https://docs.oxid-esales.com/modules/unzer/en/1.2/'),
     ],
+    'versions70': [
+        ('2.2', 'https://docs.oxid-esales.com/modules/unzer/en/2.2/'),
+    ],
     'languages':
        [('DE', 'https://docs.oxid-esales.com/modules/unzer/de/1.1/'),
         ('EN', 'https://docs.oxid-esales.com/modules/unzer/en/1.1/')],
