@@ -7,4 +7,4 @@ Informieren Sie sich in Release Notes und Changelogs über Neuerungen und Änder
    :maxdepth: 1
 
    Release Note Unzer Payment für OXID 2.2.0 <unzer-220>
-   Changelog Unzer Payment für OXID 2.2.2 <https://github.com/OXID-eSales/unzer-module/blob/v2.2.2/CHANGELOG.md>
+   Changelog Unzer Payment für OXID 2.2.3 <https://github.com/OXID-eSales/unzer-module/blob/v2.2.3/CHANGELOG.md>
