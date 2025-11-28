@@ -6,5 +6,5 @@ Informieren Sie sich in Release Notes und Changelogs über Neuerungen und Änder
 .. toctree::
    :maxdepth: 1
 
-   Release Note Unzer Payment für OXID 2.2.0 <unzer-220>
    Changelog Unzer Payment für OXID 2.2.3 <https://github.com/OXID-eSales/unzer-module/blob/v2.2.3/CHANGELOG.md>
+   Release Note Unzer Payment für OXID 2.2.0 <unzer-220>
